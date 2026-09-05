@@ -147,6 +147,16 @@ p { margin: 0; text-wrap: pretty; }
 .track-stories { background: #3a5668; }
 .track h3 { font-size: clamp(24px, 2.2vw, 30px); letter-spacing: -0.5px; }
 .track p { color: var(--on-dark-muted); line-height: 1.55; }
+.track p strong { color: #fff; font-weight: 700; }
+.track-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-top: 4px; }
+.track-link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  text-underline-offset: 4px;
+}
+.track-link:hover { color: var(--yellow); }
 .pill {
   align-self: flex-start;
   background: var(--slate);
