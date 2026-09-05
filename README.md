@@ -12,6 +12,6 @@ No build step. Edit `index.html` / `styles.css`, commit, push — Pages redeploy
 | A     | @    | 185.199.109.153 |
 | A     | @    | 185.199.110.153 |
 | A     | @    | 185.199.111.153 |
-| CNAME | www  | `unrealities.github.io` |
+| CNAME | www  | `unrealities-media.github.io` |
 
 `og.png` (1200×630) is referenced but not yet generated — export it from the brand canvas when ready.
