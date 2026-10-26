@@ -22,7 +22,14 @@ for (const relative of paths) {
   const input = path.join(source, relative)
   const output = path.join(target, relative)
   if (check) {
-    if (!fs.existsSync(output) || !fs.readFileSync(input).equals(fs.readFileSync(output))) throw new Error(`FMV copy is out of date: ${relative}`)
+    if (!fs.existsSync(output)) throw new Error(`FMV copy is missing: ${relative}`)
+    const original = fs.readFileSync(input)
+    const copy = fs.readFileSync(output)
+    const textFile = /\.(?:html|css|js|json)$/i.test(relative)
+    const same = textFile
+      ? original.toString('utf8').replaceAll('\r\n', '\n') === copy.toString('utf8').replaceAll('\r\n', '\n')
+      : original.equals(copy)
+    if (!same) throw new Error(`FMV copy is out of date: ${relative}`)
   } else {
     fs.mkdirSync(path.dirname(output), { recursive: true })
     fs.copyFileSync(input, output)

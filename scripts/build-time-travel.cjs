@@ -23,11 +23,11 @@ const cards = entries.slice().sort((a, b) => a.year - b.year || a.title.localeCo
           <dl><dt>The time idea</dt><dd>${escape(entry.idea)}</dd><dt>Watch for</dt><dd>${escape(entry.watchFor)}</dd></dl>
           <a href="https://www.themoviedb.org/movie/${entry.id}" rel="noopener noreferrer">Film details at TMDB <span aria-hidden="true">↗</span></a>
         </article>`).join('')
-const template = fs.readFileSync(path.join(root, 'time-travel/template.html'), 'utf8')
+const template = fs.readFileSync(path.join(root, 'scripts/time-travel-template.html'), 'utf8')
 const output = template.replace('<!-- FILM_CARDS -->', cards).replaceAll('<!-- FILM_COUNT -->', String(entries.length))
 const target = path.join(root, 'time-travel/index.html')
 if (process.argv.includes('--check')) {
-  if (!fs.existsSync(target) || fs.readFileSync(target, 'utf8') !== output) throw new Error('time-travel/index.html is out of date; run node scripts/build-time-travel.cjs')
+  if (!fs.existsSync(target) || fs.readFileSync(target, 'utf8').replaceAll('\r\n', '\n') !== output.replaceAll('\r\n', '\n')) throw new Error('time-travel/index.html is out of date; run node scripts/build-time-travel.cjs')
   console.log(`Checked ${entries.length} public film entries.`)
 } else {
   fs.writeFileSync(target, output)
