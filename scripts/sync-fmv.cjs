@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..')
 const source = path.resolve(root, '..', 'fmv-games')
 const target = path.join(root, 'fmv', 'games')
 const check = process.argv.includes('--check')
-const paths = ['index.html', 'game.html', 'timeline.html', 'titans.html', 'collect.html', 'channel.html']
+const paths = ['index.html', 'game.html', 'timeline.html', 'titans.html', 'collect.html', 'channel.html', 'tools/capture/store_prices.json']
 for (const directory of ['css', 'js', 'data', 'img']) {
   function addFiles(folder) {
     for (const item of fs.readdirSync(path.join(source, folder), { withFileTypes: true })) {

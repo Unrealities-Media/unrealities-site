@@ -1,0 +1,4423 @@
+{
+ "_about": "Steam and GOG prices (USD, today's price; regular is the undiscounted one) for games whose playToday buy is Digital. Written by tools/capture/fetch_store_prices.py, reviewed by hand: _reject[gameId] lists store pages that are another game (sequels, same-name games, remakes without the original video), _terms[gameId] adds search terms for a store edition the record titles miss. play_today.py copies the cheapest hit into playToday.",
+ "_reject": {
+  "cannon-fodder": [
+   "https://www.gog.com/en/game/cannon_fodder_2",
+   "https://store.steampowered.com/app/209750/"
+  ],
+  "five-hearts-under-one-roof": [
+   "https://www.gog.com/en/game/five_hearts_under_one_roof_2"
+  ],
+  "late-shift": [
+   "https://store.steampowered.com/app/3070400/"
+  ],
+  "lighthouse-the-dark-being": [
+   "https://store.steampowered.com/app/661450/"
+  ],
+  "love-is-all-around": [
+   "https://store.steampowered.com/app/3282390/"
+  ],
+  "mega-man-8": [
+   "https://store.steampowered.com/app/743900/"
+  ],
+  "mega-man-x4": [
+   "https://store.steampowered.com/app/743900/"
+  ],
+  "police-quest-swat": [
+   "https://store.steampowered.com/app/607120/"
+  ],
+  "resident-evil": [
+   "https://store.steampowered.com/app/21690/",
+   "https://store.steampowered.com/app/221040/",
+   "https://store.steampowered.com/app/883710/",
+   "https://store.steampowered.com/app/952060/",
+   "https://store.steampowered.com/app/2050650/",
+   "https://www.gog.com/en/game/resident_evil_3",
+   "https://www.gog.com/en/game/resident_evil_2",
+   "https://www.gog.com/en/game/resident_evil_0",
+   "https://store.steampowered.com/app/304240/"
+  ],
+  "ripper": [
+   "https://www.gog.com/en/game/gripper"
+  ],
+  "road-to-empress": [
+   "https://store.steampowered.com/app/4148240/"
+  ],
+  "roundabout": [
+   "https://store.steampowered.com/app/1333020/"
+  ],
+  "simulacra": [
+   "https://www.gog.com/en/game/simulacra_3",
+   "https://store.steampowered.com/app/1011190/",
+   "https://www.gog.com/en/game/simulacra_2",
+   "https://store.steampowered.com/app/1925970/"
+  ],
+  "the-bunker": [
+   "https://store.steampowered.com/app/2829480/",
+   "https://store.steampowered.com/app/2645220/",
+   "https://store.steampowered.com/app/3487660/"
+  ],
+  "the-7th-guest": [
+   "https://store.steampowered.com/app/4491360/"
+  ],
+  "area-51": [
+   "https://store.steampowered.com/app/1125130/",
+   "https://store.steampowered.com/app/3457730/"
+  ],
+  "heart-of-darkness": [
+   "https://www.gog.com/en/game/the_heart_of_darkness",
+   "https://store.steampowered.com/app/1413990/"
+  ],
+  "in-memoriam": [
+   "https://store.steampowered.com/app/2662330/"
+  ],
+  "lost-in-time": [
+   "https://store.steampowered.com/app/1411490/"
+  ],
+  "space-pirates": [
+   "https://store.steampowered.com/app/4271930/"
+  ],
+  "wheel-of-fortune-pc": [
+   "https://store.steampowered.com/app/1810230/"
+  ],
+  "casebook": [
+   "https://store.steampowered.com/app/1841190/"
+  ],
+  "connections-1995": [
+   "https://store.steampowered.com/app/4824950/"
+  ],
+  "the-13th-doll": [
+   "https://store.steampowered.com/app/1196340/"
+  ]
+ },
+ "_terms": {
+  "the-7th-guest": [
+   "The 7th Guest: 25th Anniversary Edition"
+  ],
+  "myst": [
+   "Myst: Masterpiece Edition"
+  ]
+ },
+ "a-fork-in-the-tale": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "akiba-lost": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "AKIBA LOST",
+    "url": "https://store.steampowered.com/app/4131220/",
+    "price": 24.99,
+    "regular": 24.99,
+    "released": "2026",
+    "developer": "IzanagiGames; Nippon TV; AX-ON",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "amber-journeys-beyond": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "american-hero": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "American Hero",
+    "url": "https://www.gog.com/en/game/american_hero",
+    "price": 5.25,
+    "regular": 14.99,
+    "released": "2021.11.11",
+    "developer": "Empty Clip Studios",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "amerzone": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Amerzone: The Explorer’s Legacy (1999)",
+    "url": "https://store.steampowered.com/app/302190/",
+    "price": 12.99,
+    "regular": 12.99,
+    "released": "Aug 22, 2014",
+    "developer": "Microids",
+    "match": 0.98
+   },
+   {
+    "store": "GOG",
+    "title": "Amerzone: The Explorer's Legacy (1999)",
+    "url": "https://www.gog.com/en/game/amerzone_the_explorer_legacy",
+    "price": 12.99,
+    "regular": 12.99,
+    "released": "1999.10.18",
+    "developer": "Microids",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Amerzone - The Explorer's Legacy",
+    "url": "https://store.steampowered.com/app/2429190/",
+    "price": 39.99,
+    "regular": 39.99,
+    "released": "Apr 24, 2025",
+    "developer": "Microids Studio Paris",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Amerzone - The Explorer's Legacy",
+    "url": "https://www.gog.com/en/game/amerzone_remake_the_explorers_legacy",
+    "price": 39.99,
+    "regular": 39.99,
+    "released": "2025.04.24",
+    "developer": "Microids Studio Paris",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "angel-devoid-face-of-the-enemy": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "are-you-afraid-of-the-dark-the-tale-of-orpheos-curse": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "area-51": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "assassin-2015": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "at-dead-of-night": {
+  "stores": [
+   {
+    "title": "At Dead Of Night",
+    "url": "https://store.steampowered.com/app/1450830/",
+    "price": 15.99,
+    "regular": 15.99,
+    "store": "Steam",
+    "developer": "Baggy Cat Ltd.",
+    "released": "Nov 19, 2020",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "atlantis-the-lost-tales": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Atlantis: The Lost Tales",
+    "url": "https://www.gog.com/en/game/atlantis_the_lost_tales",
+    "price": 0.59,
+    "regular": 5.99,
+    "released": "1997.09.30",
+    "developer": "Cryo Interactive",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "attentat-1942": {
+  "stores": [
+   {
+    "title": "Attentat 1942",
+    "url": "https://store.steampowered.com/app/676630/",
+    "price": 10.99,
+    "regular": 10.99,
+    "store": "Steam",
+    "developer": "Charles Games",
+    "released": "Oct 31, 2017",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "bad-mojo": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Bad Mojo Redux",
+    "url": "https://store.steampowered.com/app/255960/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Jul 3, 2014",
+    "developer": "Pulse Entertainment",
+    "match": 0.92
+   },
+   {
+    "store": "GOG",
+    "title": "Bad Mojo Redux",
+    "url": "https://www.gog.com/en/game/bad_mojo_redux",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "2004.12.09",
+    "developer": "Pulse Entertainment",
+    "match": 0.92
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "beyond-time": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "black-dahlia": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "blade-runner": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Blade Runner",
+    "url": "https://www.gog.com/en/game/blade_runner",
+    "price": 6.49,
+    "regular": 9.99,
+    "released": "1997.11.03",
+    "developer": "Westwood Studios, Inc.",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Blade Runner: Enhanced Edition",
+    "url": "https://store.steampowered.com/app/1678420/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Jun 23, 2022",
+    "developer": "Nightdive Studios, Westwood Studios",
+    "match": 0.92
+   },
+   {
+    "store": "GOG",
+    "title": "Blade Runner - Enhanced Edition",
+    "url": "https://www.gog.com/en/game/blade_runner_enhanced_edition",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "2022.06.23",
+    "developer": "Nightdive Studios, Westwood Studios",
+    "match": 0.92
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "blood-money-lethal-eden": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Blood Money: Lethal Eden",
+    "url": "https://store.steampowered.com/app/3850560/",
+    "price": 8.99,
+    "regular": 8.99,
+    "released": "2026",
+    "developer": "Bihuo Hudong (碧火互娱)",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "bloodshore": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Bloodshore",
+    "url": "https://store.steampowered.com/app/1490840/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Nov 3, 2021",
+    "developer": "Wales Interactive, Good Gate Media, Wayout Pictures, Posterity Entertainment",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "bloodwings-pumpkinheads-revenge": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "blown-away": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "blue-heat-the-case-of-the-cover-girl-murders": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "brain-dead-13": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "breakout-13": {
+  "stores": [
+   {
+    "title": "Breakout 13",
+    "url": "https://store.steampowered.com/app/2095300/",
+    "price": 9.99,
+    "regular": 9.99,
+    "store": "Steam",
+    "developer": "ALT Lab",
+    "released": "Jan 8, 2023",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "broken-sword-ii-the-smoking-mirror": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "broken-sword-the-shadow-of-the-templars": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Broken Sword - Shadow of the Templars (1996)",
+    "url": "https://store.steampowered.com/app/3361990/",
+    "price": 0.0,
+    "regular": 0.0,
+    "released": "Dec 19, 2024",
+    "developer": "Revolution Software Ltd",
+    "match": 0.95
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "burn-cycle": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "byzantine-the-betrayal": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "cadillacs-and-dinosaurs-the-second-cataclysm": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "cannon-fodder": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Cannon Fodder",
+    "url": "https://www.gog.com/en/game/cannon_fodder",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1993.11.29",
+    "developer": "Sensible Software",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "casebook": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "chaos-a-fantasy-adventure-game": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "chronicles-of-the-sword": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "cibele": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Cibele",
+    "url": "https://store.steampowered.com/app/408120/",
+    "price": 8.99,
+    "regular": 8.99,
+    "released": "2015",
+    "developer": "Star Maid Games",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "clandestiny": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "cloud-chamber": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "club-dead": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "command-and-conquer": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "command-and-conquer-3-tiberium-wars": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "command-and-conquer-4-tiberian-twilight": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "command-and-conquer-red-alert": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "command-and-conquer-red-alert-2": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "command-and-conquer-red-alert-3": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "command-and-conquer-red-alert-3-uprising": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "command-and-conquer-tiberian-sun": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "command-and-conquer-yuris-revenge": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "commander-blood": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "congo-the-movie-descent-into-zinj": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "connections-1995": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "conquer-the-world": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Conquer the World",
+    "url": "https://store.steampowered.com/app/3543040/",
+    "price": 12.99,
+    "regular": 12.99,
+    "released": "2025",
+    "developer": "Interactive Star (互动之星)",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "conspiracies": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "contradiction-spot-the-liar": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Contradiction: Spot The Liar",
+    "url": "https://store.steampowered.com/app/373390/",
+    "price": 12.99,
+    "regular": 12.99,
+    "released": "Jul 10, 2015",
+    "developer": "Baggy Cat Ltd.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "corpse-killer": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Corpse Killer - 25th Anniversary Edition",
+    "url": "https://store.steampowered.com/app/1087700/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Jul 30, 2019",
+    "developer": "Screaming Villains",
+    "match": 0.92
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "creature-shock": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "crime-patrol": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "crime-patrol-2-drug-wars": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "critical-path": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "crusader-no-regret": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Crusader: No Regret™",
+    "url": "https://www.gog.com/en/game/crusader_no_regret",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1996.09.10",
+    "developer": "Origin Systems",
+    "match": 0.95
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "crusader-no-remorse": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Crusader: No Remorse™",
+    "url": "https://www.gog.com/en/game/crusader_no_remorse",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1995.08.31",
+    "developer": "Origin Systems",
+    "match": 0.95
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "cyberia": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Cyberia",
+    "url": "https://store.steampowered.com/app/624080/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "May 17, 2017",
+    "developer": "Xatrix Entertainment",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Cyberia",
+    "url": "https://www.gog.com/en/game/cyberia",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "1994.01.01",
+    "developer": "Xatrix Entertainment",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "cyberia-2-resurrection": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Cyberia 2: Resurrection",
+    "url": "https://store.steampowered.com/app/717720/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Oct 23, 2017",
+    "developer": "Xatrix Entertainment",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Cyberia 2: Resurrection",
+    "url": "https://www.gog.com/en/game/cyberia_2_resurrection",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "1995.01.01",
+    "developer": "Xatrix Entertainment",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "cyberwar": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "cyclemania": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Cyclemania",
+    "url": "https://store.steampowered.com/app/1471680/",
+    "price": 4.99,
+    "regular": 4.99,
+    "released": "Dec 4, 2020",
+    "developer": "Compro Games, Accolade",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Cyclemania",
+    "url": "https://www.gog.com/en/game/cyclemania",
+    "price": 4.99,
+    "regular": 4.99,
+    "released": "1994.01.01",
+    "developer": "Compro Games",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "d": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "da-pursuit-of-justice": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "dark-nights-with-poe-and-munro": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Dark Nights with Poe and Munro",
+    "url": "https://store.steampowered.com/app/1098170/",
+    "price": 3.89,
+    "regular": 12.99,
+    "released": "May 19, 2020",
+    "developer": "D'Avekki Studios Ltd",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Dark Nights with Poe and Munro",
+    "url": "https://www.gog.com/en/game/dark_nights_with_poe_and_munro",
+    "price": 12.99,
+    "regular": 12.99,
+    "released": "2020.05.19",
+    "developer": "D'Avekki Studios Ltd",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "dark-side-of-the-moon": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "darkstar-the-interactive-movie": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "dead-reset": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Dead Reset",
+    "url": "https://store.steampowered.com/app/1346840/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "2025",
+    "developer": "Dark Rift Horror; Wales Interactive",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "dead-take": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Dead Take",
+    "url": "https://store.steampowered.com/app/3352690/",
+    "price": 8.99,
+    "regular": 14.99,
+    "released": "Jul 31, 2025",
+    "developer": "Surgent Studios",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "deadly-tide": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "death-come-true": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Death Come True",
+    "url": "https://store.steampowered.com/app/1321070/",
+    "price": 15.99,
+    "regular": 15.99,
+    "released": "Jul 17, 2020",
+    "developer": "IzanagiGames, Too Kyo Games, ESQUADRA,inc.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "deathtrap-dungeon-the-interactive-video-adventure": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Deathtrap Dungeon: The Interactive Video Adventure",
+    "url": "https://store.steampowered.com/app/1191940/",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "Apr 30, 2020",
+    "developer": "Branching Narrative Ltd",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "devo-presents-adventures-of-the-smart-patrol": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "discworld-ii-missing-presumed": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "doctor-who-the-lonely-assassins": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Doctor Who: The Lonely Assassins",
+    "url": "https://store.steampowered.com/app/1508270/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Mar 18, 2021",
+    "developer": "Maze Theory",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Doctor Who: The Lonely Assassins",
+    "url": "https://www.gog.com/en/game/doctor_who_the_lonely_assasins",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "2021.03.19",
+    "developer": "Kaigan Games OÜ",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "dont-quit-your-day-job": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "double-switch": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Double Switch - 25th Anniversary Edition",
+    "url": "https://store.steampowered.com/app/878290/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Dec 11, 2018",
+    "developer": "Screaming Villains",
+    "match": 0.92
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "dracula-2-the-last-sanctuary": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Dracula 2: The Last Sanctuary",
+    "url": "https://store.steampowered.com/app/289820/",
+    "price": 4.99,
+    "regular": 4.99,
+    "released": "Apr 17, 2014",
+    "developer": "Microids",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "dracula-resurrection": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Dracula: The Resurrection",
+    "url": "https://store.steampowered.com/app/289800/",
+    "price": 4.99,
+    "regular": 4.99,
+    "released": "Apr 17, 2014",
+    "developer": "Microids",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "dracula-unleashed": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "dragon-lore-ii-the-heart-of-the-dragon-man": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "dragon-lore-the-legend-begins": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Dragon Lore: The Legend Begins",
+    "url": "https://www.gog.com/en/game/dragon_lore_the_legend_begins",
+    "price": 0.59,
+    "regular": 5.99,
+    "released": "1994.12.31",
+    "developer": "Cryo Interactive",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "dragons-lair": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Dragon's Lair",
+    "url": "https://store.steampowered.com/app/227380/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "May 17, 2013",
+    "developer": "Digital Leisure Inc.",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Dragon's Lair Trilogy",
+    "url": "https://www.gog.com/en/game/dragons_lair_trilogy",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "1983.06.19",
+    "developer": "Digital Leisure Inc.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "dragons-lair-ii-time-warp": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Dragon's Lair 2: Time Warp",
+    "url": "https://store.steampowered.com/app/240360/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Oct 24, 2013",
+    "developer": "Digital Leisure Inc.",
+    "match": 0.94
+   },
+   {
+    "store": "GOG",
+    "title": "Dragon's Lair Trilogy",
+    "url": "https://www.gog.com/en/game/dragons_lair_trilogy",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "1983.06.19",
+    "developer": "Digital Leisure Inc.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "drowned-god-conspiracy-of-the-ages": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Drowned God: Conspiracy of the Ages.",
+    "url": "https://store.steampowered.com/app/3320100/",
+    "price": 6.99,
+    "regular": 6.99,
+    "released": "Feb 14, 2025",
+    "developer": "Next Path Media, FSTR",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "dune": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "dune-2000": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "dust-a-tale-of-the-wired-west": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "egypt-1156-bc-tomb-of-the-pharaoh": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "emperor-battle-for-dune": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "enemy-zero": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "eraser-turnabout": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "erica": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Erica",
+    "url": "https://store.steampowered.com/app/1514930/",
+    "price": 11.99,
+    "regular": 11.99,
+    "released": "May 25, 2021",
+    "developer": "Flavourworks",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "evidence-the-last-ritual": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "evil-school": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Evil School",
+    "url": "https://store.steampowered.com/app/3818020/",
+    "price": 7.99,
+    "regular": 7.99,
+    "released": "2026",
+    "developer": "CineGame Interactive",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "fate-by-numbers": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "fear-effect": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Fear Effect",
+    "url": "https://store.steampowered.com/app/3504570/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Aug 29, 2025",
+    "developer": "Implicit Conversions",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "final-fantasy-ix": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "FINAL FANTASY IX",
+    "url": "https://store.steampowered.com/app/377840/",
+    "price": 20.99,
+    "regular": 20.99,
+    "released": "Apr 14, 2016",
+    "developer": "Square Enix",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "FINAL FANTASY IX",
+    "url": "https://www.gog.com/en/game/final_fantasy_ix",
+    "price": 20.99,
+    "regular": 20.99,
+    "released": "2016.04.14",
+    "developer": "Square Enix",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "final-fantasy-vii": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "FINAL FANTASY VII",
+    "url": "https://store.steampowered.com/app/3837340/",
+    "price": 11.99,
+    "regular": 11.99,
+    "released": "Jul 24, 2013",
+    "developer": "Square Enix, FINE Co., Ltd.",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "FINAL FANTASY VII",
+    "url": "https://www.gog.com/en/game/final_fantasy_vii",
+    "price": 11.99,
+    "regular": 11.99,
+    "released": "2026.02.24",
+    "developer": "Square Enix, FINE Co., Ltd.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "final-fantasy-viii": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "FINAL FANTASY VIII",
+    "url": "https://store.steampowered.com/app/39150/",
+    "price": 11.99,
+    "regular": 11.99,
+    "released": "Dec 5, 2013",
+    "developer": "Square Enix",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "FINAL FANTASY VIII - REMASTERED",
+    "url": "https://store.steampowered.com/app/1026680/",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "Sep 3, 2019",
+    "developer": "Square Enix",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "FINAL FANTASY VIII - REMASTERED",
+    "url": "https://www.gog.com/en/game/final_fantasy_viii_remastered",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "2019.09.03",
+    "developer": "Square Enix",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "five-dates": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Five Dates",
+    "url": "https://store.steampowered.com/app/1353270/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Nov 17, 2020",
+    "developer": "Wales Interactive, Good Gate Media",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "five-hearts-under-one-roof": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Five Hearts Under One Roof",
+    "url": "https://www.gog.com/en/game/five_hearts_under_one_roof",
+    "price": 13.99,
+    "regular": 19.99,
+    "released": "2024.01.03",
+    "developer": "Storytaco",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Five Hearts Under One Roof",
+    "url": "https://store.steampowered.com/app/3021100/",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "Oct 2, 2024",
+    "developer": "Storytaco",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "flam-evaw": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "FLAM EVAW",
+    "url": "https://store.steampowered.com/app/3864530/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "2025",
+    "developer": "Beijing Wanhe Ruisheng Culture Media",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "flash-traffic-city-of-angels": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "flashback": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "foul-play-mystery-at-awkward-manor": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "fox-hunt": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "frankenstein-through-the-eyes-of-the-monster": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "gabriel-knight-2-the-beast-within": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "The Beast Within: A Gabriel Knight® Mystery",
+    "url": "https://store.steampowered.com/app/496760/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Aug 29, 2016",
+    "developer": "Sierra On-Line",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Gabriel Knight 2: The Beast Within",
+    "url": "https://www.gog.com/en/game/gabriel_knight_2_the_beast_within",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1995.06.30",
+    "developer": "Sierra",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "gadget-past-as-future": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "gag-the-impotent-mystery": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "game-of-fate-chasing-through-time": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Game of Fate: Chasing Through Time",
+    "url": "https://store.steampowered.com/app/2963550/",
+    "price": 10.99,
+    "regular": 10.99,
+    "released": "2024",
+    "developer": "KARMAGAME HK LIMITED",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "gex": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Gex",
+    "url": "https://www.gog.com/en/game/gex",
+    "price": 1.19,
+    "regular": 5.99,
+    "released": "1996.11.07",
+    "developer": "Crystal Dynamics",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "GEX Trilogy",
+    "url": "https://store.steampowered.com/app/3183970/",
+    "price": 29.99,
+    "regular": 29.99,
+    "released": "Jun 16, 2025",
+    "developer": "Limited Run Games, Crystal Dynamics",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Gex Trilogy",
+    "url": "https://www.gog.com/en/game/gex_trilogy",
+    "price": 29.99,
+    "regular": 29.99,
+    "released": "2025.06.16",
+    "developer": "Limited Run Games, Crystal Dynamics",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "gex-3-deep-cover-gecko": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "GEX Trilogy",
+    "url": "https://store.steampowered.com/app/3183970/",
+    "price": 29.99,
+    "regular": 29.99,
+    "released": "Jun 16, 2025",
+    "developer": "Limited Run Games, Crystal Dynamics",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Gex Trilogy",
+    "url": "https://www.gog.com/en/game/gex_trilogy",
+    "price": 29.99,
+    "regular": 29.99,
+    "released": "2025.06.16",
+    "developer": "Limited Run Games, Crystal Dynamics",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "golden-gate": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "goosebumps-escape-from-horrorland": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "gothos": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "hacked-the-streamer": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Hacked: The Streamer",
+    "url": "https://store.steampowered.com/app/2425130/",
+    "price": 8.49,
+    "regular": 8.49,
+    "released": "2026",
+    "developer": "Button Interactive; NAISU",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "hamlet-a-murder-mystery": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "hardline": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "harvester": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Harvester",
+    "url": "https://www.gog.com/en/game/harvester",
+    "price": 1.79,
+    "regular": 5.99,
+    "released": "1996.09.26",
+    "developer": "DigiFX Interactive",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Harvester",
+    "url": "https://store.steampowered.com/app/287020/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Apr 4, 2014",
+    "developer": "DigiFX Interactive",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "headspun": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Headspun",
+    "url": "https://store.steampowered.com/app/808770/",
+    "price": 10.99,
+    "regular": 10.99,
+    "released": "Aug 28, 2019",
+    "developer": "Superstring",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "heart-of-darkness": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "hell-a-cyberpunk-thriller": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "hell-cab": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "her-story": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Her Story",
+    "url": "https://www.gog.com/en/game/her_story",
+    "price": 4.99,
+    "regular": 9.99,
+    "released": "2015.06.24",
+    "developer": "Sam Barlow",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Her Story",
+    "url": "https://store.steampowered.com/app/368370/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Jun 24, 2015",
+    "developer": "Sam Barlow",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "i-saw-black-clouds": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "I Saw Black Clouds",
+    "url": "https://store.steampowered.com/app/1346830/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Mar 30, 2021",
+    "developer": "Ghost Dog Films",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "immortality": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "IMMORTALITY",
+    "url": "https://www.gog.com/en/game/immortality",
+    "price": 11.99,
+    "regular": 19.99,
+    "released": "2022.08.30",
+    "developer": "Half Mermaid",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "IMMORTALITY",
+    "url": "https://store.steampowered.com/app/1350200/",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "Aug 30, 2022",
+    "developer": "Sam Barlow, Half Mermaid",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "in-memoriam": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "in-the-1st-degree": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "inner-scales-1-choice": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Inner Scales 1: Choice",
+    "url": "https://store.steampowered.com/app/4699920/",
+    "price": 6.99,
+    "regular": 6.99,
+    "released": "2026",
+    "developer": "MYSTERY CROWN",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "isis-1995": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "jeopardy-pc": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "jerma-and-otto-the-curse-of-the-late-streamer": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Jerma & Otto: The Curse of the Late Streamer",
+    "url": "https://store.steampowered.com/app/1669490/",
+    "price": 0,
+    "regular": 0,
+    "released": "2021",
+    "developer": "William Enders",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "johnny-mnemonic": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "jump-raven": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "kids-on-site": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "killing-time": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Killing Time (Classic)",
+    "url": "https://www.gog.com/en/game/killing_time",
+    "price": 2.49,
+    "regular": 9.99,
+    "released": "1996.12.06",
+    "developer": "The 3DO Company",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Killing Time: Resurrected",
+    "url": "https://www.gog.com/en/game/killing_time_resurrected",
+    "price": 6.25,
+    "regular": 24.99,
+    "released": "2024.10.18",
+    "developer": "Nightdive Studios, 3DO",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Killing Time: Resurrected",
+    "url": "https://store.steampowered.com/app/1733170/",
+    "price": 8.74,
+    "regular": 24.99,
+    "released": "Oct 17, 2024",
+    "developer": "Nightdive Studios, 3DO",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Killing Time (Classic)",
+    "url": "https://store.steampowered.com/app/493320/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Dec 15, 2016",
+    "developer": "The 3DO Company",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "kingdom-ii-shadoan": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Kingdom II: Shadoan",
+    "url": "https://www.gog.com/en/game/kingdom_ii_shadoan",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": null,
+    "developer": "Virtual Image Productions",
+    "match": 1.0
+   },
+   {
+    "title": "Kingdom II: Shadoan",
+    "url": "https://store.steampowered.com/app/4352730/",
+    "price": 9.99,
+    "regular": 9.99,
+    "store": "Steam",
+    "developer": "Virtual Image Productions",
+    "released": "Mar 17, 2026",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "klaymen-klaymen": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "knowledge-or-know-lady": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Knowledge, or know Lady",
+    "url": "https://store.steampowered.com/app/2786680/",
+    "price": 6.99,
+    "regular": 6.99,
+    "released": "Mar 28, 2024",
+    "developer": "蒸汽满满工作室",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "lands-of-lore-guardians-of-destiny": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "late-shift": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Late Shift",
+    "url": "https://www.gog.com/en/game/late_shift",
+    "price": 3.09,
+    "regular": 12.99,
+    "released": "2017.04.18",
+    "developer": "CtrlMovie",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Late Shift",
+    "url": "https://store.steampowered.com/app/584980/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Apr 18, 2017",
+    "developer": "CtrlMovie",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "lighthouse-the-dark-being": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Lighthouse: The Dark Being",
+    "url": "https://www.gog.com/en/game/lighthouse_the_dark_being",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1996.01.01",
+    "developer": "Sierra",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "lococycle": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "LocoCycle",
+    "url": "https://store.steampowered.com/app/224040/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "2014",
+    "developer": "Twisted Pixel Games",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "lost-eden": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Lost Eden",
+    "url": "https://store.steampowered.com/app/579980/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Feb 13, 2017",
+    "developer": "Cryo Interactive",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Lost Eden",
+    "url": "https://www.gog.com/en/game/lost_eden",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "1995.01.01",
+    "developer": "Cryo Interactive",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "lost-files-of-sherlock-holmes-the-case-of-the-serrated-scalpel": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "lost-in-time": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "love-begins-with-goodbye": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Love Begins With Goodbye",
+    "url": "https://store.steampowered.com/app/3652650/",
+    "price": 15.99,
+    "regular": 15.99,
+    "released": "2025",
+    "developer": "Dawang Studio (大王工作室); Kuangda Network",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "love-is-all-around": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Love Is All Around",
+    "url": "https://store.steampowered.com/app/2322560/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Oct 17, 2023",
+    "developer": "intiny",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "love-is-all-around-2": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Love is All Around 2",
+    "url": "https://store.steampowered.com/app/3282390/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Jul 16, 2025",
+    "developer": "intiny",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "love-love-mystery-club": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Love Love Mystery Club",
+    "url": "https://store.steampowered.com/app/3904990/",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "2026",
+    "developer": "LuminDrive",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "lunar-2-eternal-blue": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "lunar-silver-star-story": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "LUNAR Remastered Collection",
+    "url": "https://store.steampowered.com/app/3255380/",
+    "price": 49.99,
+    "regular": 49.99,
+    "released": "Apr 17, 2025",
+    "developer": "ASHIBI Co., Ltd., GAME ARTS Co., Ltd.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "maabus": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "mad-dog-ii-the-lost-gold": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "mad-dog-mccree": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "man-enough": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "mandate-of-heaven": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Mandate of Heaven",
+    "url": "https://store.steampowered.com/app/3831120/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "2025",
+    "developer": "Muyan Studio (木焱工作室)",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "maximum-force": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "mckenzie-and-co": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "mechwarrior-2-mercenaries": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "mega-man-8": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Mega Man Legacy Collection 2",
+    "url": "https://store.steampowered.com/app/495050/",
+    "price": 7.99,
+    "regular": 19.99,
+    "released": "Aug 8, 2017",
+    "developer": "CAPCOM CO., LTD",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "mega-man-x4": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Mega Man X Legacy Collection",
+    "url": "https://store.steampowered.com/app/743890/",
+    "price": 7.99,
+    "regular": 19.99,
+    "released": "Jul 24, 2018",
+    "developer": "CAPCOM CO., LTD",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "megarace": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "megarace-2": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "MegaRace 2",
+    "url": "https://store.steampowered.com/app/733760/",
+    "price": 2.99,
+    "regular": 2.99,
+    "released": "Nov 10, 2017",
+    "developer": "Cryo Interactive, Jordan Freeman Group",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "mia-and-the-dragon-princess": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Mia and the Dragon Princess",
+    "url": "https://store.steampowered.com/app/1837580/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "May 3, 2023",
+    "developer": "Wales Interactive, Dead Pixel Productions, Good Gate Media",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "miazma-or-the-devils-stone": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "MIAZMA or the Devil's Stone",
+    "url": "https://store.steampowered.com/app/774141/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "May 2, 2018",
+    "developer": "Private Moon Studios",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "microcosm": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "midnight-stranger": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "missing-an-interactive-thriller-episode-one": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "mission-critical": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Mission Critical",
+    "url": "https://www.gog.com/en/game/mission_critical",
+    "price": 1.39,
+    "regular": 6.99,
+    "released": "1995.11.01",
+    "developer": "Legend Entertainment",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Mission Critical",
+    "url": "https://store.steampowered.com/app/1006460/",
+    "price": 6.99,
+    "regular": 6.99,
+    "released": "Jan 28, 2019",
+    "developer": "Legend Entertainment",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "misty-judgment": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Misty Judgment",
+    "url": "https://store.steampowered.com/app/3364770/",
+    "price": 8.99,
+    "regular": 8.99,
+    "released": "2025",
+    "developer": "Dimension Boundary (次元边界)",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "mode-1996": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "monty-python-and-the-quest-for-the-holy-grail": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "monty-pythons-the-meaning-of-life": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "morpheus": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "mortal-kombat-mythologies-sub-zero": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Mortal Kombat: Legacy Kollection",
+    "url": "https://store.steampowered.com/app/3454980/",
+    "price": 49.99,
+    "regular": 49.99,
+    "released": "Oct 29, 2025",
+    "developer": "Digital Eclipse",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "motesolo-no-girlfriend-since-birth": {
+  "stores": [
+   {
+    "title": "Motesolo : No Girlfriend Since Birth",
+    "url": "https://store.steampowered.com/app/1414180/",
+    "price": 11.49,
+    "regular": 22.99,
+    "store": "Steam",
+    "developer": "INDICAVA INTERACTIVE",
+    "released": "Jun 9, 2021",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "multimedia-celebrity-poker": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "mummy-tomb-of-the-pharaoh": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "muppets-inside": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "murderous-muses": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Murderous Muses",
+    "url": "https://www.gog.com/en/game/murderous_muses",
+    "price": 4.35,
+    "regular": 13.99,
+    "released": "2023.04.12",
+    "developer": "D'Avekki Studios Ltd",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Murderous Muses",
+    "url": "https://store.steampowered.com/app/1727270/",
+    "price": 13.99,
+    "regular": 13.99,
+    "released": "Apr 11, 2023",
+    "developer": "D'Avekki Studios Ltd",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "myst": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Myst: Masterpiece Edition",
+    "url": "https://store.steampowered.com/app/63660/",
+    "price": 1.79,
+    "regular": 5.99,
+    "released": "Feb 2, 2011",
+    "developer": "Cyan Worlds, Inc.",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Myst: Masterpiece Edition",
+    "url": "https://www.gog.com/en/game/myst_masterpiece_edition",
+    "price": 1.79,
+    "regular": 5.99,
+    "released": "1999.01.02",
+    "developer": "Cyan Worlds",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "realMyst: Masterpiece Edition",
+    "url": "https://store.steampowered.com/app/244430/",
+    "price": 7.19,
+    "regular": 17.99,
+    "released": "Feb 5, 2014",
+    "developer": "Cyan Worlds, Inc.",
+    "match": 0.92
+   },
+   {
+    "store": "GOG",
+    "title": "Myst",
+    "url": "https://www.gog.com/en/game/myst",
+    "price": 20.99,
+    "regular": 34.99,
+    "released": "2021.08.26",
+    "developer": "Cyan Worlds",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Myst",
+    "url": "https://store.steampowered.com/app/1255560/",
+    "price": 34.99,
+    "regular": 34.99,
+    "released": "Aug 26, 2021",
+    "developer": "Cyan Worlds, Inc.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "myst-iii-exile": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Myst III: Exile",
+    "url": "https://www.gog.com/en/game/myst_3_exile",
+    "price": 5.99,
+    "regular": 14.99,
+    "released": "2001.05.08",
+    "developer": "Presto Studios",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Myst III: Exile",
+    "url": "https://store.steampowered.com/app/925930/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Sep 24, 2018",
+    "developer": "Presto Studios, Cyan Worlds, Inc.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "myst-iv-revelation": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Myst IV: Revelation",
+    "url": "https://www.gog.com/en/game/myst_4",
+    "price": 5.99,
+    "regular": 14.99,
+    "released": "2004.09.10",
+    "developer": "Ubisoft Montreal",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Myst IV: Revelation",
+    "url": "https://store.steampowered.com/app/925940/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Sep 24, 2018",
+    "developer": "Ubisoft Montreal",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "next-space-rebels": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Next Space Rebels",
+    "url": "https://store.steampowered.com/app/1422430/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "2021",
+    "developer": "Studio Floris Kaayk",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "night-book": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Night Book",
+    "url": "https://store.steampowered.com/app/1477920/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Jul 27, 2021",
+    "developer": "Wales Interactive, Good Gate Media",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "night-trap": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Night Trap - 25th Anniversary Edition",
+    "url": "https://store.steampowered.com/app/643620/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Aug 15, 2017",
+    "developer": "Screaming Villains",
+    "match": 0.92
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "ninja-hayate": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "noctropolis": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Noctropolis",
+    "url": "https://store.steampowered.com/app/377070/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Sep 3, 2015",
+    "developer": "Flashpoint Productions, Nightdive Studios",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Noctropolis",
+    "url": "https://www.gog.com/en/game/noctropolis",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "1994.01.01",
+    "developer": "Nightdive Studios, Flashpoint Productions",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "noir-a-shadowy-thriller": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "not-for-broadcast": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Not For Broadcast",
+    "url": "https://www.gog.com/en/game/not_for_broadcast",
+    "price": 6.49,
+    "regular": 24.99,
+    "released": "2022.01.25",
+    "developer": "NotGames",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Not For Broadcast",
+    "url": "https://store.steampowered.com/app/1147550/",
+    "price": 24.99,
+    "regular": 24.99,
+    "released": "Jan 25, 2022",
+    "developer": "NotGames",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Not For Broadcast VR",
+    "url": "https://store.steampowered.com/app/2257770/",
+    "price": 24.99,
+    "regular": 24.99,
+    "released": "Mar 23, 2023",
+    "developer": "NotGames, Babaroga",
+    "match": 0.92
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "novastorm": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "nuclear-strike": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "obduction": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Obduction ®",
+    "url": "https://www.gog.com/en/game/obduction",
+    "price": 11.99,
+    "regular": 29.99,
+    "released": "2016.08.24",
+    "developer": "Cyan Worlds",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Obduction",
+    "url": "https://store.steampowered.com/app/306760/",
+    "price": 29.99,
+    "regular": 29.99,
+    "released": "Aug 24, 2016",
+    "developer": "Cyan, Inc.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "obsidian": {
+  "stores": [
+   {
+    "title": "Obsidian",
+    "url": "https://store.steampowered.com/app/2471130/",
+    "price": 9.99,
+    "regular": 9.99,
+    "store": "Steam",
+    "developer": "Rocket Science Games, Jordan Freeman Group, SegaSoft",
+    "released": "Aug 28, 2023",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "oddworld-abes-oddysee": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Oddworld: Abe's Oddysee®",
+    "url": "https://store.steampowered.com/app/15700/",
+    "price": 2.99,
+    "regular": 2.99,
+    "released": "Aug 28, 2008",
+    "developer": "Oddworld Inhabitants",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Oddworld: Abe's Oddysee",
+    "url": "https://www.gog.com/en/game/oddworld_abes_oddysee",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1997.10.31",
+    "developer": "Oddworld Inhabitants",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "of-light-and-darkness-the-prophecy": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "panic-in-the-park": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "paparazzi-tales-of-tinseltown": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "phantasmagoria": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Phantasmagoria",
+    "url": "https://store.steampowered.com/app/501990/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Aug 29, 2016",
+    "developer": "Sierra",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Phantasmagoria",
+    "url": "https://www.gog.com/en/game/phantasmagoria",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "1995.07.31",
+    "developer": "Sierra",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "phantasmagoria-a-puzzle-of-flesh": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Phantasmagoria 2: A Puzzle of Flesh",
+    "url": "https://store.steampowered.com/app/501970/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Aug 29, 2016",
+    "developer": "Sierra",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Phantasmagoria 2: A Puzzle of Flesh",
+    "url": "https://www.gog.com/en/game/phantasmagoria_2",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1996.12.03",
+    "developer": "Sierra",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "piper-1995": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "plumbers-dont-wear-ties": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Plumbers Don't Wear Ties: Definitive Edition",
+    "url": "https://www.gog.com/en/game/plumbers_dont_wear_ties_definitive_edition",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "2024.03.05",
+    "developer": "Limited Run Games",
+    "match": 0.92
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "police-quest-swat": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Police Quest: SWAT",
+    "url": "https://store.steampowered.com/app/560350/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Dec 15, 2016",
+    "developer": "Yosemite Entertainment",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "press-x-to-not-die": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Press X to Not Die",
+    "url": "https://store.steampowered.com/app/402330/",
+    "price": 2.99,
+    "regular": 2.99,
+    "released": "Oct 6, 2017",
+    "developer": "All Seeing Eye Games",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "prince-interactive": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "prisoner-of-ice": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Call of Cthulhu: Prisoner of Ice",
+    "url": "https://store.steampowered.com/app/359620/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Nov 4, 2015",
+    "developer": "Infogrames",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Call of Cthulhu: Prisoner of Ice",
+    "url": "https://www.gog.com/en/game/call_of_cthulhu_prisoner_of_ice",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1995.01.01",
+    "developer": "Infogrames Europe SA",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "privateer-2-the-darkening": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Privateer™ 2: The Darkening",
+    "url": "https://www.gog.com/en/game/privateer_2_the_darkening",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1996.12.09",
+    "developer": "Origin Systems",
+    "match": 0.96
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "psychic-detective": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "pyst": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "quantum-break": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Quantum Break",
+    "url": "https://store.steampowered.com/app/474960/",
+    "price": 39.99,
+    "regular": 39.99,
+    "released": "Sep 29, 2016",
+    "developer": "Remedy Entertainment",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "quantum-gate": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "quarterback-attack-with-mike-ditka": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "quest-for-fame": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "rama": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "realms-of-the-haunting": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Realms of the Haunting",
+    "url": "https://www.gog.com/en/game/realms_of_the_haunting",
+    "price": 1.49,
+    "regular": 2.99,
+    "released": "1996.12.31",
+    "developer": "Gremlin Interactive Ltd.",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Realms of the Haunting",
+    "url": "https://store.steampowered.com/app/292390/",
+    "price": 2.99,
+    "regular": 2.99,
+    "released": "Apr 24, 2014",
+    "developer": "Gremlin Interactive",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "rebel-assault-ii-the-hidden-empire": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "STAR WARS™: Rebel Assault I + II",
+    "url": "https://store.steampowered.com/app/456540/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Mar 29, 2016",
+    "developer": "LucasArts",
+    "match": 0.93
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "redjack-revenge-of-the-brethren": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "reelect-jfk": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "resident-evil": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Resident Evil",
+    "url": "https://www.gog.com/en/game/resident_evil",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "1997.09.14",
+    "developer": "Capcom, GOG",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "return-to-zork": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Return to Zork",
+    "url": "https://www.gog.com/en/game/return_to_zork",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1993.08.11",
+    "developer": "Infocom",
+    "match": 1.0
+   },
+   {
+    "title": "Return to Zork",
+    "url": "https://store.steampowered.com/app/585240/",
+    "price": 5.99,
+    "regular": 5.99,
+    "store": "Steam",
+    "developer": "Activision",
+    "released": "Apr 18, 2017",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "revenge-on-gold-diggers": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Revenge on gold diggers ",
+    "url": "https://store.steampowered.com/app/3350200/",
+    "price": 6.99,
+    "regular": 6.99,
+    "released": "Jun 19, 2025",
+    "developer": "前方工作室",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "riana-rouge": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "rifftrax-the-game": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "RiffTrax: The Game",
+    "url": "https://store.steampowered.com/app/1707870/",
+    "price": 6.99,
+    "regular": 9.99,
+    "released": "May 5, 2022",
+    "developer": "Wide Right Interactive, Mark Zorn, Kurt Wojda",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "ripper": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "rise-of-the-robots": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "riven-the-sequel-to-myst": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Riven (1997)",
+    "url": "https://store.steampowered.com/app/63610/",
+    "price": 1.79,
+    "regular": 5.99,
+    "released": "Aug 4, 2010",
+    "developer": "Cyan Worlds, Inc.",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Riven (1997)",
+    "url": "https://www.gog.com/en/game/riven_the_sequel_to_myst",
+    "price": 1.79,
+    "regular": 5.99,
+    "released": "1997.11.30",
+    "developer": "Cyan Worlds",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Riven",
+    "url": "https://www.gog.com/en/game/riven",
+    "price": 20.99,
+    "regular": 34.99,
+    "released": "2024.06.25",
+    "developer": "Cyan Worlds",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Riven",
+    "url": "https://store.steampowered.com/app/1712350/",
+    "price": 34.99,
+    "regular": 34.99,
+    "released": "Jun 25, 2024",
+    "developer": "Cyan Worlds, Inc.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "road-to-empress": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Road to Empress I",
+    "url": "https://store.steampowered.com/app/3478050/",
+    "price": 8.49,
+    "regular": 8.49,
+    "released": "Sep 8, 2025",
+    "developer": " New One Studio",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "road-to-empress-ii": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Road to Empress II",
+    "url": "https://store.steampowered.com/app/4148240/",
+    "price": 18.0,
+    "regular": 18.0,
+    "released": "2026",
+    "developer": "New One Studio",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "rolling-stones-voodoo-lounge": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "roommates-romance-and-ringing-hearts": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Roommates, Romance, and Ringing Hearts",
+    "url": "https://store.steampowered.com/app/3898860/",
+    "price": 11.99,
+    "regular": 11.99,
+    "released": "2026",
+    "developer": "TV Asahi Corporation; Aiming Inc.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "roundabout": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Roundabout",
+    "url": "https://store.steampowered.com/app/303430/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Sep 18, 2014",
+    "developer": "No Goblin",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "sakura-wars": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "santa-fe-mysteries-sacred-ground": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "santa-fe-mysteries-the-elk-moon-murder": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "sarah-is-missing": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "she-sees-red": {
+  "stores": [
+   {
+    "title": "She Sees Red - Interactive Movie",
+    "url": "https://store.steampowered.com/app/1081510/",
+    "price": 7.99,
+    "regular": 7.99,
+    "store": "Steam",
+    "developer": "Rhinotales",
+    "released": "Jul 11, 2019",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "sherlock-holmes-consulting-detective-vol-i": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "sherlock-holmes-consulting-detective-vol-ii": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "sherlock-holmes-consulting-detective-vol-iii": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "shivers": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Shivers",
+    "url": "https://www.gog.com/en/game/shivers",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1995.01.01",
+    "developer": "Sierra",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "shivers-two-harvest-of-souls": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Shivers II: Harvest of Souls",
+    "url": "https://www.gog.com/en/game/shivers_ii_harvest_of_souls",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1997.01.01",
+    "developer": "Sierra",
+    "match": 0.91
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "shockwave-assault": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "sid-meiers-civilization-ii": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "silent-steel": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "simcity-enhanced-cd-rom": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "simulacra": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "SIMULACRA",
+    "url": "https://store.steampowered.com/app/712730/",
+    "price": 4.99,
+    "regular": 4.99,
+    "released": "Oct 26, 2017",
+    "developer": "Kaigan Games OÜ",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "SIMULACRA",
+    "url": "https://www.gog.com/en/game/simulacra",
+    "price": 4.99,
+    "regular": 4.99,
+    "released": "2017.10.26",
+    "developer": "Kaigan Games OÜ",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "simulacra-2": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "SIMULACRA 2",
+    "url": "https://store.steampowered.com/app/1011190/",
+    "price": 7.99,
+    "regular": 7.99,
+    "released": "Jan 30, 2020",
+    "developer": "Kaigan Games",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "SIMULACRA 2",
+    "url": "https://www.gog.com/en/game/simulacra_2",
+    "price": 7.99,
+    "regular": 7.99,
+    "released": "2020.01.30",
+    "developer": "Kaigan Games OÜ",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "simulacra-3": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "SIMULACRA 3",
+    "url": "https://www.gog.com/en/game/simulacra_3",
+    "price": 3.99,
+    "regular": 9.99,
+    "released": "2022.10.25",
+    "developer": "Kaigan Games OÜ",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "SIMULACRA 3",
+    "url": "https://store.steampowered.com/app/1925970/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Oct 25, 2022",
+    "developer": "Kaigan Games",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "slam-city-with-scottie-pippen": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "soldier-boyz": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "space-ace": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Space Ace",
+    "url": "https://store.steampowered.com/app/240340/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Aug 27, 2013",
+    "developer": "Digital Leisure Inc.",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Dragon's Lair Trilogy",
+    "url": "https://www.gog.com/en/game/dragons_lair_trilogy",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "1983.06.19",
+    "developer": "Digital Leisure Inc.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "space-battleship-yamato-arcade": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "space-pirates": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "spycraft-the-great-game": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Spycraft: The Great Game",
+    "url": "https://store.steampowered.com/app/569220/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Apr 18, 2017",
+    "developer": "Activision",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Spycraft: The Great Game",
+    "url": "https://www.gog.com/en/game/spycraft_the_great_game",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1996.02.29",
+    "developer": "Activision",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "star-trek-borg": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "star-trek-klingon": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "star-trek-klingon-academy": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "star-trek-starfleet-academy": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Star Trek™: Starfleet Academy",
+    "url": "https://store.steampowered.com/app/364810/",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "May 8, 2015",
+    "developer": "Interplay Entertainment Corp.",
+    "match": 0.96
+   },
+   {
+    "store": "GOG",
+    "title": "Star Trek™: Starfleet Academy",
+    "url": "https://www.gog.com/en/game/star_trek_starfleet_academy",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "1997.09.12",
+    "developer": "Interplay",
+    "match": 0.96
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "star-trek-the-next-generation-a-final-unity": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "star-wars-jedi-knight-dark-forces-ii": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "STAR WARS™ Jedi Knight: Dark Forces II",
+    "url": "https://store.steampowered.com/app/32380/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Sep 16, 2009",
+    "developer": "LucasArts",
+    "match": 0.97
+   },
+   {
+    "store": "GOG",
+    "title": "STAR WARS™ Jedi Knight: Dark Forces II",
+    "url": "https://www.gog.com/en/game/star_wars_jedi_knight_dark_forces_ii",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1997.09.30",
+    "developer": "Lucasfilm",
+    "match": 0.97
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "star-wars-rebel-assault": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "starship-troopers-ultimate-bug-war": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Starship Troopers: Ultimate Bug War!",
+    "url": "https://store.steampowered.com/app/2321780/",
+    "price": 24.99,
+    "regular": 24.99,
+    "released": "2026",
+    "developer": "Auroch Digital",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "steins-gate-elite": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "steven-spielbergs-directors-chair": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "subzero": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "SubZero",
+    "url": "https://store.steampowered.com/app/3711170/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "2026",
+    "developer": "Joy Media Limited",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "super-seducer": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Super Seducer : How to Talk to Girls",
+    "url": "https://store.steampowered.com/app/695920/",
+    "price": 12.99,
+    "regular": 12.99,
+    "released": "Mar 6, 2018",
+    "developer": "RLR Training Inc",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "superscout": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Superscout",
+    "url": "https://store.steampowered.com/app/2862610/",
+    "price": 17.99,
+    "regular": 17.99,
+    "released": "Jul 18, 2024",
+    "developer": "Mountain and Sea Studio",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "supreme-warrior": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "svoboda-1945-liberation": {
+  "stores": [
+   {
+    "title": "Svoboda 1945: Liberation",
+    "url": "https://store.steampowered.com/app/1076620/",
+    "price": 15.99,
+    "regular": 15.99,
+    "store": "Steam",
+    "developer": "Charles Games",
+    "released": "Aug 3, 2021",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "synnergist": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "tekwar": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "telling-lies": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Telling Lies",
+    "url": "https://store.steampowered.com/app/762830/",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "Aug 23, 2019",
+    "developer": "Sam Barlow, Half Mermaid, Furious Bee Limited",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Telling Lies",
+    "url": "https://www.gog.com/en/game/telling_lies",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "2019.08.23",
+    "developer": "Sam Barlow, Furious Bee Limited",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "temujin": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "ten-dates": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Ten Dates",
+    "url": "https://store.steampowered.com/app/1946070/",
+    "price": 15.99,
+    "regular": 15.99,
+    "released": "Feb 13, 2023",
+    "developer": "Wales Interactive, Good Gate Media",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "tender-loving-care": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Tender Loving Care",
+    "url": "https://store.steampowered.com/app/593900/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Mar 30, 2017",
+    "developer": "Aftermath Media",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Tender Loving Care",
+    "url": "https://www.gog.com/en/game/tender_loving_care",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1998.01.01",
+    "developer": "Aftermath Media",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "tenebris-somnia": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Tenebris Somnia",
+    "url": "https://store.steampowered.com/app/2121510/",
+    "price": 24.99,
+    "regular": 24.99,
+    "released": "2026",
+    "developer": "Andrés Borghi; Saibot Studios",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "terra-nova-strike-force-centauri": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Terra Nova: Strike Force Centauri",
+    "url": "https://store.steampowered.com/app/368600/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Jul 23, 2015",
+    "developer": "Looking Glass Studios",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Terra Nova: Strike Force Centauri",
+    "url": "https://www.gog.com/en/game/terra_nova_strike_force_centauri",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1996.03.05",
+    "developer": "Looking Glass Studios",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "tex-murphy-overseer": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Tex Murphy: Overseer",
+    "url": "https://www.gog.com/en/game/tex_murphy_overseer",
+    "price": 1.99,
+    "regular": 9.99,
+    "released": "1998.03.13",
+    "developer": "Access Software",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Tex Murphy: Overseer",
+    "url": "https://store.steampowered.com/app/302370/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Jun 12, 2014",
+    "developer": "Access Software",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "tex-murphy-tesla-effect": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Tesla Effect: A Tex Murphy Adventure",
+    "url": "https://www.gog.com/en/game/tesla_effect_a_tex_murphy_adventure",
+    "price": 3.99,
+    "regular": 19.99,
+    "released": "2014.05.07",
+    "developer": "Big Finish Games",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Tesla Effect: A Tex Murphy Adventure",
+    "url": "https://store.steampowered.com/app/261510/",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "May 8, 2014",
+    "developer": "Big Finish Games",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "thayers-quest": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Kingdom: The Far Reaches",
+    "url": "https://store.steampowered.com/app/700880/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Sep 8, 2017",
+    "developer": "Interplay",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Kingdom: The Far Reaches",
+    "url": "https://www.gog.com/en/game/kingdom_the_far_reaches",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "1995.12.30",
+    "developer": "Interplay",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-11th-hour": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "The 11th Hour",
+    "url": "https://www.gog.com/en/game/the_11th_hour",
+    "price": 1.19,
+    "regular": 5.99,
+    "released": "1995.12.13",
+    "developer": "Trilobyte Games",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "The 11th Hour",
+    "url": "https://store.steampowered.com/app/255940/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Oct 18, 2013",
+    "developer": "Trilobyte Games",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-13th-doll": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "The 13th Doll: A Fan Game of The 7th Guest",
+    "url": "https://www.gog.com/en/game/the_13th_doll_a_fan_game_of_the_7th_guest",
+    "price": 9.99,
+    "regular": 19.99,
+    "released": "2019.10.31",
+    "developer": "Attic Door Productions",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "The 13th Doll: A Fan Game of The 7th Guest",
+    "url": "https://store.steampowered.com/app/1107230/",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "Oct 30, 2019",
+    "developer": "Attic Door Productions",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "the-7th-guest": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "The 7th Guest: 25th Anniversary Edition",
+    "url": "https://www.gog.com/en/game/the_7th_guest_25th_anniversary_edition",
+    "price": 7.49,
+    "regular": 9.99,
+    "released": "2019.04.02",
+    "developer": "Trilobyte Games",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "The 7th Guest: 25th Anniversary Edition",
+    "url": "https://store.steampowered.com/app/1044340/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Apr 2, 2019",
+    "developer": "MojoTouch, Trilobyte Games",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-bunker": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "The Bunker",
+    "url": "https://store.steampowered.com/app/481110/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Sep 20, 2016",
+    "developer": "Splendy Interactive, Wales Interactive",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-centennial-case-a-shijima-story": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "The Centennial Case : A Shijima Story",
+    "url": "https://store.steampowered.com/app/1612780/",
+    "price": 49.99,
+    "regular": 49.99,
+    "released": "May 12, 2022",
+    "developer": "Square Enix",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-complex": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "The Complex",
+    "url": "https://store.steampowered.com/app/1107790/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Mar 31, 2020",
+    "developer": "Wales Interactive, Good Gate Media, Little Jade Productions",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-daedalus-encounter": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-dame-was-loaded": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "The Dame Was Loaded",
+    "url": "https://store.steampowered.com/app/1006440/",
+    "price": 6.99,
+    "regular": 6.99,
+    "released": "Jan 28, 2019",
+    "developer": "Beam Software",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "The Dame Was Loaded",
+    "url": "https://www.gog.com/en/game/the_dame_was_loaded",
+    "price": 6.99,
+    "regular": 6.99,
+    "released": "1996.04.30",
+    "developer": "Beam Software",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-dark-eye": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-gallery": {
+  "stores": [
+   {
+    "title": "The Gallery",
+    "url": "https://store.steampowered.com/app/1884570/",
+    "price": 9.99,
+    "regular": 9.99,
+    "store": "Steam",
+    "developer": "PRM Games",
+    "released": "Sep 8, 2022",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "the-hive": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "The Hive",
+    "url": "https://www.gog.com/en/game/the_hive",
+    "price": 9.99,
+    "regular": 19.99,
+    "released": "2016.08.25",
+    "developer": "Skydome Entertainment",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "The Hive",
+    "url": "https://store.steampowered.com/app/325730/",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "Aug 25, 2016",
+    "developer": "Skydome Entertainment",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "the-infectious-madness-of-doctor-dekker": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "The Infectious Madness of Doctor Dekker",
+    "url": "https://www.gog.com/en/game/the_infectious_madness_of_doctor_dekker",
+    "price": 2.69,
+    "regular": 8.99,
+    "released": "2017.05.19",
+    "developer": "D'Avekki Studios Ltd",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "The Infectious Madness of Doctor Dekker",
+    "url": "https://store.steampowered.com/app/545540/",
+    "price": 8.99,
+    "regular": 8.99,
+    "released": "May 19, 2017",
+    "developer": "D'Avekki Studios Ltd",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-invisible-guardian": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-isle-tide-hotel": {
+  "stores": [
+   {
+    "title": "The Isle Tide Hotel",
+    "url": "https://store.steampowered.com/app/2000090/",
+    "price": 19.99,
+    "regular": 19.99,
+    "store": "Steam",
+    "developer": "Wales Interactive, Interflix Media",
+    "released": "Sep 11, 2023",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "the-journeyman-project": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-journeyman-project-2-buried-in-time": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "The Journeyman Project 2: Buried in Time",
+    "url": "https://www.gog.com/en/game/journeyman_project_2",
+    "price": 2.99,
+    "regular": 5.99,
+    "released": "1995.01.02",
+    "developer": "Presto Studios",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-journeyman-project-3-legacy-of-time": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "The Journeyman Project 3: Legacy of Time",
+    "url": "https://www.gog.com/en/game/journeyman_project_3",
+    "price": 2.99,
+    "regular": 5.99,
+    "released": "1998.01.31",
+    "developer": "Presto Studios",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-journeyman-project-pegasus-prime": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "The Journeyman Project 1: Pegasus Prime",
+    "url": "https://www.gog.com/en/game/journeyman_project_1_pegasus_prime_the",
+    "price": 4.99,
+    "regular": 9.99,
+    "released": "1997.06.19",
+    "developer": "Presto Studios",
+    "match": 0.97
+   },
+   {
+    "store": "Steam",
+    "title": "The Journeyman Project 1: Pegasus Prime",
+    "url": "https://store.steampowered.com/app/359420/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Feb 20, 2017",
+    "developer": "Presto Studios",
+    "match": 0.97
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-last-bounty-hunter": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-last-dynasty": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-lawnmower-man": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-legend-of-dragoon": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-magic-death": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-museum-of-anything-goes": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-need-for-speed": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-pandora-directive": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Tex Murphy: The Pandora Directive",
+    "url": "https://www.gog.com/en/game/tex_murphy_the_pandora_directive",
+    "price": 4.99,
+    "regular": 9.99,
+    "released": "1996.07.31",
+    "developer": "Access Software",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Tex Murphy: The Pandora Directive",
+    "url": "https://store.steampowered.com/app/302360/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Jun 12, 2014",
+    "developer": "Access Software",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-psychotron": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-quiet-man": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "THE QUIET MAN™",
+    "url": "https://store.steampowered.com/app/790540/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Nov 1, 2018",
+    "developer": "Square Enix, Human Head Studios",
+    "match": 0.9
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-run": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "The Run",
+    "url": "https://store.steampowered.com/app/3447920/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "2026",
+    "developer": "PRM Games",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "the-sacred-mirror-of-kofun": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-sacred-pools": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-shapeshifting-detective": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "The Shapeshifting Detective",
+    "url": "https://store.steampowered.com/app/898650/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Nov 6, 2018",
+    "developer": "D'Avekki Studios Ltd, Wales Interactive",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-solitaire-conspiracy": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "The Solitaire Conspiracy",
+    "url": "https://store.steampowered.com/app/1424980/",
+    "price": 11.99,
+    "regular": 11.99,
+    "released": "2020",
+    "developer": "Bithell Games",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "the-spectre-files-deathstalker": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "The Spectre Files: Deathstalker",
+    "url": "https://store.steampowered.com/app/1356760/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Oct 27, 2020",
+    "developer": "Game Refuge, Galloping Ghost Productions",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-three-kingdoms-rebirth": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "The Three Kingdoms: Rebirth",
+    "url": "https://store.steampowered.com/app/3412900/",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "2026",
+    "developer": "Machiato Interactive (玛奇阿朵互娱科技); Mountain and Sea Studio",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "the-vampire-diaries-1996": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-vig": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "THE VIG",
+    "url": "https://store.steampowered.com/app/4181110/",
+    "price": 17.99,
+    "regular": 17.99,
+    "released": "2026",
+    "developer": "Yiying Culture (亦盈文化); Mountain and Sea Studio; Beijing Chaodaigan",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "the-vortex-quantum-gate-ii": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "the-x-files-game": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "time-commando": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Time Commando",
+    "url": "https://store.steampowered.com/app/1758910/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Oct 9, 2021",
+    "developer": "[2.21], Adeline Software",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Time Commando",
+    "url": "https://www.gog.com/en/game/time_commando",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1996.07.31",
+    "developer": "[2.21]",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "time-gal": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "time-gal-and-ninja-hayate": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "timelapse": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Timelapse",
+    "url": "https://www.gog.com/en/game/timelapse",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1996.09.30",
+    "developer": "GTE Entertainment",
+    "match": 1.0
+   },
+   {
+    "title": "Timelapse",
+    "url": "https://store.steampowered.com/app/433580/",
+    "price": 5.99,
+    "regular": 5.99,
+    "store": "Steam",
+    "developer": "GTE Entertainment",
+    "released": "Jan 21, 2016",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "titanic-adventure-out-of-time": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Titanic: Adventure Out Of Time",
+    "url": "https://store.steampowered.com/app/785480/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Apr 26, 2018",
+    "developer": "Cyberflix Incorporated",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Titanic: Adventure Out of Time",
+    "url": "https://www.gog.com/en/game/titanic_adventure_out_of_time",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1996.01.01",
+    "developer": "Cyberflix Incorporated",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "tomorrows-love-puzzle": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Tomorrow's Love Puzzle",
+    "url": "https://store.steampowered.com/app/2726890/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "2024",
+    "developer": "EpicDream Games; Youyuan Media",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "toonstruck": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Toonstruck",
+    "url": "https://store.steampowered.com/app/369830/",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "Nov 15, 2016",
+    "developer": "Burst",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Toonstruck",
+    "url": "https://www.gog.com/en/game/toonstruck",
+    "price": 19.99,
+    "regular": 19.99,
+    "released": "1996.11.04",
+    "developer": "Burst",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "total-distortion": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "train-to-sachsenhausen": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "treasure-quest-1996": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "under-a-killing-moon": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Tex Murphy: Under a Killing Moon",
+    "url": "https://www.gog.com/en/game/tex_murphy_under_a_killing_moon",
+    "price": 4.99,
+    "regular": 9.99,
+    "released": "1994.10.31",
+    "developer": "Access Software",
+    "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Tex Murphy: Under a Killing Moon",
+    "url": "https://store.steampowered.com/app/302350/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "Jun 12, 2014",
+    "developer": "Access Software",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "underdog-detective": {
+  "stores": [
+   {
+    "title": "神都不良探 Underdog Detective",
+    "url": "https://store.steampowered.com/app/1681970/",
+    "price": 7.99,
+    "regular": 7.99,
+    "store": "Steam",
+    "developer": "天津芸芸科技有限公司",
+    "released": "Apr 27, 2022",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "urban-runner": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "vanity-fair-the-pursuit": {
+  "stores": [
+   {
+    "title": "Vanity Fair: The Pursuit",
+    "url": "https://store.steampowered.com/app/2758000/",
+    "price": 6.99,
+    "regular": 6.99,
+    "store": "Steam",
+    "developer": "木焱工作室",
+    "released": "Feb 19, 2024",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "vikings-1998": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "virtual-corporation": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "virtual-nightclub": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "voyeur": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Voyeur",
+    "url": "https://store.steampowered.com/app/1414500/",
+    "price": 8.99,
+    "regular": 8.99,
+    "released": "Oct 12, 2020",
+    "developer": "Philips P.O.V. Entertainment Group",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "voyeur-ii": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "wetlands": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Wetlands",
+    "url": "https://store.steampowered.com/app/1367160/",
+    "price": 2.09,
+    "regular": 6.99,
+    "released": "Feb 5, 2021",
+    "developer": "New World Computing",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Wetlands",
+    "url": "https://www.gog.com/en/game/wetlands",
+    "price": 2.09,
+    "regular": 6.99,
+    "released": "1995.01.01",
+    "developer": "New World Computing, Inc.",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "what-the-dub": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "What The Dub?!",
+    "url": "https://store.steampowered.com/app/1495860/",
+    "price": 5.59,
+    "regular": 7.99,
+    "released": "Apr 8, 2021",
+    "developer": "Wide Right Interactive, Mark Zorn, Kurt Wojda",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "wheel-of-fortune-pc": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "whiteboyz-wit-attitude-the-pursuit-of-money": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Whiteboyz Wit Attitude: The Pursuit of Money",
+    "url": "https://store.steampowered.com/app/1411670/",
+    "price": 0,
+    "regular": 0,
+    "released": "2020",
+    "developer": "MichaelArts",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "who-is-oscar-lake": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "who-killed-brett-penance": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "who-killed-sam-rupert": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "who-killed-taylor-french-the-case-of-the-undressed-reporter": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "who-pressed-mute-on-uncle-marcus": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Who Pressed Mute on Uncle Marcus?",
+    "url": "https://store.steampowered.com/app/1628130/",
+    "price": 14.99,
+    "regular": 14.99,
+    "released": "Mar 18, 2022",
+    "developer": "Wales Interactive, Good Gate Media",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "who-shot-johnny-rock": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "wing-commander-iii-heart-of-the-tiger": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Wing Commander™ III: Heart of the Tiger",
+    "url": "https://www.gog.com/en/game/wing_commander_3_heart_of_the_tiger",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1994.12.30",
+    "developer": "Origin Systems",
+    "match": 0.97
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "wing-commander-iv-the-price-of-freedom": {
+  "stores": [
+   {
+    "store": "GOG",
+    "title": "Wing Commander™ IV: The Price of Freedom",
+    "url": "https://www.gog.com/en/game/wing_commander_4_the_price_of_freedom",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1995.12.31",
+    "developer": "Origin Systems",
+    "match": 0.97
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "wing-commander-prophecy": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "wing-nuts-battle-in-the-sky": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "wrath-of-the-gods": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "yoomurjaks-ring": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "YOOMURJAK'S RING",
+    "url": "https://store.steampowered.com/app/774151/",
+    "price": 9.99,
+    "regular": 9.99,
+    "released": "May 21, 2019",
+    "developer": "Private Moon Studios",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "zelenhgorm": {
+  "stores": [],
+  "checked": "2026-10-25"
+ },
+ "zork-grand-inquisitor": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Zork: Grand Inquisitor",
+    "url": "https://store.steampowered.com/app/570680/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Apr 18, 2017",
+    "developer": "Activision",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Zork: Grand Inquisitor",
+    "url": "https://www.gog.com/en/game/zork_grand_inquisitor",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1997.10.31",
+    "developer": "Activision",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "zork-nemesis": {
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Zork Nemesis: The Forbidden Lands",
+    "url": "https://store.steampowered.com/app/571060/",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "Apr 18, 2017",
+    "developer": "Zombie Studios",
+    "match": 1.0
+   },
+   {
+    "store": "GOG",
+    "title": "Zork Nemesis: The Forbidden Lands",
+    "url": "https://www.gog.com/en/game/zork_nemesis_the_forbidden_lands",
+    "price": 5.99,
+    "regular": 5.99,
+    "released": "1996.02.29",
+    "developer": "Zombie LLC",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-24"
+ },
+ "the-dark-side-of-the-moon-2021": {
+  "stores": [
+   {
+    "title": "The Dark Side of the Moon: An Interactive FMV Thriller",
+    "url": "https://store.steampowered.com/app/1525770/",
+    "price": 8.99,
+    "regular": 8.99,
+    "store": "Steam",
+    "developer": "Tayanna Studios",
+    "released": "Mar 12, 2021",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "jessika": {
+  "stores": [
+   {
+    "title": "Jessika",
+    "url": "https://store.steampowered.com/app/1251980/",
+    "price": 12.49,
+    "regular": 12.49,
+    "store": "Steam",
+    "developer": "Tritrie Games",
+    "released": "Aug 25, 2020",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "super-seducer-2": {
+  "stores": [
+   {
+    "title": "Super Seducer 2 - Advanced Seduction Tactics",
+    "url": "https://store.steampowered.com/app/863570/",
+    "price": 12.99,
+    "regular": 12.99,
+    "store": "Steam",
+    "developer": "RLR Training Inc",
+    "released": "Sep 13, 2018",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "love-too-easily": {
+  "stores": [
+   {
+    "title": "Love Too Easily",
+    "url": "https://store.steampowered.com/app/2274500/",
+    "price": 21.99,
+    "regular": 21.99,
+    "store": "Steam",
+    "developer": "Monster Guide inc.",
+    "released": "Aug 24, 2023",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "drive-me-crazy": {
+  "stores": [
+   {
+    "title": "Drive Me Crazy",
+    "url": "https://store.steampowered.com/app/2918550/",
+    "price": 12.99,
+    "regular": 12.99,
+    "store": "Steam",
+    "developer": "Tenth Art Studio",
+    "released": "Jul 12, 2024",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "my-destiny-girls": {
+  "stores": [
+   {
+    "title": "MY DESTINY GIRLS",
+    "url": "https://store.steampowered.com/app/2766860/",
+    "price": 9.99,
+    "regular": 9.99,
+    "store": "Steam",
+    "developer": "KARMAGAME HK LIMITED",
+    "released": "Mar 28, 2024",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "secrets-of-the-heartbeat": {
+  "stores": [
+   {
+    "title": "Secrets of the Heartbeat",
+    "url": "https://store.steampowered.com/app/2774190/",
+    "price": 6.99,
+    "regular": 6.99,
+    "store": "Steam",
+    "developer": "RainbowGame",
+    "released": "Jun 7, 2024",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "charming-hearts": {
+  "stores": [
+   {
+    "title": "Charming Hearts",
+    "url": "https://store.steampowered.com/app/2817140/",
+    "price": 9.99,
+    "regular": 9.99,
+    "store": "Steam",
+    "developer": "坤舆科技, 一冉影视",
+    "released": "Jun 13, 2024",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "i-ve-fallen-for-you": {
+  "stores": [
+   {
+    "title": "I've Fallen For You!",
+    "url": "https://store.steampowered.com/app/2754690/",
+    "price": 7.99,
+    "regular": 7.99,
+    "store": "Steam",
+    "developer": "LOVE MOOD STUDIO LIMITED",
+    "released": "Oct 15, 2024",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "only-you-2024": {
+  "stores": [
+   {
+    "title": "恋爱单选题",
+    "url": "https://store.steampowered.com/app/2865490/",
+    "price": 10.99,
+    "regular": 10.99,
+    "store": "Steam",
+    "developer": "无忧传媒",
+    "released": "Jul 18, 2024",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "beauties-they-re-all-after-me": {
+  "stores": [
+   {
+    "title": "Beauties! They're All After Me",
+    "url": "https://store.steampowered.com/app/2873760/",
+    "price": 8.99,
+    "regular": 8.99,
+    "store": "Steam",
+    "developer": "Beauties! They're All After Me",
+    "released": "Jun 21, 2024",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ },
+ "stay-dead": {
+  "stores": [
+   {
+    "title": "Stay Dead Evolution",
+    "url": "https://store.steampowered.com/app/341070/",
+    "price": 5.99,
+    "regular": 5.99,
+    "store": "Steam",
+    "developer": "Brucefilm",
+    "released": "Feb 4, 2015",
+    "match": 1.0
+   }
+  ],
+  "checked": "2026-10-25"
+ }
+}

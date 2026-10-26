@@ -9,8 +9,10 @@ After updating either source, run:
 ```sh
 node scripts/sync-fmv.cjs
 node scripts/build-time-travel.cjs
+node scripts/build-explore.cjs
 node scripts/sync-fmv.cjs --check
 node scripts/build-time-travel.cjs --check
+node scripts/build-explore.cjs --check
 node scripts/check-public.cjs
 ```
 

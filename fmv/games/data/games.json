@@ -19087,7 +19087,7 @@
     "modern": true,
     "cultureWhy": "Star voice-acting cast (Neil Newbon, Ben Starr, Matthew Mercer, Sam Lake) on camera, and a BAFTA Games Award nomination.",
     "cultureSources": [
-     "https://episteme.tllm.fr/wiki/Dead_Take",
+     "https://www.bafta.org/media-centre/press-releases/nominations-games-awards-2026/",
      "https://www.gameswelt.de/dead-take/test/test-fmv-horror-mit-stars-aus-critical-role-und-baldur-s-gate-iii-331324"
     ],
     "rank": 195
@@ -23559,7 +23559,7 @@
     "modern": false,
     "cultureWhy": "The kaiju-fan Playdia disc: every Showa Gamera film in one interactive reel, released alongside the 1995 reboot.",
     "cultureSources": [
-     "https://wikizilla.wikiteq.com/wiki/Gamera:_The_Time_Adventure"
+     "https://wikizilla.org/wiki/Gamera:_The_Time_Adventure"
     ],
     "qualityEstimated": true,
     "rank": 240
@@ -49140,7 +49140,7 @@
    "modern": "No (ROMs dumped but not emulated in MAME/Daphne/Hypseus per TCRF; the films themselves are on home video)",
    "access": "Lost",
    "wherePlay": "At home: ROMs dumped but not emulated in MAME/Daphne/Hypseus per TCRF; the films themselves are on home video.",
-   "notes": "TCRF: https://www.tcrf.net/Freedom_Fighter_(Arcade). DLP: https://dragons-lair-project.com/games/pages/ffr.asp. Disc dump status unclear (verify).",
+   "notes": "TCRF: https://www.tcrf.net/Freedom_Fighter_(Arcade). DLP: https://www.dragons-lair-project.com/games/pages/ffr.asp. Disc dump status unclear (verify).",
    "mobyCritic": null,
    "mobyPlayer": null,
    "urlMoby": "https://www.mobygames.com/search/?q=Freedom+Fighter",
@@ -49359,7 +49359,7 @@
    "modern": "No (laserdisc version not dumped/emulated; the 1985 non-laserdisc arcade game is in MAME and on Atari collections)",
    "access": "Lost",
    "wherePlay": "At home: Laserdisc version not dumped/emulated; the 1985 non-laserdisc arcade game is in MAME and on Atari collections.",
-   "notes": "Not the cartridge or 1985 System 1 game. DLP: https://dragons-lair-project.com/games/unreleased/atari.asp",
+   "notes": "Not the cartridge or 1985 System 1 game. DLP: https://www.dragons-lair-project.com/games/unreleased/atari.asp",
    "mobyCritic": null,
    "mobyPlayer": null,
    "urlMoby": "https://www.mobygames.com/search/?q=Road+Runner",
@@ -49689,7 +49689,7 @@
    "modern": "Yes (PC version Los Justicieros runs today, e.g. via Lutris (verify); the arcade laserdisc is not dumped)",
    "access": "Lost",
    "wherePlay": "At home: PC version Los Justicieros runs today, e.g. via Lutris (verify); the arcade laserdisc is not dumped.",
-   "notes": "unMAMEd: laserdisc needs to be dumped. DLP: https://dragons-lair-project.com/games/pages/zb.asp",
+   "notes": "unMAMEd: laserdisc needs to be dumped. DLP: https://www.dragons-lair-project.com/games/pages/zb.asp",
    "mobyCritic": null,
    "mobyPlayer": "2.0",
    "urlMoby": "https://www.mobygames.com/game/arcade/los-justicieros",
@@ -87838,7 +87838,7 @@
    "mobyCritic": null,
    "mobyPlayer": null,
    "urlMoby": "https://www.mobygames.com/search/?q=Gamera%3A+The+Time+Adventure",
-   "urlWiki": "https://wikizilla.wikiteq.com/wiki/Gamera:_The_Time_Adventure",
+   "urlWiki": "https://wikizilla.org/wiki/Gamera:_The_Time_Adventure",
    "urlKLOV": null,
    "critic": "",
    "criticSrc": "",

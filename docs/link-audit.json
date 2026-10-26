@@ -1,0 +1,794 @@
+[
+  {
+    "url": "https://talkie-trivia-beta.web.app/",
+    "status": 200,
+    "final": "https://talkie-trivia-beta.web.app/"
+  },
+  {
+    "url": "https://unrealities-media.github.io/DeckLogic/",
+    "status": 200,
+    "final": "https://unrealities-media.github.io/DeckLogic/"
+  },
+  {
+    "url": "https://www.themoviedb.org/movie/218",
+    "status": 403,
+    "final": "https://www.themoviedb.org/movie/218-the-terminator"
+  },
+  {
+    "url": "https://www.themoviedb.org/movie/105",
+    "status": 403,
+    "final": "https://www.themoviedb.org/movie/105-back-to-the-future"
+  },
+  {
+    "url": "https://www.themoviedb.org/movie/165",
+    "status": 403,
+    "final": "https://www.themoviedb.org/movie/165-back-to-the-future-part-ii"
+  },
+  {
+    "url": "https://www.themoviedb.org/movie/1648",
+    "status": 403,
+    "final": "https://www.themoviedb.org/movie/1648-bill-ted-s-excellent-adventure"
+  },
+  {
+    "url": "https://www.themoviedb.org/movie/137",
+    "status": 403,
+    "final": "https://www.themoviedb.org/movie/137-groundhog-day"
+  },
+  {
+    "url": "https://www.themoviedb.org/movie/63",
+    "status": 403,
+    "final": "https://www.themoviedb.org/movie/63-twelve-monkeys"
+  },
+  {
+    "url": "https://www.themoviedb.org/movie/14337",
+    "status": 403,
+    "final": "https://www.themoviedb.org/movie/14337-primer"
+  },
+  {
+    "url": "https://www.themoviedb.org/movie/59967",
+    "status": 403,
+    "final": "https://www.themoviedb.org/movie/59967-looper"
+  },
+  {
+    "url": "https://www.themoviedb.org/movie/122906",
+    "status": 403,
+    "final": "https://www.themoviedb.org/movie/122906-about-time"
+  },
+  {
+    "url": "https://www.themoviedb.org/movie/137113",
+    "status": 403,
+    "final": "https://www.themoviedb.org/movie/137113-edge-of-tomorrow"
+  },
+  {
+    "url": "https://www.themoviedb.org/movie/587792",
+    "status": 403,
+    "final": "https://www.themoviedb.org/movie/587792-palm-springs"
+  },
+  {
+    "url": "https://www.themoviedb.org/movie/206487",
+    "status": 403,
+    "final": "https://www.themoviedb.org/movie/206487-predestination"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Dragon%27s_Lair",
+    "status": 200,
+    "final": "https://en.wikipedia.org/wiki/Dragon%27s_Lair"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Mad_Dog_McCree",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Mad_Dog_McCree"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Road_Blaster",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Road_Blaster"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Night_Trap",
+    "status": 200,
+    "final": "https://en.wikipedia.org/wiki/Night_Trap"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Space_Ace",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Space_Ace"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Sherlock_Holmes,_Consulting_Detective_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Sherlock_Holmes,_Consulting_Detective_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Sherlock_Holmes:_Consulting_Detective",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Sherlock_Holmes:_Consulting_Detective"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Immortality_(video_game)",
+    "status": 200,
+    "final": "https://en.wikipedia.org/wiki/Immortality_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Sherlock_Holmes:_Consulting_Detective_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Sherlock_Holmes:_Consulting_Detective_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/D_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/D_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Gabriel_Knight_2:_The_Beast_Within",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Gabriel_Knight_2:_The_Beast_Within"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/The_Beast_Within:_A_Gabriel_Knight_Mystery",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/The_Beast_Within:_A_Gabriel_Knight_Mystery"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Dragon%27s_Lair_(1983_video_game)",
+    "status": 200,
+    "final": "https://en.wikipedia.org/wiki/Dragon%27s_Lair_(1983_video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Star_Wars:_Rebel_Assault",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Star_Wars:_Rebel_Assault"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Her_Story_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Her_Story_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Wing_Commander_III:_Heart_of_the_Tiger",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Wing_Commander_III:_Heart_of_the_Tiger"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Dragon%27s_Lair_II:_Time_Warp",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Dragon%27s_Lair_II:_Time_Warp"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Time_Gal",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Time_Gal"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Ninja_Hayate",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Ninja_Hayate"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Telling_Lies_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Telling_Lies_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Mad_Dog_II:_The_Lost_Gold",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Mad_Dog_II:_The_Lost_Gold"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Double_Switch",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Double_Switch"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Cobra_Command_(1984_video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Cobra_Command_(1984_video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Double_Switch_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Double_Switch_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Phantasmagoria_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Phantasmagoria_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Sewer_Shark",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Sewer_Shark"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Brain_Dead_13",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Brain_Dead_13"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/The_7th_Guest",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/The_7th_Guest"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Myst",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Myst"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Kingdom:_The_Far_Reaches",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Kingdom:_The_Far_Reaches"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Thayer%27s_Quest",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Thayer%27s_Quest"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Wing_Commander_IV:_The_Price_of_Freedom",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Wing_Commander_IV:_The_Price_of_Freedom"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/The_X-Files_Game",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/The_X-Files_Game"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Corpse_Killer",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Corpse_Killer"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Love_Is_All_Around_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Love_Is_All_Around_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Time_Traveler_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Time_Traveler_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Star_Wars:_Rebel_Assault_II:_The_Hidden_Empire",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Star_Wars:_Rebel_Assault_II:_The_Hidden_Empire"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Voyeur_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Voyeur_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Crime_Patrol_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Crime_Patrol_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Who_Shot_Johnny_Rock%3F",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Who_Shot_Johnny_Rock%3F"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Area_51_(1995_video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Area_51_(1995_video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Under_a_Killing_Moon",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Under_a_Killing_Moon"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Revenge_on_Gold_Diggers",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Revenge_on_Gold_Diggers"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Microcosm_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Microcosm_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Late_Shift_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Late_Shift_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/The_Last_Bounty_Hunter",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/The_Last_Bounty_Hunter"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Creature_Shock",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Creature_Shock"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Not_for_Broadcast",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Not_for_Broadcast"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Riven",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Riven"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Space_Pirates_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Space_Pirates_(video_game)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/The_Pandora_Directive",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/The_Pandora_Directive"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Burn_Cycle",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Burn_Cycle"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/The_Daedalus_Encounter",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/The_Daedalus_Encounter"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Return_to_Zork",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Return_to_Zork"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Psychic_Detective_(video_game)",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/Psychic_Detective_(video_game)"
+  },
+  {
+    "url": "https://www.mobygames.com/search/?q=3x3+Eyes%3A+Kyuusei+Koushu",
+    "status": 403,
+    "final": "https://www.mobygames.com/search/?q=3x3+Eyes%3A+Kyuusei+Koushu"
+  },
+  {
+    "url": "https://automaton-media.com/en/news/20231107-22859/",
+    "status": 200,
+    "final": "https://automaton-media.com/en/news/20231107-22859/"
+  },
+  {
+    "url": "https://backloggd.com/search/games/3x3%20Eyes%3A%20Kyuusei%20Koushu/",
+    "status": 200,
+    "final": "https://backloggd.com/search/games/3x3%20Eyes%3A%20Kyuusei%20Koushu/"
+  },
+  {
+    "url": "https://www.pricecharting.com/game/jp-sega-saturn/3x3-eyes",
+    "status": 200,
+    "final": "https://www.pricecharting.com/game/jp-sega-saturn/3x3-eyes"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/A_Fork_in_the_Tale",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/A_Fork_in_the_Tale"
+  },
+  {
+    "url": "https://www.mobygames.com/search/?q=A+Fork+in+the+Tale",
+    "status": 403,
+    "final": "https://www.mobygames.com/search/?q=A+Fork+in+the+Tale"
+  },
+  {
+    "url": "https://backloggd.com/search/games/A%20Fork%20in%20the%20Tale/",
+    "status": 200,
+    "final": "https://backloggd.com/search/games/A%20Fork%20in%20the%20Tale/"
+  },
+  {
+    "url": "https://kr-asia.com/road-to-empress-tops-one-million-sales-revives-chinas-interactive-film-genre",
+    "status": 200,
+    "final": "https://kr-asia.com/road-to-empress-tops-one-million-sales-revives-chinas-interactive-film-genre"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/A%2FX-101",
+    "status": 429,
+    "final": "https://en.wikipedia.org/wiki/A%2FX-101"
+  },
+  {
+    "url": "https://www.sega-16.com/2010/10/ax-101/",
+    "status": 200,
+    "final": "https://www.sega-16.com/2010/10/ax-101/"
+  },
+  {
+    "url": "https://segaretro.org/index.php?search=A%2FX-101",
+    "status": 200,
+    "final": "https://segaretro.org/index.php?search=A%2FX-101"
+  },
+  {
+    "url": "https://segaretro.org/3x3_Eyes:_Kyuusei_Koushu",
+    "status": 200,
+    "final": "https://segaretro.org/3x3_Eyes:_Kyuusei_Koushu"
+  },
+  {
+    "url": "https://store.steampowered.com/app/4131220/",
+    "status": 200,
+    "final": "https://store.steampowered.com/app/4131220/"
+  },
+  {
+    "url": "https://www.pricecharting.com/search-products?q=A+Fork+in+the+Tale+pc+games&type=prices",
+    "status": 200,
+    "final": "https://www.pricecharting.com/game/pc-games/fork-in-the-tale?q=a+fork+in+the+tale+pc+games"
+  },
+  {
+    "url": "https://www.gematsu.com/2025/09/izanagigames-nippon-tv-and-ax-on-announce-full-scale-live-action-game-akiba-lost-for-ps5-switch-2-switch-and-pc",
+    "status": 200,
+    "final": "https://www.gematsu.com/2025/09/izanagigames-nippon-tv-and-ax-on-announce-full-scale-live-action-game-akiba-lost-for-ps5-switch-2-switch-and-pc"
+  },
+  {
+    "url": "https://web.archive.org/web/20191209013243id_/https://www.gamerankings.com/ps/196536-ace-combat-3-electrosphere/",
+    "status": 200,
+    "final": "https://web.archive.org/web/20191209013243id_/https://www.gamerankings.com/ps/196536-ace-combat-3-electrosphere/"
+  },
+  {
+    "url": "https://www.arcade-museum.com/Videogame/albegas",
+    "status": 200,
+    "final": "https://www.arcade-museum.com/Videogame/albegas"
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Amerzone_15_-_Ordinateur_Hydraflot.png",
+    "status": 200,
+    "final": "https://commons.wikimedia.org/wiki/File:Amerzone_15_-_Ordinateur_Hydraflot.png"
+  },
+  {
+    "url": "https://www.metacritic.com/game/akiba-lost/",
+    "status": 200,
+    "final": "https://www.metacritic.com/game/akiba-lost/"
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Amerzone_14_-_Hydraflot.png",
+    "status": 200,
+    "final": "https://commons.wikimedia.org/wiki/File:Amerzone_14_-_Hydraflot.png"
+  },
+  {
+    "url": "https://store.steampowered.com/app/302190/",
+    "status": 200,
+    "final": "https://store.steampowered.com/app/302190/"
+  },
+  {
+    "url": "https://web.archive.org/web/20191209011855id_/https://www.gamerankings.com/pc/574847-are-you-afraid-of-the-dark-the-tale-of-orpheos-curse/index.html",
+    "status": 200,
+    "final": "https://web.archive.org/web/20191209011855id_/https://www.gamerankings.com/pc/574847-are-you-afraid-of-the-dark-the-tale-of-orpheos-curse/index.html"
+  },
+  {
+    "url": "https://www.denofgeek.com/culture/looking-back-at-atmosfear/",
+    "status": 200,
+    "final": "https://www.denofgeek.com/culture/looking-back-at-atmosfear/"
+  },
+  {
+    "url": "https://www.gog.com/en/game/american_hero",
+    "status": 200,
+    "final": "https://www.gog.com/en/game/american_hero"
+  },
+  {
+    "url": "https://arcade-museum.com/Videogame/astron-belt",
+    "status": 200,
+    "final": "https://www.arcade-museum.com/Videogame/astron-belt"
+  },
+  {
+    "url": "https://www.gog.com/en/game/atlantis_the_lost_tales",
+    "status": 200,
+    "final": "https://www.gog.com/en/game/atlantis_the_lost_tales"
+  },
+  {
+    "url": "https://arcade-museum.com/Videogame/atomic-castle",
+    "status": 200,
+    "final": "https://www.arcade-museum.com/Videogame/atomic-castle"
+  },
+  {
+    "url": "https://www.charlesgames.net/games",
+    "status": 200,
+    "final": "https://www.charlesgames.net/games"
+  },
+  {
+    "url": "https://mobygames.com/game/3do/blue-forest-story-kaze-no-fin",
+    "status": 403,
+    "final": "https://mobygames.com/game/3do/blue-forest-story-kaze-no-fin"
+  },
+  {
+    "url": "https://mobygames.com/game/45350",
+    "status": 403,
+    "final": "https://mobygames.com/game/45350"
+  },
+  {
+    "url": "https://www.arcade-museum.com/Videogame/badlands--konami",
+    "status": 200,
+    "final": "https://www.arcade-museum.com/Videogame/badlands--konami"
+  },
+  {
+    "url": "https://www.arcade-history.com/game/230/",
+    "status": 200,
+    "final": "https://www.arcade-history.com/game/230/"
+  },
+  {
+    "url": "https://www.sega-16.com/2007/03/bram-stokers-dracula/",
+    "status": 200,
+    "final": "https://www.sega-16.com/2007/03/bram-stokers-dracula/"
+  },
+  {
+    "url": "https://fmvgo.com/history/",
+    "status": 200,
+    "final": "https://fmvgo.com/history/"
+  },
+  {
+    "url": "https://fmvgo.com/directory/breakout-13/",
+    "status": 200,
+    "final": "https://fmvgo.com/directory/breakout-13/"
+  },
+  {
+    "url": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%AA%E3%82%B9%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%AB",
+    "status": 429,
+    "final": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%AA%E3%82%B9%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%AB"
+  },
+  {
+    "url": "https://steamcommunity.com/app/2095300/allnews/",
+    "status": 200,
+    "final": "https://steamcommunity.com/app/2095300/allnews/"
+  },
+  {
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%BC%E3%83%89",
+    "status": 429,
+    "final": "https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%BC%E3%83%89"
+  },
+  {
+    "url": "https://charlesgames.net/attentat1942/Teachers_Guide.pdf",
+    "status": 200,
+    "final": "https://content.charlesgames.net/attentat1942/Teachers_Guide.pdf"
+  },
+  {
+    "url": "https://worthplaying.com/article/2001/7/27/news/434-red-alert-2-cast-returns/",
+    "status": 200,
+    "final": "https://worthplaying.com/article/2001/7/27/news/434-red-alert-2-cast-returns/"
+  },
+  {
+    "url": "https://toucharcade.com/2020/01/21/deathtrap-dungeon-the-interactive-video-adventure-released/",
+    "status": 403,
+    "final": "https://toucharcade.com/2020/01/21/deathtrap-dungeon-the-interactive-video-adventure-released/"
+  },
+  {
+    "url": "https://www.speedrun.com/double_switch",
+    "status": 403,
+    "final": "https://www.speedrun.com/double_switch"
+  },
+  {
+    "url": "https://www.speedrun.com/double_switch/runs/y2rx07jm",
+    "status": 403,
+    "final": "https://www.speedrun.com/double_switch/runs/y2rx07jm"
+  },
+  {
+    "url": "https://www.nintendo.com/us/store/products/double-switch-25th-anniversary-edition-switch/",
+    "status": 200,
+    "final": "https://www.nintendo.com/us/store/products/double-switch-25th-anniversary-edition-switch/"
+  },
+  {
+    "url": "https://episteme.tllm.fr/wiki/Dead_Take",
+    "status": 503,
+    "final": "https://episteme.tllm.fr/wiki/Dead_Take"
+  },
+  {
+    "url": "https://www.gameswelt.de/dead-take/test/test-fmv-horror-mit-stars-aus-critical-role-und-baldur-s-gate-iii-331324",
+    "status": 200,
+    "final": "https://www.gameswelt.de/dead-take/test/test-fmv-horror-mit-stars-aus-critical-role-und-baldur-s-gate-iii-331324"
+  },
+  {
+    "url": "https://store.playstation.com/en-us/product/UP3455-PPSA23502_00-DOUBLESWITCH2501",
+    "status": 200,
+    "final": "https://store.playstation.com/en-us/product/UP3455-PPSA23502_00-DOUBLESWITCH2501"
+  },
+  {
+    "url": "https://www.kanzenshuu.com/?p=7396",
+    "status": 200,
+    "final": "https://www.kanzenshuu.com/tidbits/saiya-jin-zetsumetsu-keikaku/"
+  },
+  {
+    "url": "https://playday.one/2026/01/06/storytaco-shares-impressive-stats-for-five-hearts-under-one-roof-season-2-bl-rpg-zerowake-gates-latter-sees-q1-26-roadmap/",
+    "status": 200,
+    "final": "https://playday.one/2026/01/06/storytaco-shares-impressive-stats-for-five-hearts-under-one-roof-season-2-bl-rpg-zerowake-gates-latter-sees-q1-26-roadmap/"
+  },
+  {
+    "url": "https://www.tcrf.net/Freedom_Fighter_(Arcade)",
+    "status": 403,
+    "final": "https://www.tcrf.net/Freedom_Fighter_(Arcade)"
+  },
+  {
+    "url": "https://www.satakore.com/sega-saturn-game,,T-16207H,,Double-Switch-USA.html",
+    "status": 200,
+    "final": "https://www.satakore.com/sega-saturn-game,,T-16207H,,Double-Switch-USA.html"
+  },
+  {
+    "url": "https://dragons-lair-project.com/games/pages/ffr.asp",
+    "error": "apiRequestContext.get: certificate has expired"
+  },
+  {
+    "url": "https://wikizilla.wikiteq.com/wiki/Gamera:_The_Time_Adventure",
+    "error": "apiRequestContext.get: getaddrinfo ENOTFOUND wikizilla.wikiteq.com"
+  },
+  {
+    "url": "https://www.arcade-history.com/game/4488/",
+    "status": 200,
+    "final": "https://www.arcade-history.com/game/4488/"
+  },
+  {
+    "url": "https://www.dragons-lair-project.com/games/unreleased/stern.asp",
+    "status": 200,
+    "final": "https://www.dragons-lair-project.com/games/unreleased/stern.asp"
+  },
+  {
+    "url": "https://www.giantbomb.com/games/3030-21698/",
+    "status": 403,
+    "final": "https://giantbomb.com/games/3030-21698/"
+  },
+  {
+    "url": "https://searchworks.stanford.edu/view/4381143",
+    "status": 200,
+    "final": "https://searchworks.stanford.edu/view/4381143"
+  },
+  {
+    "url": "https://steamcommunity.com/app/2274500/allnews/",
+    "status": 200,
+    "final": "https://steamcommunity.com/app/2274500/allnews/"
+  },
+  {
+    "url": "https://www.thexboxhub.com/survive-and-thrive-in-the-university-dating-scene-with-knowledge-or-know-lady-on-xbox-and-playstation/",
+    "status": 200,
+    "final": "https://www.thexboxhub.com/survive-and-thrive-in-the-university-dating-scene-with-knowledge-or-know-lady-on-xbox-and-playstation/"
+  },
+  {
+    "url": "https://steamspy.com/app/1837580",
+    "status": 200,
+    "final": "https://steamspy.com/app/1837580"
+  },
+  {
+    "url": "https://www.timeextension.com/features/the-making-of-microcosm-cd-rom-gamings-first-aaa-title",
+    "status": 200,
+    "final": "https://www.timeextension.com/features/the-making-of-microcosm-cd-rom-gamings-first-aaa-title"
+  },
+  {
+    "url": "https://www.amigareviews.leveluphost.com/microcos.htm",
+    "status": 200,
+    "final": "https://www.amigareviews.leveluphost.com/microcos.htm"
+  },
+  {
+    "url": "https://opencritic.com/game/14765/murderous-muses",
+    "status": 200,
+    "final": "https://opencritic.com/game/14765/murderous-muses"
+  },
+  {
+    "url": "https://sega-16.com/?p=2249",
+    "status": 200,
+    "final": "https://www.sega-16.com/2007/04/mighty-morphin-power-rangers/"
+  },
+  {
+    "url": "https://retrohandhelds.gg/game-over-playdia/",
+    "status": 200,
+    "final": "https://retrohandhelds.gg/game-over-playdia/"
+  },
+  {
+    "url": "https://dragons-lair-project.com/games/unreleased/atari.asp",
+    "error": "apiRequestContext.get: certificate has expired"
+  },
+  {
+    "url": "https://desertbus.org/",
+    "status": 200,
+    "final": "https://desertbus.org/2026"
+  },
+  {
+    "url": "https://sega-16.com/?p=2303",
+    "status": 200,
+    "final": "https://www.sega-16.com/2005/01/nfls-greatest-san-francisco-vs-dallas/"
+  },
+  {
+    "url": "https://mysterymanor.net/gamemanuals/Santa%20Fe%20Mysteries%20Sacred%20Ground%20Manual.pdf",
+    "status": 200,
+    "final": "https://mysterymanor.net/gamemanuals/Santa%20Fe%20Mysteries%20Sacred%20Ground%20Manual.pdf"
+  },
+  {
+    "url": "https://www.digitpress.com/reviews/sewershark.htm",
+    "status": 200,
+    "final": "https://www.digitpress.com/reviews/sewershark.htm"
+  },
+  {
+    "url": "https://www.esrb.org/ratings/2368/santa-fe-mysteries-sacred-ground/",
+    "status": 200,
+    "final": "https://www.esrb.org/ratings/2368/santa-fe-mysteries-sacred-ground/"
+  },
+  {
+    "url": "https://www.gamedeveloper.com/business/the-replay-interviews-rob-fulop",
+    "status": 200,
+    "final": "https://www.gamedeveloper.com/business/the-replay-interviews-rob-fulop"
+  },
+  {
+    "url": "https://advgamer.blogspot.com/2016/09/consulting-detective-alternate-versions.html?m=0",
+    "status": 200,
+    "final": "https://advgamer.blogspot.com/2016/09/consulting-detective-alternate-versions.html?m=0"
+  },
+  {
+    "url": "https://advgamer.blogspot.com/2016/09/a-conversation-with-david-marsh.html",
+    "status": 200,
+    "final": "https://advgamer.blogspot.com/2016/09/a-conversation-with-david-marsh.html"
+  },
+  {
+    "url": "https://www.segakore.fr/media/segakore/downloads/jeux/megacd/mcd_sewer_shark_bundle_manual_u.pdf",
+    "status": 200,
+    "final": "https://www.segakore.fr/media/segakore/downloads/jeux/megacd/mcd_sewer_shark_bundle_manual_u.pdf"
+  },
+  {
+    "url": "https://www.gamespot.com/amp-articles/sony-blocks-ps4-game-about-picking-up-women/1100-6457229/",
+    "status": 403,
+    "final": "https://www.gamespot.com/amp-articles/sony-blocks-ps4-game-about-picking-up-women/1100-6457229/"
+  },
+  {
+    "url": "https://www.segaretro.org/Shichisei_Toushin_Guyferd:_Crown_Kaimetsu_Sakusen",
+    "status": 200,
+    "final": "https://segaretro.org/Shichisei_Toushin_Guyferd:_Crown_Kaimetsu_Sakusen"
+  },
+  {
+    "url": "https://www.steamspy.com/app/1946070",
+    "status": 200,
+    "final": "https://www.steamspy.com/app/1946070"
+  },
+  {
+    "url": "https://automaton-media.com/en/news/live-action-dating-sim-superscout-is-an-instant-hit-on-steam/",
+    "status": 200,
+    "final": "https://automaton-media.com/en/news/live-action-dating-sim-superscout-is-an-instant-hit-on-steam/"
+  },
+  {
+    "url": "https://www.nintendolife.com/news/2022/12/wales-interactive-announces-ten-dates-speeding-onto-switch-in-2023",
+    "status": 200,
+    "final": "https://www.nintendolife.com/news/2022/12/wales-interactive-announces-ten-dates-speeding-onto-switch-in-2023"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7rpVMsPJZoE",
+    "status": 200,
+    "final": "https://www.youtube.com/watch?v=7rpVMsPJZoE"
+  },
+  {
+    "url": "https://bloody-disgusting.com/video-games/3930373/fmv-horror-adventure-game-the-run-launches-february-5-on-steam-trailer/",
+    "status": 403,
+    "final": "https://bloody-disgusting.com/video-games/3930373/fmv-horror-adventure-game-the-run-launches-february-5-on-steam-trailer/"
+  },
+  {
+    "url": "https://rhinotales.com/",
+    "status": 200,
+    "final": "https://rhinotales.com/"
+  },
+  {
+    "url": "https://www.ibiblio.org/GameBytes/issue18/creviews/tomcat.html",
+    "status": 200,
+    "final": "https://www.ibiblio.org/GameBytes/issue18/creviews/tomcat.html"
+  },
+  {
+    "url": "https://www.gamespress.com/uk-UA/Thrilling-FMVLive-Action-Game-and-Interactive-Film-Hybrid-The-Gallery-",
+    "status": 200,
+    "final": "https://www.gamespress.com/uk-UA/Thrilling-FMVLive-Action-Game-and-Interactive-Film-Hybrid-The-Gallery-"
+  },
+  {
+    "url": "https://r.mprd.se/Sega%20CD/Manuals/Tomcat%20Alley%20%28U%29.pdf",
+    "status": 200,
+    "final": "https://r.mprd.se/Sega%20CD/Manuals/Tomcat%20Alley%20%28U%29.pdf"
+  },
+  {
+    "url": "https://r.mprd.se/Sega%20CD/Manuals/Wirehead%20%28U%29.pdf",
+    "status": 200,
+    "final": "https://r.mprd.se/Sega%20CD/Manuals/Wirehead%20%28U%29.pdf"
+  },
+  {
+    "url": "https://www.ppe.pl/blog/4122/279319/Egzotyka-5-Ultra-Seven-Chikyuu-Bouei-Sakusen.html",
+    "status": 200,
+    "final": "https://www.ppe.pl/blog/4122/279319/Egzotyka-5-Ultra-Seven-Chikyuu-Bouei-Sakusen.html"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=9tOnxG2-kFQ",
+    "status": 200,
+    "final": "https://www.youtube.com/watch?v=9tOnxG2-kFQ"
+  },
+  {
+    "url": "https://www.metacritic.com/game/contradiction-spot-the-liar/",
+    "status": 200,
+    "final": "https://www.metacritic.com/game/contradiction-spot-the-liar/"
+  }
+]
