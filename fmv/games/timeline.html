@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FMV Games Timeline</title>
+<meta name="description" content="Every full-motion video game in the index, placed at its first release, with the systems it reached afterwards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/unrealities.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23f2b544'/><circle cx='16' cy='16' r='4' fill='%23141b2d'/></svg>">
+</head>
+<body class="tl-page">
+<div class="unrealities-bar"><a class="unrealities-name" href="https://unrealities.media/">UNREALITIES</a><a href="https://unrealities.media/time-travel/">Time-travel movies ↗</a></div>
+
+<nav class="site-nav" aria-label="Site">
+  <a class="site-nav-home" href="./">FMV Index</a>
+  <a href="collect.html">Platform Titans</a><a href="game.html">Game guides</a>
+  <a href="channel.html" id="nav-channel">Channel</a>
+  <a href="./" id="nav-games">All games</a>
+  <a href="timeline.html" aria-current="page">Timeline</a>
+  <a href="titans.html" id="nav-titans">Titans</a>
+</nav>
+
+<header class="hero tl-hero">
+  <div class="hero-inner">
+    <p class="hero-kicker">Release timeline</p>
+    <h1 class="hero-title">First<br>Released</h1>
+    <p class="hero-lede">Each game sits at the year it first came out on any system in the index. Games that shipped on more than one system carry a badge for each, and a port track shows when it reached the others. A yellow ring marks the version to play. <span id="tl-count"></span> games across <span id="tl-years"></span>.</p>
+  </div>
+</header>
+
+<section class="tl-chart" aria-labelledby="tl-chart-title">
+  <h2 class="tl-chart-title" id="tl-chart-title">New games per year</h2>
+  <p class="tl-chart-sub">Click a year to jump to it. Ports of older games are counted where the game first appeared.</p>
+  <div class="tl-bars" id="tl-bars" role="list"></div>
+  <div class="tl-tip" id="tl-tip" role="status" hidden></div>
+</section>
+
+<section class="controls tl-controls" aria-label="Filters">
+  <div class="search">
+    <label for="tl-q" class="visually-hidden">Search titles, developers, cast</label>
+    <input id="tl-q" type="search" placeholder="Search titles, developers, cast…" autocomplete="off">
+  </div>
+  <div class="filters">
+    <label>Released on <select id="tl-sys"><option value="">Any system</option></select></label>
+    <label>Category <select id="tl-cat"><option value="">All</option></select></label>
+    <label>FMV amount <select id="tl-fmv"><option value="">Any</option><option value="8-10">Core FMV (8–10)</option><option value="4-7">Substantial (4–7)</option><option value="1-3">Cutscenes only (1–3)</option></select></label>
+    <label>Systems <select id="tl-multi"><option value="">One or more</option><option value="multi">Two or more</option><option value="single">Only one</option></select></label>
+    <label>Within a year <select id="tl-sort"><option value="titan" selected>By Titan score</option><option value="title">By title</option><option value="fmv">By FMV amount</option><option value="systems">Most systems first</option></select></label>
+    <label>Layout <select id="tl-layout"><option value="cards">Cards</option><option value="compact">Compact</option></select></label>
+    <button id="tl-reset" type="button" class="btn-ghost">Clear filters</button>
+  </div>
+</section>
+
+<nav class="tl-years" id="tl-yearnav" aria-label="Jump to year"></nav>
+
+<main class="tl-main">
+  <ol class="tl" id="tl" aria-label="Games by first release year"></ol>
+  <p class="tl-empty" id="tl-empty" hidden>No games match these filters.</p>
+</main>
+
+<footer class="foot">
+  <p>Release years are the earliest year in any region. The index records years, not months, so games inside a year are not in release order. Versions are tied together by a shared game id in the database, not by title, so renamed ports (Road Avenger, Revenge of the Ninja) sit with their originals and same-named different games stay apart. Compilation discs appear as a version of each game on them. Systems outside the index are listed under "Also on" when a game is opened.</p>
+  <p>Open a system badge to see that version's full record, prices and tracker on the <a href="./">games list</a>.</p>
+</footer>
+
+<script src="js/systems.js"></script>
+<script src="js/art.js"></script>
+<script src="js/timeline.js"></script>
+</body>
+</html>

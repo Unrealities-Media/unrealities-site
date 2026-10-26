@@ -1,0 +1,152 @@
+{
+ "checked": "2026-10-25",
+ "scope": "Structured language and availability findings supplement the full catalog. Absence of a route is not proof of exclusivity or inability to purchase. Original disc prices are dated market references, not stock checks.",
+ "systems": {
+  "3do": {
+   "label": "No system-wide region lock",
+   "kind": "open",
+   "note": "Imports can broaden the choice of discs. Some games need a Japanese Kanji ROM, specific NTSC/PAL timing or compatible hardware revisions. Region freedom does not translate Japanese games.",
+   "sources": [
+    "https://3dodev.com/documentation/games/region_locks_and_compatibility"
+   ],
+   "checked": "2026-10-25"
+  },
+  "saturn": {
+   "label": "Import access with the right cartridge",
+   "kind": "setup",
+   "note": "Stock region protection can be bypassed with Pseudo Saturn Kai-compatible hardware. It also supports CD-R backups for patched copies. Region bypass does not change 50/60 Hz video timing. Per-game and cartridge compatibility still need checking; Tom has not tested this setup.",
+   "sources": [
+    "https://ppcenter.webou.net/pskai/"
+   ],
+   "checked": "2026-10-25"
+  },
+  "cdi": {
+   "label": "Region freedom: catalog claim",
+   "kind": "unverified",
+   "note": "The existing catalog describes CD-i as region-free. Model, video standard, controller and Digital Video Cartridge requirements need a purchase-specific check; this view does not treat every disc as compatible.",
+   "sources": []
+  },
+  "segacd": {
+   "label": "Owned tower · exact region unknown",
+   "kind": "owned",
+   "note": "Genesis, Sega CD and 32X are owned. Console models, region and import access are not yet confirmed. No capture setup has been tested.",
+   "sources": []
+  },
+  "jaguarcd": {
+   "label": "Add-on needs a Jaguar base console",
+   "kind": "setup",
+   "note": "The hardware guide covers the CD add-on only. A Jaguar base console is also required; the combined cost is incomplete until both are priced.",
+   "sources": [
+    "https://www.pricecharting.com/game/jaguar-cd/jaguar-cd-system"
+   ]
+  }
+ },
+ "releases": {
+  "saturn-38": {
+   "status": "fan",
+   "note": "English fan translation listed for the Saturn release.",
+   "requirements": "Buy an original Japanese copy, apply the patch to your disc image, and use compatible patched-disc or ODE hardware. A region bypass alone is not a translation. Compatibility is documented, not personally tested.",
+   "sources": [
+    "https://www.segasaturnshiro.com/saturn-community-projects/saturn-translations/",
+    "https://ppcenter.webou.net/pskai/"
+   ],
+   "checked": "2026-10-25"
+  },
+  "ps1-82": {
+   "status": "fan",
+   "note": "English fan translation exists for the PlayStation release; patch and playback setup need checking before purchase.",
+   "requirements": "An original disc plus a patched copy and a compatible original-hardware playback method. Hardware setup cost has not been estimated.",
+   "sources": [
+    "https://policenauts.net/english/",
+    "https://www.zophar.net/translations/playstation/english/policenauts.html"
+   ],
+   "checked": "2026-10-25"
+  },
+  "saturn-56": {
+   "status": "fan",
+   "note": "English fan translation of the original Saturn game; this does not mean the later PC port is translated.",
+   "requirements": "Purchase the Japanese Saturn game; a patched disc image and compatible playback hardware are required.",
+   "sources": [
+    "https://segaxtreme.net/resources/sakura-wars-english-patch.96/",
+    "https://iwakuraproductions.wordpress.com/2019/12/16/sakura-wars-fan-translation-released/"
+   ],
+   "checked": "2026-10-25"
+  },
+  "pcfx-1": {
+   "status": "partial",
+   "note": "Team Innocent patch 0.9.1 translates game text, but subtitled FMVs are separate videos rather than integrated into the game.",
+   "requirements": "The patch project documents burning the patched image for real PC-FX hardware. Story FMV subtitles must currently be watched separately; this is not counted as a complete English route.",
+   "sources": [
+    "https://github.com/DerekPascarella/TeamInnocent-EnglishPatchPCFX"
+   ],
+   "checked": "2026-10-25"
+  }
+ },
+ "games": {
+  "time-gal": {
+   "routes": [
+    {
+     "label": "TIMEGAL HD-Remaster · Steam",
+     "platform": "windows",
+     "english": "partial",
+     "available": true,
+     "url": "https://store.steampowered.com/app/3050490/",
+     "checked": "2026-10-25",
+     "note": "English interface; Japanese full audio; no English subtitles listed. This may suit a comparison, but is not silently counted as a fully English replacement."
+    }
+   ],
+   "comparisonNote": "Tom's preferred plan: consider the remaster for the main playthrough and a loose Sega CD copy for the original comparison. No need to collect every port. Language coverage of the remaster is limited."
+  },
+  "d": {
+   "routes": [
+    {
+     "label": "D: The Game · Steam",
+     "platform": "windows",
+     "english": "official",
+     "available": true,
+     "url": "https://store.steampowered.com/app/510590/",
+     "checked": "2026-10-25",
+     "note": "The PC edition is a whole-game alternative to buying a console port. Check current system requirements at the store; capture is not personally tested."
+    }
+   ]
+  },
+  "dragons-lair": {
+   "routes": [
+    {
+     "label": "Dragon's Lair · Steam",
+     "platform": "windows",
+     "english": "official",
+     "available": true,
+     "url": "https://store.steampowered.com/app/227380/",
+     "checked": "2026-10-25",
+     "note": "Official PC release. Historical console ports remain optional comparison purchases."
+    }
+   ]
+  },
+  "policenauts": {
+   "note": "Dated English-route review: documented full fan translations cover PlayStation and Saturn. No purchasable official English PC release or modern remaster was found in the reviewed catalog/store search. This is a choice of original consoles, not a Saturn-only exclusive. Patch playback hardware is still required and unpriced.",
+   "sources": [
+    "https://www.segasaturnshiro.com/saturn-community-projects/saturn-translations/",
+    "https://www.zophar.net/translations/playstation/english/policenauts.html",
+    "https://junkerhq.net/"
+   ],
+   "alternativesReviewed": true,
+   "checked": "2026-10-25"
+  },
+  "sherlock-holmes-consulting-detective-vol-i": {
+   "routes": [
+    {
+     "label": "Sherlock Holmes Consulting Detective Collection · three restored Volume I cases",
+     "platform": "windows",
+     "english": "official",
+     "available": true,
+     "url": "https://store.steampowered.com/sub/69999/",
+     "price": 9.99,
+     "checked": "2026-10-26",
+     "priceSource": "https://store.steampowered.com/api/packagedetails?packageids=69999&cc=us&l=english",
+     "note": "Official Steam package: Mummy’s Curse, Mystified Murderess and Tin Soldier, the three Volume I cases. English and Windows support listed. US Steam package API price verified in USD; this is not a bundle of Volumes I–III."
+    }
+   ]
+  }
+ }
+}

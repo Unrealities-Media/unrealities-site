@@ -1,0 +1,7 @@
+.unrealities-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 9px clamp(16px, 4vw, 48px); border-bottom: 1px solid #3c6075; background: #2f4858; color: #faf9f6; font: 600 13px/1.4 system-ui, sans-serif; }
+.unrealities-bar a { color: #faf9f6; text-decoration: none; }
+.unrealities-bar a:hover { color: #f6ae2d; text-decoration: underline; }
+.unrealities-bar a:focus-visible { outline: 3px solid #f6ae2d; outline-offset: 3px; }
+.unrealities-name { font-weight: 800; letter-spacing: .12em; }
+.unrealities-name::before { content: "●"; margin-right: 10px; color: #f26419; }
+@media (max-width: 560px) { .unrealities-bar { font-size: 11px; } }

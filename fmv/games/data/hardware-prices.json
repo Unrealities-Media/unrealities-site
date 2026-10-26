@@ -1,0 +1,43 @@
+{
+ "checked": "2026-10-25",
+ "currency": "USD",
+ "scope": "Dated PriceCharting hardware guide estimates, not current offers; game condition is independent and defaults to complete in box.",
+ "systems": {
+  "3do": {
+   "model": "Panasonic FZ-10",
+   "unboxed": 229.98,
+   "cib": 298.84,
+   "url": "https://www.pricecharting.com/game/3do/3do-console-fz-10",
+   "note": "Thin market. A boxed-console guide is not a listing-level guarantee of cables, controller or working condition."
+  },
+  "saturn": {
+   "model": "US Sega Saturn (combined revisions)",
+   "unboxed": 159.95,
+   "cib": 304.57,
+   "url": "https://www.pricecharting.com/game/sega-saturn/sega-saturn-console",
+   "note": "US guide combines revisions. Japanese and PAL hardware, region access and accessories need separate checks."
+  },
+  "ps1": {
+   "model": "US PlayStation (combined revisions)",
+   "unboxed": 55.78,
+   "cib": 99.75,
+   "url": "https://www.pricecharting.com/game/playstation/playstation-system",
+   "note": "US guide combines console revisions. The PS5 does not play original PlayStation discs."
+  },
+  "cdi": {
+   "model": "Philips CD-i 220",
+   "unboxed": 249.99,
+   "cib": 599.99,
+   "url": "https://www.pricecharting.com/game/cd-i/philips-cd-i-220-console",
+   "note": "Very thin CIB market. Check region and Digital Video Cartridge requirements; the cartridge is not assumed to be included."
+  },
+  "jaguarcd": {
+   "model": "Jaguar CD add-on",
+   "unboxed": 1178.44,
+   "cib": 1578.42,
+   "url": "https://www.pricecharting.com/game/jaguar-cd/jaguar-cd-system",
+   "note": "Add-on reference only; a Jaguar base console is also required. Mixed bundles and thin sales make the estimate uncertain.",
+   "requiresAdditionalHardware": true
+  }
+ }
+}
