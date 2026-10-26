@@ -14,7 +14,7 @@ node scripts/build-time-travel.cjs --check
 node scripts/check-public.cjs
 ```
 
-The source repositories own their data and product UIs. Do not edit `/fmv/games/` or `/time-travel/index.html` directly. The Talkie guide uses public, spoiler-light copy in `content/public-time-travel-films.json`; never include private daily clues or unreleased schedules. The Talkie web game is currently linked as a public beta. See [the cross-repository plan](docs/public-showcase-plan.md) for update and release order.
+The source repositories own their data and product UIs. Do not edit `/fmv/games/` or `/time-travel/index.html` directly. The Talkie guide uses public, spoiler-light copy in `data/public-time-travel-films.json`; never include private daily clues or unreleased schedules. The Talkie web game is currently linked as a public beta. See [the cross-repository plan](docs/public-showcase-plan.md) for update and release order.
 
 `CNAME` pins the custom domain. DNS at the registrar:
 

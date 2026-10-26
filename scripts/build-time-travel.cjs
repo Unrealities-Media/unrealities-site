@@ -3,7 +3,7 @@ const path = require('node:path')
 
 const root = path.resolve(__dirname, '..')
 const talkie = path.resolve(root, '..', 'talkie-trivia')
-const entries = JSON.parse(fs.readFileSync(path.join(talkie, 'content/public-time-travel-films.json'), 'utf8'))
+const entries = JSON.parse(fs.readFileSync(path.join(talkie, 'data/public-time-travel-films.json'), 'utf8'))
 const catalog = new Map(JSON.parse(fs.readFileSync(path.join(talkie, 'data/movies.json'), 'utf8')).map(movie => [movie.id, movie]))
 const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[character]))
 const allowed = new Set(['Journey', 'Branching timeline', 'Time loop', 'Overlapping selves', 'Personal rewind', 'Causal loop'])
