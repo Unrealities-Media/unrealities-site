@@ -78,7 +78,7 @@ p { margin: 0; text-wrap: pretty; }
 .brand-small .mark { width: 28px; height: 28px; }
 .brand-small .wordmark { font-size: 16px; }
 
-.nav { display: flex; gap: clamp(18px, 3vw, 36px); font-weight: 500; font-size: 15px; }
+.nav { display: flex; flex-wrap: wrap; gap: 12px 24px; font-weight: 500; font-size: 14px; }
 .nav a { color: var(--slate); }
 .nav a:hover { color: var(--orange); }
 .nav a[aria-current="page"] { color: var(--orange); text-decoration: underline; text-underline-offset: 6px; }
@@ -184,6 +184,20 @@ p { margin: 0; text-wrap: pretty; }
 .project-card a { margin-top: auto; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
 .project-label { color: var(--blue); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
 
+/* Shared studio language: paper, ink, restrained color and generous reading space. */
+.projects { background: #eef2f3; border-block: 1px solid #d7e0e5; }
+.projects .section-intro > p:last-child { color: var(--blue); }
+.project-card { border: 1px solid #cbd9df; border-top: 4px solid var(--blue); border-radius: 12px; gap: 18px; }
+.project-status { font-size: 13px; font-weight: 700; color: #486275; padding: 6px 10px; background: #eef3f5; border-radius: 5px; }
+.project-card .project-milestone { font-size: 14px; color: #526775; border-top: 1px solid #dce5e9; padding-top: 16px; }
+.project-card a { padding-block: 8px; }
+.film-topline { flex-wrap: wrap; }
+.film-controls { padding: 20px; border: 1px solid #cbd9df; border-radius: 12px; background: #eef2f3; }
+.film-controls input { min-width: 0; }
+.button { background: #b84812; border-radius: 8px; }
+.hero-eyebrow, .projects .eyebrow, .guide-section .eyebrow { color: #a54116; }
+@media (max-width: 1000px) { .site-header { flex-wrap: wrap; } }
+
 .page-hero { position: relative; isolation: isolate; overflow: hidden; padding: clamp(60px, 9vw, 130px) var(--gutter); background: var(--slate); color: #fff; }
 .page-hero::after { content: ""; position: absolute; z-index: -1; right: -80px; top: 50%; width: min(44vw, 560px); aspect-ratio: 1; transform: translateY(-50%); border: 22px solid rgba(246, 174, 45, .22); border-radius: 50%; box-shadow: 0 0 0 42px rgba(134, 187, 216, .10), 0 0 0 112px rgba(134, 187, 216, .06), inset 0 0 0 56px rgba(246, 174, 45, .09); }
 .time-hero::after { border-style: dashed; transform: translateY(-50%) rotate(-24deg); }
@@ -283,3 +297,11 @@ address { font-style: normal; font-size: 15px; line-height: 1.6; color: var(--bl
   .button { transition: none; }
   .feature-card { transition: none; }
 }
+
+/* These refinements follow the shared page rules so every guide uses them. */
+.feature-card, .film-card { border-width: 1px; border-radius: 12px; }
+.film-card { border-top: 4px solid var(--blue); }
+.film-card dd { line-height: 1.65; }
+.page-hero h1 { font-size: clamp(40px, 5.6vw, 76px); max-width: 16ch; }
+.page-hero::after { opacity: .6; }
+.page-hero .guide-status { margin-top: 20px; color: var(--on-dark-muted); font-size: 14px; }

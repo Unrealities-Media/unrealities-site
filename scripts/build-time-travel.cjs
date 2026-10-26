@@ -24,7 +24,7 @@ const cards = entries.slice().sort((a, b) => a.year - b.year || a.title.localeCo
           <a href="https://www.themoviedb.org/movie/${entry.id}" rel="noopener noreferrer">Film details at TMDB <span aria-hidden="true">↗</span></a>
         </article>`).join('')
 const template = fs.readFileSync(path.join(root, 'scripts/time-travel-template.html'), 'utf8')
-const output = template.replace('<!-- FILM_CARDS -->', cards).replaceAll('<!-- FILM_COUNT -->', String(entries.length))
+const output = require('./projects.cjs').render(template, undefined, 'time-travel').replace('<!-- FILM_CARDS -->', cards).replaceAll('<!-- FILM_COUNT -->', String(entries.length))
 const target = path.join(root, 'time-travel/index.html')
 if (process.argv.includes('--check')) {
   if (!fs.existsSync(target) || fs.readFileSync(target, 'utf8').replaceAll('\r\n', '\n') !== output.replaceAll('\r\n', '\n')) throw new Error('time-travel/index.html is out of date; run node scripts/build-time-travel.cjs')

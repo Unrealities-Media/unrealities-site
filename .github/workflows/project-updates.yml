@@ -1,0 +1,101 @@
+name: Project updates
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 14 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: project-updates-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  site:
+    name: Validate committed site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --test scripts/projects.test.cjs
+      - run: node scripts/build-projects.cjs --check
+      - run: node scripts/build-sitemap.cjs --check
+      - run: node scripts/check-public.cjs
+      - run: git diff --check
+
+  upstream:
+    name: Check upstream project updates
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify private source access is configured
+        env:
+          PROJECTS_READ_TOKEN: ${{ secrets.PROJECTS_READ_TOKEN || secrets.PROJECT_READ_TOKEN }}
+        run: |
+          if [ -z "$PROJECTS_READ_TOKEN" ]; then
+            echo '::error::Configure PROJECTS_READ_TOKEN with Contents read access to the source repositories; talkie-trivia is private. See docs/public-showcase-plan.md.'
+            exit 1
+          fi
+      - uses: actions/checkout@v4
+        with:
+          path: unrealities-site
+      - uses: actions/checkout@v4
+        with:
+          repository: Unrealities-Media/fmv-games
+          path: fmv-games
+          token: ${{ secrets.PROJECTS_READ_TOKEN || secrets.PROJECT_READ_TOKEN || github.token }}
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: Unrealities-Media/talkie-trivia
+          path: talkie-trivia
+          token: ${{ secrets.PROJECTS_READ_TOKEN || secrets.PROJECT_READ_TOKEN || github.token }}
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: Unrealities-Media/DeckLogic
+          path: DeckLogic
+          token: ${{ secrets.PROJECTS_READ_TOKEN || secrets.PROJECT_READ_TOKEN || github.token }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Regenerate and validate against upstream
+        working-directory: unrealities-site
+        run: |
+          node scripts/update-site.cjs
+          node scripts/update-site.cjs --check --upstream
+          git diff --check
+      - name: Prepare reviewable update
+        id: drift
+        working-directory: unrealities-site
+        shell: bash
+        run: |
+          git add -- index.html fmv time-travel sitemap.xml data
+          git diff --cached --binary > ../site-update.patch
+          if git diff --cached --quiet; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+            echo '### Public site update needed' >> "$GITHUB_STEP_SUMMARY"
+            git diff --cached --stat >> "$GITHUB_STEP_SUMMARY"
+            echo 'Download the site-update artifact, review the patch, and apply it in a site update branch.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: steps.drift.outputs.changed == 'true'
+        with:
+          name: site-update
+          path: site-update.patch
+          retention-days: 14
+      - name: Flag actionable drift
+        if: steps.drift.outputs.changed == 'true'
+        run: |
+          echo '::error::Public project content has changed. A validated site-update patch is available in this run.'
+          exit 1

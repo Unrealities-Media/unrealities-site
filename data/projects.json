@@ -1,0 +1,46 @@
+[
+  {
+    "id": "talkie-trivia",
+    "name": "Talkie Trivia",
+    "category": "Daily movie game",
+    "status": "Public web beta",
+    "description": "Identify a film as its clues come into focus. Make movie discovery a daily ritual, and keep a personal archive of the screenings you have played.",
+    "url": "https://talkie-trivia-beta.web.app/",
+    "action": "Play Talkie Trivia",
+    "milestone": "The web beta is available to play.",
+    "reviewedOn": "2026-10-26"
+  },
+  {
+    "id": "decklogic",
+    "name": "DeckLogic",
+    "category": "Desktop companion for MTG Arena",
+    "status": "Pre-alpha · in development",
+    "description": "Build, play and learn from your Magic: The Gathering Arena games. A desktop companion for Limited practice, descriptive match tracking and post-game review.",
+    "url": "https://unrealities-media.github.io/DeckLogic/",
+    "action": "Explore DeckLogic",
+    "milestone": "Development focuses on the Limited practice, play and review loop.",
+    "reviewedOn": "2026-10-26"
+  },
+  {
+    "id": "rip-fmv",
+    "name": "RIP FMV",
+    "category": "Games, research & video",
+    "status": "Public archive · channel in development",
+    "description": "Discover the games that made video playable. Explore releases, compare versions and follow the research behind a full-motion video channel in development.",
+    "url": "/fmv/",
+    "action": "Explore RIP FMV",
+    "milestone": "The public archive brings game guides, a release timeline and platform comparisons together.",
+    "reviewedOn": "2026-10-26"
+  },
+  {
+    "id": "time-travel",
+    "name": "Time Travel Movies",
+    "category": "Film, research & video",
+    "status": "Public guide · channel in development",
+    "description": "Follow journeys, loops and paradoxes through cinema. Read original, spoiler-light film notes from a growing research project and prospective video channel.",
+    "url": "/time-travel/",
+    "action": "Explore time travel",
+    "milestone": "The public film guide includes title search and filters for different kinds of time travel.",
+    "reviewedOn": "2026-10-26"
+  }
+]

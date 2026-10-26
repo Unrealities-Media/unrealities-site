@@ -5,3 +5,49 @@
 .unrealities-name { font-weight: 800; letter-spacing: .12em; }
 .unrealities-name::before { content: "●"; margin-right: 10px; color: #f26419; }
 @media (max-width: 560px) { .unrealities-bar { font-size: 11px; } }
+
+/* Studio theme shared by the catalog, field guides and platform comparisons.
+   Kept upstream so every copy of the public archive receives the same styling. */
+:root {
+  --bg: #faf9f6; --paper: #faf9f6; --panel: #eef2f3; --panel-2: #e5ecef;
+  --ink: #2f4858; --ink-dim: #526775; --muted: #526775; --line: #cbd9df;
+  --blue: #33658a; --cyan: #285f82; --red: #b84812; --yellow: #925718; --accent: #b84812;
+  --ui: 'Space Grotesk', system-ui, sans-serif;
+  --sans: 'Space Grotesk', system-ui, sans-serif;
+  --pixel: 'Space Grotesk', system-ui, sans-serif;
+  --display: 'Archivo Black', Impact, sans-serif;
+  --mono: 'Space Grotesk', system-ui, sans-serif;
+  --dither: none;
+}
+html { color-scheme: light; }
+body { background: var(--paper); background-image: none; font-family: var(--sans); }
+body::after, .hero::before { display: none; }
+.unrealities-bar { min-height: 54px; font-family: var(--sans); }
+.hero { background: linear-gradient(120deg, #eef2f3, #faf9f6); border-bottom: 1px solid var(--line); }
+.hero-title { font-family: var(--display); font-size: clamp(32px, 4.8vw, 66px); text-shadow: none; line-height: 1.1; }
+.hero-disc svg { animation: none; }
+.hero-disc { opacity: .85; }
+.hero-copy { background: var(--panel); }
+.hero-art { background: #2f4858; }
+.hero-art figcaption, .hero-art figcaption a { color: #dcebf4; }
+.hero-kicker, .filters label, .stat-scope { font-size: 12px; font-weight: 700; }
+.site-nav { background: var(--paper); border-bottom: 1px solid var(--line); }
+.site-nav a { color: var(--ink); text-shadow: none; font-size: 13px; }
+.site-nav a[aria-current="page"] { color: var(--accent); }
+.btn, .btn-ghost { box-shadow: none; border-radius: 6px; font-size: 13px; border-color: var(--blue); }
+.btn { background: var(--blue); color: #fff; }
+.btn-ghost { background: transparent; color: var(--blue); }
+input, select, textarea { border-radius: 6px; }
+.stat-bar i { background: var(--blue); }
+.ti-score, .d-titan > b { text-shadow: none; }
+.directory-grid>a, .field-grid, .score-layout, .price-cards, .episode-link { border-radius: 10px; }
+.directory-grid h3 { font-size: 22px; }
+.site-footer { background: #2f4858; color: #faf9f6; }
+.site-footer a { color: #faf9f6; }
+.site-footer .brand b { color: #f6ae2d; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #b84812; outline-offset: 3px; }
+/* Keep the interactive TV's screen legible within the shared studio frame. */
+.ch-page { --ink: #f4f4f8; --ink-dim: #bfc9d4; --yellow: #f6ae2d; --cyan: #86bbd8; }
+.ch-page .site-nav a, .ch-hint { color: #2f4858; }
+.ch-page .site-nav a[aria-current="page"] { color: #b84812; }
+@media (max-width: 760px) { .hero-title { font-size: clamp(30px, 8vw, 52px); } }

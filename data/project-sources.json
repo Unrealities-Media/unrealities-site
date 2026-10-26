@@ -1,0 +1,14 @@
+{
+  "talkie-trivia": {
+    "summaryHash": "82162205d94c0edf3e680086bdeea31152f0e96d30116c120a8a0ed1bf1be19d",
+    "commit": "66d85b349604abc8559ffe0e5a120af601e29ded"
+  },
+  "DeckLogic": {
+    "summaryHash": "da8af51b6c976715575bb78a5e4e5f2d45d5d3d445d9a0a44234d55ea3c99a93",
+    "commit": "3b5b5d4265f62ebc81d5da3d86d389bcaf942faf"
+  },
+  "fmv-games": {
+    "summaryHash": "00681a235cd0611a8d5f4ba751881b51bb8c83cc4f39c210c619f6eb4cacf4a1",
+    "commit": "5eb7a0b7e03f20d54766d1a53b184221c6c40a4a"
+  }
+}

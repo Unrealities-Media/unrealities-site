@@ -22,10 +22,10 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="/" aria-label="Unrealities home"><svg class="mark" viewBox="0 0 200 200" aria-hidden="true"><path d="M50,26 V112 A50,50 0 0 0 150,112 V56" fill="none" stroke="currentColor" stroke-width="40" stroke-linecap="round"/><circle cx="150" cy="44" r="14" fill="#F26419"/></svg><span class="wordmark">UNREALITIES</span></a>
-    <nav class="nav" aria-label="Primary"><a href="/fmv/">FMV games</a><a href="/time-travel/" aria-current="page">Time-travel movies</a><a href="/#about">About</a></nav>
+    <nav class="nav" aria-label="Primary"><!-- PROJECT_NAV --></nav>
   </header>
   <main id="main">
-    <section class="page-hero time-hero"><p class="eyebrow">The film shelf / <!-- FILM_COUNT --> entries</p><h1>Every timeline has a story.</h1><p class="lede">A growing guide to movies that travel through time, repeat it, or make cause and effect lose their footing. Browse by the trick each film uses, then notice what it does with the people inside it.</p></section>
+    <section class="page-hero time-hero"><p class="eyebrow">Time Travel Movies / <!-- FILM_COUNT --> entries</p><h1>Every timeline has a story.</h1><p class="guide-status"><!-- TIME-TRAVEL_STATUS --></p><p class="lede">A growing guide to movies that travel through time, repeat it, or make cause and effect lose their footing. Browse by the trick each film uses, then notice what it does with the people inside it.</p></section>
     <section class="guide-section" aria-labelledby="guide-title">
       <div class="guide-heading"><div><p class="eyebrow">The encyclopedia</p><h2 id="guide-title">Films across the timeline</h2></div><p>Original, spoiler-light notes from Unrealities. Titles and years are checked against the Talkie Trivia movie catalog.</p></div>
       <div class="film-controls"><label for="film-search">Find a film</label><input id="film-search" type="search" placeholder="Search titles" autocomplete="off"><label for="film-mechanism">Time mechanic</label><select id="film-mechanism"><option value="">Every kind of time travel</option><option>Journey</option><option>Branching timeline</option><option>Time loop</option><option>Overlapping selves</option><option>Personal rewind</option><option>Causal loop</option></select></div>
@@ -33,7 +33,7 @@
       <div class="film-grid" id="film-grid"><!-- FILM_CARDS -->
       </div>
     </section>
-    <section class="crosslink"><p class="eyebrow">Keep exploring</p><h2>Know your movies? Play the daily game.</h2><p>Talkie Trivia asks you to identify a movie as its clues come into focus. The current web edition is a public beta.</p><div class="actions"><a class="button" href="https://talkie-trivia-beta.web.app/">Play Talkie Trivia <span aria-hidden="true">↗</span></a><a class="link-button" href="/fmv/">Explore FMV games</a></div></section>
+    <section class="crosslink"><p class="eyebrow">Keep exploring</p><h2>Know your movies? Play the daily game.</h2><p>Talkie Trivia asks you to identify a movie as its clues come into focus. Current release: <!-- TALKIE-TRIVIA_STATUS -->.</p><div class="actions"><a class="button" href="<!-- TALKIE-TRIVIA_URL -->">Play Talkie Trivia <span aria-hidden="true">↗</span></a><a class="link-button" href="/fmv/">Explore FMV games</a></div></section>
   </main>
   <footer class="site-footer"><div class="footer-org"><a class="brand brand-small" href="/"><svg class="mark" viewBox="0 0 200 200" aria-hidden="true"><path d="M50,26 V112 A50,50 0 0 0 150,112 V56" fill="none" stroke="currentColor" stroke-width="40" stroke-linecap="round"/><circle cx="150" cy="44" r="14" fill="#F26419"/></svg><span class="wordmark">UNREALITIES</span></a><p>Games, films and the stories between them.</p></div><div class="footer-contact"><a href="mailto:hello@unrealities.media">hello@unrealities.media</a><small>&copy; 2026 Unrealities LLC</small></div></footer>
   <script src="/time-travel/filters.js" defer></script>
