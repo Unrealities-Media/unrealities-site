@@ -9,7 +9,7 @@ const output = process.env.AUDIT_OUTPUT || 'docs/browser-audit.json';
   const browser = await chromium.launch({channel:'msedge',headless:true});
   const page = await browser.newPage();
   const report = [];
-  const routes = ['/', '/explore/', '/fmv/', '/time-travel/', ...['index','game','timeline','titans','collect','channel'].map(p=>`/fmv/games/${p}.html`), '/404.html', '/audit-missing-page'];
+  const routes = ['/', '/fmv/', '/time-travel/', ...['index','game','timeline','titans','collect','channel'].map(p=>`/fmv/games/${p}.html`), '/404.html', '/audit-missing-page'];
   for (const route of routes) {
     const errors=[], failures=[];
     const onError=e=>errors.push(e.message);

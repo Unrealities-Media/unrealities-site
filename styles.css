@@ -225,12 +225,6 @@ p { margin: 0; text-wrap: pretty; }
 .film-card dd { margin: 0; }
 .film-card a { margin-top: auto; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
 
-.explore-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 14px 28px; padding: 24px 0 24px 20px; }
-.explore-links a { text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }
-.explore-tree { margin-top: 28px; }
-.explore-tree details { border-bottom: 1px solid #b6cbd5; }
-.explore-tree summary { cursor: pointer; padding: 18px 0; font-weight: 700; font-size: 22px; }
-.explore-tree summary span { font-size: 14px; color: var(--blue); margin-left: 16px; }
 .about {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

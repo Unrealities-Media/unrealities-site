@@ -10,7 +10,7 @@ The live baseline covered all ten HTML pages at desktop and 390px mobile width:
 - Studio links → Talkie Trivia public beta and DeckLogic.
 - Custom 404 page and recovery navigation.
 
-The new Explore directory adds a visible tree of all 786 guides, all 17 catalog systems, and links to each catalog view. Its native disclosure controls work with the keyboard without JavaScript. The sitemap now contains 796 public URLs, including each game guide and the previously omitted timeline, rankings and Channel pages.
+The sitemap contains 795 public URLs, including each game guide and the previously omitted timeline, rankings and Channel pages. The unrequested Explore directory and its navigation links were removed after the user clarified the intended scope.
 
 ## Findings and fixes
 
@@ -18,7 +18,7 @@ The new Explore directory adds a visible tree of all 786 guides, all 17 catalog 
 | --- | --- | --- |
 | Platform Titans unusable | HTML returned 200, but `tools/capture/store_prices.json` returned 404; UI displayed “Platform rankings could not load” | Added the required public file to the FMV sync manifest. Verified rankings, value mode and hardware estimates in the browser. |
 | Deployment checks missed JavaScript data dependencies | Old checker scanned only HTML links | Checker now discovers public HTML and follows its script references to check literal runtime data dependencies. Unused historical modules and optional localhost overlays are excluded. |
-| Deep branches missing from sitemap and no complete visible guide tree | Five sitemap entries; only an initial subset of guides in the JS directory | Added `/explore/`, linked it from studio navigation and the 404 page, and generated the full sitemap. |
+| Deep branches missing from sitemap | Five sitemap entries | Generated the full sitemap for the existing site. |
 | Obsolete Wikizilla hostname | `wikizilla.wikiteq.com` failed DNS | Replaced with the verified Gamera article on `wikizilla.org`. |
 | Dragon’s Lair Project TLS failures | Bare hostname failed certificate validation | Verified and switched Freedom Fighter, Atari prototypes and Zorton Brothers links to the working `www` hostname. |
 | Dead Take reference unavailable | Episteme source returned 503 on both checks | Replaced with BAFTA’s official 2026 nominations announcement, supporting the nomination claim. Other cast/review sources remain. |
@@ -34,8 +34,7 @@ Research URL corrections were made in `fmv-games` data and upstream research inp
 - Timeline system links, empty search and reset passed; Titans Top 50/100 switching passed.
 - Channel year tuning and teletext passed.
 - Platform Titans loaded with the restored file; value mode and editing hardware estimates passed.
-- Explore’s 786 guide links, keyboard disclosure, desktop/mobile screenshots and mobile width check passed.
-- Generation parity, all 11 public HTML pages’ local links, runtime asset checks and whitespace checks passed before publication.
+- Generation parity, all 10 public HTML pages’ local links, runtime asset checks and whitespace checks passed before publication.
 
 ## External links and limits
 
