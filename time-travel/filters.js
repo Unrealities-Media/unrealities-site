@@ -33,6 +33,9 @@ function update(moveFocus = false) {
   document.querySelector('#film-next').disabled = page === totalPages;
   document.querySelector('.archive-pagination').hidden = !matched.length;
   const context = [];
+  if(controls.mechanism.value)context.push(`Time mechanism: ${controls.mechanism.value}.`);
+  if(controls.status.value==='included')context.push('Showing included films.');
+  if(controls.format.value)context.push(`Release format: ${controls.format.value}.`);
   if(controls.focus.value)context.push('Time travel drives much or all of the story: significance 7–10, high confidence.');
   if(controls.sort.value==='titan')context.push('Titan emphasizes audience, legacy and time-travel significance. A higher score is not a promise that you will enjoy the film.');
   if(controls.status.value==='questionable')context.push('These are disputed cases, not confirmed examples. Read the assessment in each guide.');
@@ -42,8 +45,12 @@ function update(moveFocus = false) {
   const next = new URLSearchParams();
   for(const [key,input] of Object.entries(controls)) if(input.value && !(key==='sort'&&input.value==='title')) next.set(keys[key],input.value);
   if(page>1)next.set('page',page);
+  for(const film of visible)for(const link of film.querySelectorAll('a[href*="/time-travel/films/"]')) {
+    const url=new URL(link.href);url.searchParams.set('browse',next.toString());link.href=url.pathname+url.search;
+  }
   history.replaceState(null,'',location.pathname+(next.size?'?'+next:'')+location.hash);
   for(const button of document.querySelectorAll('[data-view]')) button.setAttribute('aria-pressed',String(button.dataset.view === 'titans' ? controls.sort.value==='titan'&&controls.status.value==='included'&&!controls.format.value : button.dataset.view==='releases' ? controls.format.value==='physical' : !controls.format.value&&controls.sort.value==='title'&&!controls.status.value));
+  document.querySelector('#film-reset').hidden = !next.size;
   if(moveFocus)document.querySelector('#guide-title').focus();
 }
 function reset() { for(const [key,input] of Object.entries(controls))input.value=key==='sort'?'title':'';page=1; }
