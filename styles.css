@@ -307,6 +307,10 @@ address { font-style: normal; font-size: 15px; line-height: 1.6; color: var(--bl
 .page-hero .guide-status { margin-top: 20px; color: var(--on-dark-muted); font-size: 14px; }
 
 /* Archive entrances share a compact masthead and useful routes into the research. */
+.discovery-paths{background:#eef2f3;border-bottom:1px solid #cbd9df;scroll-margin-top:20px}
+.discovery-paths .feature-card h3{font-family:'Space Grotesk',sans-serif;font-size:24px;line-height:1.25}
+.discovery-paths .feature-card p{font-size:15px;line-height:1.7}
+.discovery-paths .feature-link{font-size:14px;line-height:1.6}
 .page-hero { padding-block: clamp(36px,5vw,72px); }
 .page-hero h1 { font-size: clamp(36px,4.7vw,64px); }
 .page-hero .eyebrow { margin-bottom: 16px; }

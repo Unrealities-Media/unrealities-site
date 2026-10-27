@@ -26,7 +26,14 @@
     <nav class="nav" aria-label="Primary"><!-- PROJECT_NAV --></nav>
   </header>
   <main id="main">
-    <section class="page-hero time-hero"><p class="eyebrow">Time Travel Movies / <!-- FILM_COUNT --> entries</p><h1>Every timeline has a story.</h1><p class="guide-status"><!-- TIME-TRAVEL_STATUS --></p><p class="lede">Discover the films that bend time. Compare Titan scores, explore release editions, and follow the evidence behind each story.</p><div class="actions"><a class="button" href="#catalog">Explore the archive ↓</a><a class="link-button" href="?sort=titan&amp;status=included#catalog">Discover the Titans</a></div><div class="archive-stats"><span><b><!-- FILM_COUNT --></b> films &amp; catalog records</span><span><b><!-- RELEASE_COUNT --></b> release editions</span></div></section>
+    <section class="page-hero time-hero"><p class="eyebrow">Time Travel Movies / <!-- FILM_COUNT --> entries</p><h1>Every timeline has a story.</h1><p class="guide-status"><!-- TIME-TRAVEL_STATUS --></p><p class="lede">Discover the films that bend time. Compare Titan scores, explore release editions, and follow the evidence behind each story.</p><div class="actions"><a class="button" href="#start-here">Find a way in ↓</a><a class="link-button" href="?sort=titan&amp;status=included#catalog">Discover the Titans</a></div><div class="archive-stats"><span><b><!-- FILM_COUNT --></b> films &amp; catalog records</span><span><b><!-- RELEASE_COUNT --></b> release editions</span></div></section>
+    <section class="guide-section discovery-paths" id="start-here" aria-labelledby="discovery-title"><div class="guide-heading"><div><p class="eyebrow">Choose your question</p><h2 id="discovery-title">What brings you here?</h2></div><p>Start with an idea you want to explore. The full catalog is below when you know what you are looking for.</p></div>
+      <div class="feature-grid">
+        <a class="feature-card" href="?focus=central&amp;status=included&amp;sort=titan#catalog"><h3>I want time travel to drive the story.</h3><p>Included films with high-confidence significance scores of 7–10. Titan orders the results; it does not predict your taste.</p><span class="feature-link">Explore story-driving time travel →</span></a>
+        <a class="feature-card" href="?mechanism=Causal%20Loop&amp;status=included#catalog"><h3>I’m fascinated by loops.</h3><p>Explore the archive’s causal-loop classification, then read how each film uses repetition and consequences.</p><span class="feature-link">Follow the loops →</span></a>
+        <a class="feature-card" href="?status=questionable#catalog"><h3>Does this count as time travel?</h3><p>Borderline cases are kept separate from the core catalog. Open the research notes to see the reasoning and uncertainty.</p><span class="feature-link">Explore the disputed cases →</span></a>
+      </div>
+    </section>
     <section class="guide-section archive-catalog" id="catalog" aria-labelledby="guide-title">
       <div class="guide-heading"><div><p class="eyebrow">The encyclopedia</p><h2 id="guide-title" tabindex="-1">Films across the timeline</h2></div><p>Search by title, filmmaker or story. Every film has its own guide, scores, release editions and research sources.</p></div>
       <details class="archive-explainer"><summary>About the catalog &amp; scores</summary><p>Included films meet the archive’s time-travel criteria. Questionable entries are borderline; excluded entries explain the boundary. Titan combines quality, audience and legacy with time-travel significance; it is not a score out of 100. Partial data and provisional assessments are labeled in each guide.</p></details>
@@ -34,12 +41,14 @@
         <div class="browse-modes" role="group" aria-label="Explore the archive"><button type="button" data-view="all">All films</button><button type="button" data-view="titans">Titan ranking</button><button type="button" data-view="releases">Physical releases</button></div>
         <div class="archive-search-row"><label>Find a film<input id="film-search" type="search" placeholder="Title, director, cast or story" autocomplete="off"></label><label>Sort by<select id="film-sort"><option value="title">Title A–Z</option><option value="titan">Titan: highest first</option><option value="year">Newest first</option><option value="score">Time-travel significance</option></select></label></div>
         <details class="advanced-filters"><summary>Refine your search</summary><div class="film-controls">
+          <label>Role in the story<select id="film-focus"><option value="">Any role / unassessed</option><option value="central">Drives the story · high confidence</option></select></label>
           <label>Time mechanism<select id="film-mechanism"><option value="">All mechanisms</option><!-- MECHANISMS --></select></label>
           <label>Catalog assessment<select id="film-status"><option value="">All records</option><option value="included">Included</option><option value="questionable">Questionable</option><option value="excluded">Excluded</option></select></label>
           <label>Release format<select id="film-format"><option value="">Any / not cataloged</option><option value="physical">Any physical edition</option><option>4K UHD</option><option>Blu-ray</option><option>DVD</option><option>Digital</option></select></label>
           <button type="button" id="film-reset">Reset browsing</button>
         </div></details>
       </div>
+      <p id="browse-context" class="browse-context">Choose by premise and interpretation; use Titan as one research signal, not a verdict on what you will enjoy.</p>
       <p id="film-count" class="result-count" role="status"><!-- FILM_COUNT --> films</p>
       <noscript><p>All films are listed below. Enable JavaScript to search, filter and browse in pages.</p></noscript>
       <div class="film-grid" id="film-grid"><!-- FILM_CARDS -->

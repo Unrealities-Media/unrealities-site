@@ -18,6 +18,13 @@
 @media(max-width:480px){.film-controls{grid-template-columns:1fr}}
 
 [hidden]{display:none!important}
+.film-meaning{font-size:13px;line-height:1.65;color:#526775}
+.browse-context{font-size:14px;line-height:1.7;max-width:85ch;padding:16px 0 0;color:#526775}
+.insight-lead{font-size:clamp(20px,2vw,26px);line-height:1.5;max-width:65ch;margin:20px 0}
+.decision-summary>p:not(.insight-lead){margin-block:16px;line-height:1.7}
+.related-path,.decision-summary .methodology>a{display:inline-flex;align-items:center;min-height:44px;font-size:14px;font-weight:700}
+.edition-guidance{max-width:80ch;padding:16px 20px;background:#eef2f3;border-left:3px solid #33658a;margin-bottom:24px;line-height:1.7;font-size:14px}
+.release-specs summary{cursor:pointer;min-height:44px;display:list-item;padding-block:12px;font-size:14px;font-weight:700;color:#33658a}
 .archive-catalog{scroll-margin-top:20px}
 .archive-explainer{margin-bottom:24px;max-width:80ch;color:#526775;font-size:14px}
 .archive-explainer summary,.advanced-filters summary,.methodology summary{cursor:pointer;min-height:44px;padding:12px 0;font-weight:700;color:#33658a}

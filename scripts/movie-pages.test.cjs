@@ -1,7 +1,15 @@
 const {test} = require('node:test');
 const assert = require('node:assert/strict');
 const {card,detail,number} = require('./movie-pages.cjs');
+const {temporalRole,catalogMeaning} = require('./film-insight.cjs');
 const movie = {id:'film',Title:'A <film>',Year:'2000',Director:'Director',TT_Score:'0',TT_Confidence:'low',_Titan:'',Catalog_Status:'included',releases:[]};
+test('interpretation follows the significance rubric without treating a missing score as zero',()=>{
+  assert.match(temporalRole({...movie,TT_Score:''}),/not yet been assessed/);
+  assert.match(temporalRole(movie),/No established temporal element/);
+  assert.match(temporalRole({...movie,TT_Score:'7',TT_Confidence:'high'}),/drives much/);
+  assert.match(temporalRole({...movie,TT_Score:'10'}),/provisional/);
+  assert.match(catalogMeaning({...movie,Catalog_Status:'excluded'}),/not included/);
+});
 test('missing scores remain distinct from genuine zero, with provisional labels',()=>{
   assert.equal(number(''),null);assert.equal(number('0'),0);assert.equal(number('NaN'),null);
   const html=card(movie);

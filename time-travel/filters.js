@@ -1,7 +1,7 @@
 const grid = document.querySelector('#film-grid');
 const films = [...grid.children];
-const controls = Object.fromEntries(['search','mechanism','status','sort','format'].map(key => [key,document.querySelector('#film-'+key)]));
-const keys = {search:'q',mechanism:'mechanism',status:'status',sort:'sort',format:'format'};
+const controls = Object.fromEntries(['search','mechanism','status','sort','format','focus'].map(key => [key,document.querySelector('#film-'+key)]));
+const keys = {search:'q',mechanism:'mechanism',status:'status',sort:'sort',format:'format',focus:'focus'};
 const pageSize = 24;
 let page = 1;
 const params = new URLSearchParams(location.search);
@@ -15,7 +15,7 @@ function update(moveFocus = false) {
   const query = controls.search.value.trim().toLowerCase();
   const matched = films.filter(film => {
     const d = film.dataset, formats = d.formats.split('|');
-    return d.search.includes(query) && (!controls.mechanism.value || d.mechanism === controls.mechanism.value) && (!controls.status.value || d.status === controls.status.value) && (!controls.format.value || (controls.format.value === 'physical' ? formats.some(f => ['4K UHD','Blu-ray','DVD'].includes(f)) : formats.includes(controls.format.value)));
+    return (!controls.focus.value || (numeric(d.score)>=7 && d.confidence==='high')) && d.search.includes(query) && (!controls.mechanism.value || d.mechanism === controls.mechanism.value) && (!controls.status.value || d.status === controls.status.value) && (!controls.format.value || (controls.format.value === 'physical' ? formats.some(f => ['4K UHD','Blu-ray','DVD'].includes(f)) : formats.includes(controls.format.value)));
   }).sort((a,b) => {
     const key = controls.sort.value;
     if (key !== 'title') { const x=numeric(a.dataset[key]), y=numeric(b.dataset[key]); if(x===null&&y!==null)return 1;if(y===null&&x!==null)return -1;if(x!==y)return y-x; }
@@ -32,6 +32,13 @@ function update(moveFocus = false) {
   document.querySelector('#film-prev').disabled = page === 1;
   document.querySelector('#film-next').disabled = page === totalPages;
   document.querySelector('.archive-pagination').hidden = !matched.length;
+  const context = [];
+  if(controls.focus.value)context.push('Time travel drives much or all of the story: significance 7–10, high confidence.');
+  if(controls.sort.value==='titan')context.push('Titan emphasizes audience, legacy and time-travel significance. A higher score is not a promise that you will enjoy the film.');
+  if(controls.status.value==='questionable')context.push('These are disputed cases, not confirmed examples. Read the assessment in each guide.');
+  if(controls.status.value==='excluded')context.push('These records explain what falls outside the catalog’s criteria.');
+  if(controls.format.value)context.push('A cataloged edition is a research lead, not a claim of current availability.');
+  document.querySelector('#browse-context').textContent=context.join(' ') || 'Choose by premise and interpretation; use Titan as one research signal, not a verdict on what you will enjoy.';
   const next = new URLSearchParams();
   for(const [key,input] of Object.entries(controls)) if(input.value && !(key==='sort'&&input.value==='title')) next.set(keys[key],input.value);
   if(page>1)next.set('page',page);
