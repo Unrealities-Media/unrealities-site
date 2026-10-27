@@ -3,7 +3,7 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const { execFileSync } = require('node:child_process');
 const root = path.resolve(__dirname, '..');
-const sources = { 'talkie-trivia': ['talkie-trivia', 'time-travel'], DeckLogic: ['decklogic'], 'fmv-games': ['rip-fmv'] };
+const sources = { 'talkie-trivia': ['talkie-trivia'], DeckLogic: ['decklogic'], 'fmv-games': ['rip-fmv'], 'movie-archivist': ['time-travel'] };
 const order = ['talkie-trivia', 'decklogic', 'rip-fmv', 'time-travel'];
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));

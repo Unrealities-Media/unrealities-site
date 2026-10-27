@@ -1,35 +1,30 @@
-const fs = require('node:fs')
-const path = require('node:path')
-
-const root = path.resolve(__dirname, '..')
-const talkie = path.resolve(root, '..', 'talkie-trivia')
-const entries = JSON.parse(fs.readFileSync(path.join(talkie, 'data/public-time-travel-films.json'), 'utf8'))
-const catalog = new Map(JSON.parse(fs.readFileSync(path.join(talkie, 'data/movies.json'), 'utf8')).map(movie => [movie.id, movie]))
-const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[character]))
-const allowed = new Set(['Journey', 'Branching timeline', 'Time loop', 'Overlapping selves', 'Personal rewind', 'Causal loop'])
-
-if (entries.length < 10 || new Set(entries.map(entry => entry.id)).size !== entries.length) throw new Error('The public film guide needs at least ten unique movies.')
-for (const entry of entries) {
-  const movie = catalog.get(entry.id)
-  if (!movie || movie.title !== entry.title || Number(movie.release_date.slice(0, 4)) !== entry.year) throw new Error(`Talkie catalog mismatch: ${entry.id} ${entry.title}`)
-  if (!allowed.has(entry.mechanism) || ![entry.hook, entry.idea, entry.watchFor].every(value => typeof value === 'string' && value.length >= 30)) throw new Error(`Incomplete public entry: ${entry.id}`)
-}
-
-const cards = entries.slice().sort((a, b) => a.year - b.year || a.title.localeCompare(b.title)).map(entry => `
-        <article class="film-card" id="film-${entry.id}" data-title="${escape(entry.title.toLowerCase())}" data-mechanism="${escape(entry.mechanism)}">
-          <div class="film-topline"><span>${entry.year}</span><span>${escape(entry.mechanism)}</span></div>
-          <h3>${escape(entry.title)}</h3>
-          <p>${escape(entry.hook)}</p>
-          <dl><dt>The time idea</dt><dd>${escape(entry.idea)}</dd><dt>Watch for</dt><dd>${escape(entry.watchFor)}</dd></dl>
-          <a href="https://www.themoviedb.org/movie/${entry.id}" rel="noopener noreferrer">Film details at TMDB <span aria-hidden="true">↗</span></a>
-        </article>`).join('')
-const template = fs.readFileSync(path.join(root, 'scripts/time-travel-template.html'), 'utf8')
-const output = require('./projects.cjs').render(template, undefined, 'time-travel').replace('<!-- FILM_CARDS -->', cards).replaceAll('<!-- FILM_COUNT -->', String(entries.length))
-const target = path.join(root, 'time-travel/index.html')
+const fs = require('node:fs');
+const path = require('node:path');
+const { load } = require('../../movie-archivist/public-catalog.cjs');
+const { movies } = load();
+const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
+const list = value => { if (Array.isArray(value)) return value; try { const parsed = JSON.parse(value); return Array.isArray(parsed) ? parsed : []; } catch { return []; } };
+const url = value => { try { const u = new URL(value); return ['https:', 'http:'].includes(u.protocol) ? u.href : null; } catch { return null; } };
+const cards = movies.slice().sort((a,b) => String(a.Title).localeCompare(String(b.Title))).map(m => {
+  const sources = [...new Set([...list(m.Catalog_Sources), ...list(m.TT_Sources), m['Letterboxd URL'], m['IMDb Link']].map(url).filter(Boolean))];
+  const score = m.TT_Score === '' ? 'Not yet assessed' : `${m.TT_Score}/10${m.TT_Confidence === 'high' ? '' : ' · provisional'}`;
+  return `<article class="film-card" id="film-${escape(m.id)}" data-search="${escape([m.Title,m.Director,m['Top Cast'],m.Overview].join(' ').toLowerCase())}" data-title="${escape(m.Title)}" data-year="${escape(m.Year)}" data-status="${escape(m.Catalog_Status)}" data-mechanism="${escape(m.Mechanism)}" data-score="${escape(m.TT_Score)}">
+    <div class="film-topline"><span>${escape(m.Year || 'Year unknown')}</span><span>${escape(m.Catalog_Status || 'unreviewed')}</span></div>
+    <h3><a href="#film-${escape(m.id)}">${escape(m.Title)}</a></h3>
+    <p class="film-credit">${escape(m.Director || 'Director not recorded')} · ${escape(m.Catalog_Format || 'Film')}</p>
+    <p>${escape(m.Overview || 'Synopsis not yet available.')}</p>
+    <div class="archive-tags"><span>${escape(m.Mechanism || 'Mechanism unclassified')}</span><span>Time-travel significance: ${escape(score)}</span></div>
+    <details><summary>Research &amp; sources <span class="spoiler-note">(may contain spoilers)</span></summary>
+      <dl><dt>Catalog assessment</dt><dd>${escape(m.Catalog_Rationale || 'Assessment pending.')}</dd><dt>Time-travel significance</dt><dd>${escape(m.TT_Reason || 'Assessment pending.')}</dd><dt>Cast</dt><dd>${escape(m['Top Cast'] || 'Not recorded')}</dd><dt>Genres / runtime</dt><dd>${escape(m.Genres)}${m['Runtime (Mins)'] ? ' · '+escape(m['Runtime (Mins)'])+' minutes' : ''}</dd></dl>
+      <ul class="archive-sources">${sources.map(link => `<li><a href="${escape(link)}" rel="noopener noreferrer">${escape(new URL(link).hostname.replace(/^www\./,''))}</a></li>`).join('')}</ul>
+    </details></article>`;
+}).join('\n');
+const mechanisms = [...new Set(movies.map(m => m.Mechanism).filter(Boolean))].sort();
+const output = require('./projects.cjs').render(fs.readFileSync(path.join(__dirname, 'time-travel-template.html'), 'utf8'), undefined, 'time-travel')
+  .replace('<!-- FILM_CARDS -->', cards).replaceAll('<!-- FILM_COUNT -->', String(movies.length))
+  .replace('<!-- MECHANISMS -->', mechanisms.map(m => `<option>${escape(m)}</option>`).join(''));
+const target = path.resolve(__dirname, '../time-travel/index.html');
 if (process.argv.includes('--check')) {
-  if (!fs.existsSync(target) || fs.readFileSync(target, 'utf8').replaceAll('\r\n', '\n') !== output.replaceAll('\r\n', '\n')) throw new Error('time-travel/index.html is out of date; run node scripts/build-time-travel.cjs')
-  console.log(`Checked ${entries.length} public film entries.`)
-} else {
-  fs.writeFileSync(target, output)
-  console.log(`Built ${target} with ${entries.length} films.`)
-}
+  if (fs.readFileSync(target, 'utf8').replaceAll('\r\n', '\n') !== output.replaceAll('\r\n', '\n')) throw Error('Public archive is out of date; run node scripts/update-site.cjs');
+} else fs.writeFileSync(target, output);
+console.log(`${process.argv.includes('--check') ? 'Checked' : 'Built'} ${movies.length} public Movie Archivist records.`);

@@ -40,7 +40,7 @@ jobs:
           PROJECTS_READ_TOKEN: ${{ secrets.PROJECTS_READ_TOKEN || secrets.PROJECT_READ_TOKEN }}
         run: |
           if [ -z "$PROJECTS_READ_TOKEN" ]; then
-            echo '::error::Configure PROJECTS_READ_TOKEN with Contents read access to the source repositories; talkie-trivia is private. See docs/public-showcase-plan.md.'
+            echo '::error::Configure PROJECTS_READ_TOKEN with Contents read access to the source repositories; talkie-trivia and movie-archivist are private. See docs/public-showcase-plan.md.'
             exit 1
           fi
       - uses: actions/checkout@v4
@@ -67,6 +67,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
+      - uses: actions/checkout@v4
+        with:
+          repository: Unrealities-Media/movie-archivist
+          path: movie-archivist
+          token: ${{ secrets.PROJECTS_READ_TOKEN || secrets.PROJECT_READ_TOKEN || github.token }}
+          persist-credentials: false
+      - run: node --test movie-archivist/public-catalog.test.cjs
       - name: Regenerate and validate against upstream
         working-directory: unrealities-site
         run: |

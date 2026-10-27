@@ -7,8 +7,7 @@ card structure, navigation visibility and planning review cadence. Release matur
 is explicit; prospective channels remain labeled in development. Review each
 project's next milestone, blockers and public presentation together.
 
-Each source repository owns `public-projects.json`: Talkie owns the Talkie and
-Time Travel Movies summaries, DeckLogic owns its summary, and FMV owns RIP FMV.
+Each source repository owns `public-projects.json`: Talkie owns Talkie Trivia, Movie Archivist owns Time Travel Movies, DeckLogic owns its summary, and FMV owns RIP FMV.
 At a public release, changed destination/status or meaningful milestone, update
 that file and its `reviewedOn` date. Otherwise record "no website change needed"
 in the release/PR notes. Never automatically refresh review dates.
@@ -22,11 +21,11 @@ node --test scripts/projects.test.cjs
 git diff --check
 ```
 
-All four repositories must be siblings with their canonical names. The command
+All five repositories must be siblings with their canonical names. The command
 syncs FMV, imports summaries, renders the home/FMV/film pages, generates the
 sitemap and checks local links. Edit `scripts/home-template.html`,
 `scripts/fmv-template.html` and `scripts/time-travel-template.html`, not generated
-HTML. FMV counts come from the catalog. Cards, navigation and Talkie's film-guide
+HTML. FMV counts come from the catalog. Cards, navigation and the film archive’s
 release label come from the imported summaries.
 
 `data/projects.json` is the committed public snapshot. `data/project-sources.json`
@@ -47,7 +46,7 @@ notification. Checkout/build failures also fail visibly. GitHub Actions
 notification preferences control delivery; nothing publishes automatically.
 
 For private source repositories, configure the site's `PROJECTS_READ_TOKEN`
-Actions secret with Contents read access to the three source repositories.
+Actions secret with Contents read access to the four source repositories: `fmv-games`, `talkie-trivia`, `DeckLogic`, and `movie-archivist`.
 The existing singular name `PROJECT_READ_TOKEN` is also accepted as an alias;
 if both exist, `PROJECTS_READ_TOKEN` takes precedence.
 Public sources need no extra token. This token needs no write permission, and
@@ -60,19 +59,10 @@ it manually once to verify repository access. Review the artifact with
 diff, and run checks before merging. The schedule detects changed public inputs;
 the release checklist catches product changes whose summaries were overlooked.
 
-## Content ownership
+## Public archive and source ownership
 
-Unrealities owns the visual system and navigation. The two encyclopedias live on `unrealities.media`: `/fmv/` introduces the full FMV catalog at `/fmv/games/`, and `/time-travel/` presents original film entries. Talkie Trivia and DeckLogic are equally prominent linked products with accurate release labels.
+The complete FMV catalog is synced from `fmv-games`. The time-travel archive comes from `movie-archivist/public-catalog.cjs`, which verifies both recovery checksums and selects an explicit allowlist of film metadata and research fields. It never exports personal-state, episodes, saved views, production plans, raw recovery files or arbitrary future fields. All catalog records are included, with included/questionable/excluded assessments visible. Significance is not a film-quality rating; lower-confidence scores are marked provisional.
 
-| Repository | Source of truth | Public output |
-| --- | --- | --- |
-| `fmv-games` | Catalog, game guides, release data, art, FMV UI | Static copy at `/fmv/games/` |
-| `DeckLogic` | `public-projects.json` | DeckLogic card, status and product destination |
-| `talkie-trivia` | Public film notes in `data/public-time-travel-films.json`; movie title/year catalog | Generated guide at `/time-travel/`; separate playable web beta |
-| `unrealities-site` | Studio copy, visual system, landing pages, cross-project navigation | GitHub Pages at `unrealities.media` |
+Talkie Trivia remains a separate linked game. Its older 12-film editorial file is no longer an input to this site. Movie Archivist catalog edits must be captured in its committed recovery snapshot before the public update command can see them. Run `node --test public-catalog.test.cjs` in Movie Archivist before publishing changes to the export.
 
-The FMV copy is intentionally generated from the public static site files; changes to game data and design begin in `fmv-games`. The Talkie guide contains no private daily clues, answer schedule, player history or TMDB synopsis. It uses original notes plus titles and years checked against the Talkie movie catalog. The public movie guide can be updated independently of Talkie's game release schedule.
-
-Publish in dependency order: update and validate the FMV and Talkie source repositories, run `node scripts/update-site.cjs` in `unrealities-site`, review the generated diff, then publish the site. Links inside the FMV catalog stay relative, so the copy works at `/fmv/games/`. Check the home page, both landing pages, the game directory, a direct game guide, search/filtering, small screens and keyboard navigation after each update.
-
-When Talkie Trivia leaves beta, update its source summary and regenerate; the home page and film guide share its URL and status. FMV landing page counts are generated from the synced catalog. Edit catalog styling in `fmv-games/css/unrealities.css` and studio/film-guide styling in `styles.css`; both use paper/slate/blue colors, Space Grotesk body type and Archivo Black headings.
+Publish source changes first, regenerate and validate the site, then publish the generated site. Keep the Movie Archivist checkout private; only generated public HTML goes into this repository. Shared styling lives in `styles.css`, with archive-specific layout in `time-travel/archive.css`; FMV styling starts in `fmv-games/css/unrealities.css`.

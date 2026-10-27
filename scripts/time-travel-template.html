@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Time-travel movies — Unrealities</title>
-  <meta name="description" content="A field guide to time-travel movies: journeys, loops, rewinds and causal knots, with original notes on what makes each film tick.">
+  <meta name="description" content="Explore the Movie Archivist time-travel catalog, with film research, classifications and sources.">
   <link rel="canonical" href="https://unrealities.media/time-travel/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#2F4858">
@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Archivo+Black&display=swap">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/time-travel/archive.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -25,10 +26,17 @@
     <nav class="nav" aria-label="Primary"><!-- PROJECT_NAV --></nav>
   </header>
   <main id="main">
-    <section class="page-hero time-hero"><p class="eyebrow">Time Travel Movies / <!-- FILM_COUNT --> entries</p><h1>Every timeline has a story.</h1><p class="guide-status"><!-- TIME-TRAVEL_STATUS --></p><p class="lede">A growing guide to movies that travel through time, repeat it, or make cause and effect lose their footing. Browse by the trick each film uses, then notice what it does with the people inside it.</p></section>
+    <section class="page-hero time-hero"><p class="eyebrow">Time Travel Movies / <!-- FILM_COUNT --> entries</p><h1>Every timeline has a story.</h1><p class="guide-status"><!-- TIME-TRAVEL_STATUS --></p><p class="lede">Explore the Movie Archivist collection: films that bend time, stories at the edge of the genre, and the research that tells them apart.</p></section>
     <section class="guide-section" aria-labelledby="guide-title">
-      <div class="guide-heading"><div><p class="eyebrow">The encyclopedia</p><h2 id="guide-title">Films across the timeline</h2></div><p>Original, spoiler-light notes from Unrealities. Titles and years are checked against the Talkie Trivia movie catalog.</p></div>
-      <div class="film-controls"><label for="film-search">Find a film</label><input id="film-search" type="search" placeholder="Search titles" autocomplete="off"><label for="film-mechanism">Time mechanic</label><select id="film-mechanism"><option value="">Every kind of time travel</option><option>Journey</option><option>Branching timeline</option><option>Time loop</option><option>Overlapping selves</option><option>Personal rewind</option><option>Causal loop</option></select></div>
+      <div class="guide-heading"><div><p class="eyebrow">The encyclopedia</p><h2 id="guide-title">Films across the timeline</h2></div><p>A public edition of Movie Archivist. Search films, directors, cast and synopses, or explore by time-travel mechanism.</p></div>
+      <p class="archive-note">Included films meet the archive’s time-travel criteria. Questionable entries are borderline; excluded entries remain here to explain the boundary. Significance measures the role of time travel, not film quality. Provisional scores are still under review.</p>
+      <div class="film-controls">
+        <label>Find a film<input id="film-search" type="search" placeholder="Title, director, cast or story" autocomplete="off"></label>
+        <label>Time mechanism<select id="film-mechanism"><option value="">All mechanisms</option><!-- MECHANISMS --></select></label>
+        <label>Catalog assessment<select id="film-status"><option value="">All records</option><option value="included">Included</option><option value="questionable">Questionable</option><option value="excluded">Excluded</option></select></label>
+        <label>Sort by<select id="film-sort"><option value="title">Title A–Z</option><option value="year">Newest first</option><option value="score">Time-travel significance</option></select></label>
+        <button type="button" id="film-reset">Clear filters</button>
+      </div>
       <p id="film-count" class="result-count" role="status"><!-- FILM_COUNT --> films</p>
       <div class="film-grid" id="film-grid"><!-- FILM_CARDS -->
       </div>
