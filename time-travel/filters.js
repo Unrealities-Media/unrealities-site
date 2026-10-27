@@ -1,29 +1,55 @@
 const grid = document.querySelector('#film-grid');
 const films = [...grid.children];
-const search = document.querySelector('#film-search');
-const mechanism = document.querySelector('#film-mechanism');
-const status = document.querySelector('#film-status');
-const sort = document.querySelector('#film-sort');
-function filter() {
-  const query = search.value.trim().toLowerCase();
-  let count = 0;
-  for (const film of films) {
-    film.hidden = !(film.dataset.search.includes(query) && (!mechanism.value || film.dataset.mechanism === mechanism.value) && (!status.value || film.dataset.status === status.value));
-    if (!film.hidden) count++;
-  }
-  document.querySelector('#film-count').textContent = `${count} of ${films.length} records${count ? '' : ' — try another title or clear the filters'}`;
+const controls = Object.fromEntries(['search','mechanism','status','sort','format'].map(key => [key,document.querySelector('#film-'+key)]));
+const keys = {search:'q',mechanism:'mechanism',status:'status',sort:'sort',format:'format'};
+const pageSize = 24;
+let page = 1;
+const params = new URLSearchParams(location.search);
+for (const [key,input] of Object.entries(controls)) {
+  const value = params.get(keys[key]);
+  if (value !== null && (input.tagName !== 'SELECT' || [...input.options].some(o=>o.value === value))) input.value = value;
 }
-for (const input of [search, mechanism, status]) input.addEventListener('input', filter);
-sort.addEventListener('change', () => {
-  const sorted = films.slice().sort((a,b) => sort.value === 'title' ? a.dataset.title.localeCompare(b.dataset.title) : (Number(b.dataset[sort.value] || -1) - Number(a.dataset[sort.value] || -1)) || a.dataset.title.localeCompare(b.dataset.title));
-  grid.append(...sorted);
-});
-document.querySelector('#film-reset').addEventListener('click', () => { search.value = mechanism.value = status.value = ''; filter(); });
+page = Math.max(1,Number.parseInt(params.get('page'),10)||1);
+const numeric = value => value !== '' && Number.isFinite(Number(value)) ? Number(value) : null;
+function update(moveFocus = false) {
+  const query = controls.search.value.trim().toLowerCase();
+  const matched = films.filter(film => {
+    const d = film.dataset, formats = d.formats.split('|');
+    return d.search.includes(query) && (!controls.mechanism.value || d.mechanism === controls.mechanism.value) && (!controls.status.value || d.status === controls.status.value) && (!controls.format.value || (controls.format.value === 'physical' ? formats.some(f => ['4K UHD','Blu-ray','DVD'].includes(f)) : formats.includes(controls.format.value)));
+  }).sort((a,b) => {
+    const key = controls.sort.value;
+    if (key !== 'title') { const x=numeric(a.dataset[key]), y=numeric(b.dataset[key]); if(x===null&&y!==null)return 1;if(y===null&&x!==null)return -1;if(x!==y)return y-x; }
+    return a.dataset.title.localeCompare(b.dataset.title,'en');
+  });
+  const totalPages = Math.max(1,Math.ceil(matched.length/pageSize));
+  page = Math.min(page,totalPages);
+  for (const film of films) film.hidden = true;
+  const visible = matched.slice((page-1)*pageSize,page*pageSize);
+  for (const film of visible) film.hidden = false;
+  grid.append(...visible);
+  document.querySelector('#film-count').textContent = matched.length ? `${(page-1)*pageSize+1}–${Math.min(page*pageSize,matched.length)} of ${matched.length} matching films · ${films.length} records in the archive` : 'No films match. Try another search or reset browsing.';
+  document.querySelector('#film-page').textContent = `Page ${page} of ${totalPages}`;
+  document.querySelector('#film-prev').disabled = page === 1;
+  document.querySelector('#film-next').disabled = page === totalPages;
+  document.querySelector('.archive-pagination').hidden = !matched.length;
+  const next = new URLSearchParams();
+  for(const [key,input] of Object.entries(controls)) if(input.value && !(key==='sort'&&input.value==='title')) next.set(keys[key],input.value);
+  if(page>1)next.set('page',page);
+  history.replaceState(null,'',location.pathname+(next.size?'?'+next:'')+location.hash);
+  for(const button of document.querySelectorAll('[data-view]')) button.setAttribute('aria-pressed',String(button.dataset.view === 'titans' ? controls.sort.value==='titan'&&controls.status.value==='included'&&!controls.format.value : button.dataset.view==='releases' ? controls.format.value==='physical' : !controls.format.value&&controls.sort.value==='title'&&!controls.status.value));
+  if(moveFocus)document.querySelector('#guide-title').focus();
+}
+function reset() { for(const [key,input] of Object.entries(controls))input.value=key==='sort'?'title':'';page=1; }
+for(const input of Object.values(controls))input.addEventListener('input',()=>{page=1;update();});
+document.querySelector('#film-reset').addEventListener('click',()=>{reset();update();});
+for(const button of document.querySelectorAll('[data-view]'))button.addEventListener('click',()=>{reset();if(button.dataset.view==='titans'){controls.sort.value='titan';controls.status.value='included';}if(button.dataset.view==='releases')controls.format.value='physical';update();});
+document.querySelector('#film-prev').addEventListener('click',()=>{page--;update(true);});
+document.querySelector('#film-next').addEventListener('click',()=>{page++;update(true);});
 function revealLink() {
-  let id; try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
-  const film = document.getElementById(id);
-  if (film?.classList.contains('film-card')) { search.value = mechanism.value = status.value = ''; filter(); film.querySelector('details').open = true; film.scrollIntoView(); }
+  let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}
+  const film=document.getElementById(id);
+  if(film?.classList.contains('film-card')){reset();controls.search.value=film.dataset.title;update();film.scrollIntoView();}
 }
-window.addEventListener('hashchange', revealLink);
-filter();
-revealLink();
+document.querySelector('.archive-tools').hidden=false;
+update();revealLink();
+window.addEventListener('hashchange',revealLink);

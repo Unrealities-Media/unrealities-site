@@ -8,11 +8,11 @@
     "commit": "3b5b5d4265f62ebc81d5da3d86d389bcaf942faf"
   },
   "fmv-games": {
-    "summaryHash": "00681a235cd0611a8d5f4ba751881b51bb8c83cc4f39c210c619f6eb4cacf4a1",
-    "commit": "5eb7a0b7e03f20d54766d1a53b184221c6c40a4a"
+    "summaryHash": "1a86e84faa900ef0feec0f31ee151b9f3a36cde13e0d463a1aea535592739ada",
+    "commit": "b95816cb935a4da1a74996f2787e4f3044429986"
   },
   "movie-archivist": {
-    "summaryHash": "450df739b0562e5341198cbe9afdfc0db99f7071f9eb035b6b0ff8549bb50ac5",
-    "commit": "66bededdf58f0eca35014c0308f513725760b8e3"
+    "summaryHash": "44494de0a0c2f89c60c76031a0289f576798e2b10e3053ee6ee51083d42f82d3",
+    "commit": "3b98c3b59b615e2f7fae69d26b5057257157191e"
   }
 }

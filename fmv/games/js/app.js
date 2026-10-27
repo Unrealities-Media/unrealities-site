@@ -102,15 +102,21 @@
 
   // Rows are built once and reused across filter changes; a tracker edit drops that game's row so it is rebuilt.
   const rowCache = new Map();
-  const renderList = () => {
+  let visibleLimit = 48, lastFilters = '';
+  const renderList = (more = false) => {
+    const filterKey = $$('.controls select, #q').map(el => el.value).join('\u0000');
+    if (filterKey !== lastFilters) { visibleLimit = 48; lastFilters = filterKey; }
+    if (more === true) visibleLimit += 48;
     const rows = filtered();
     const frag = document.createDocumentFragment();
-    for (const g of rows) {
+    for (const g of rows.slice(0, visibleLimit)) {
       if (!rowCache.has(g.key)) rowCache.set(g.key, buildRow(g));
       frag.appendChild(rowCache.get(g.key));
     }
     $("#list").replaceChildren(frag);
-    $("#result-count").textContent = !rows.length ? "No games match these filters." : rows.length === games.length ? `${rows.length} titles` : `${rows.length} of ${games.length} titles`;
+    $("#result-count").textContent = !rows.length ? "No games match these filters." : `Showing ${Math.min(visibleLimit, rows.length)} of ${rows.length} matching release records`;
+    $("#list-more").hidden = visibleLimit >= rows.length;
+    $("#list-more").textContent = `Show ${Math.min(48, rows.length - visibleLimit)} more releases`;
   };
   const buildRow = g => {
     const t = entry(g.key);
@@ -385,6 +391,7 @@
       for (const a of $$("#hero-systems a")) a.toggleAttribute("aria-current", a.dataset.sys === $("#f-sys").value);
     };
     for (const el of $$(".controls select, #q")) el.addEventListener("input", renderList);
+    $("#list-more").addEventListener("click", () => { const shown = $("#list").children.length; renderList(true); $("#list").children[shown]?.focus(); });
     $("#f-sys").addEventListener("input", () => { renderStats(); syncSysParam(); });
     // The system names in the hero are links of their own; on this page they set the filter without reloading. A second click clears it.
     $("#hero-systems").addEventListener("click", e => {

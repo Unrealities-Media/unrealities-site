@@ -305,3 +305,34 @@ address { font-style: normal; font-size: 15px; line-height: 1.6; color: var(--bl
 .page-hero h1 { font-size: clamp(40px, 5.6vw, 76px); max-width: 16ch; }
 .page-hero::after { opacity: .6; }
 .page-hero .guide-status { margin-top: 20px; color: var(--on-dark-muted); font-size: 14px; }
+
+/* Archive entrances share a compact masthead and useful routes into the research. */
+.page-hero { padding-block: clamp(36px,5vw,72px); }
+.page-hero h1 { font-size: clamp(36px,4.7vw,64px); }
+.page-hero .eyebrow { margin-bottom: 16px; }
+.page-hero .lede { margin-top: 18px; line-height: 1.6; }
+.page-hero .actions { margin-top: 22px; gap: 12px; }
+.archive-stats { display:flex;flex-wrap:wrap;gap:16px 32px;margin-top:28px;padding-top:20px;border-top:1px solid #ffffff35;font-size:13px;color:var(--on-dark-muted); }
+.archive-stats b { color:#fff;font-size:22px;margin-right:6px; }
+.archive-shortcuts { display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:20px var(--gutter);background:#eef2f3;border-bottom:1px solid #cbd9df; }
+.archive-shortcuts a { padding:12px 0;font-size:14px;font-weight:700; }
+.site-header .nav a { display:inline-flex;align-items:center;min-height:44px; }
+.guide-section { padding-block:clamp(32px,5vw,64px); }
+.feature-card { padding:24px; }
+.feature-link { color:#a54116; }
+@media(max-width:600px) {
+  .site-header { gap:8px;padding-block:16px; }
+  .site-header .nav { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;width:100%; }
+  .site-header .nav a { width:fit-content;font-size:13px; }
+  .page-hero .guide-status { margin-top:14px;font-size:13px; }
+  .page-hero .lede { font-size:16px; }
+  .page-hero .link-button { padding:12px 0;min-height:44px; }
+  .page-hero::after { right:-130px;opacity:.35; }
+  .archive-stats { gap:12px;font-size:12px; }
+  .archive-stats span { flex:1; }
+  .archive-stats b { display:block; }
+  .archive-shortcuts { grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px; }
+  .guide-heading h2 { font-size:30px; }
+  .feature-card h3 { font-size:25px; }
+  .site-footer { padding-block:32px;gap:24px; }
+}

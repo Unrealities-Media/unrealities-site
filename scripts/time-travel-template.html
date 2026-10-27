@@ -26,20 +26,25 @@
     <nav class="nav" aria-label="Primary"><!-- PROJECT_NAV --></nav>
   </header>
   <main id="main">
-    <section class="page-hero time-hero"><p class="eyebrow">Time Travel Movies / <!-- FILM_COUNT --> entries</p><h1>Every timeline has a story.</h1><p class="guide-status"><!-- TIME-TRAVEL_STATUS --></p><p class="lede">Explore the Movie Archivist collection: films that bend time, stories at the edge of the genre, and the research that tells them apart.</p></section>
-    <section class="guide-section" aria-labelledby="guide-title">
-      <div class="guide-heading"><div><p class="eyebrow">The encyclopedia</p><h2 id="guide-title">Films across the timeline</h2></div><p>A public edition of Movie Archivist. Search films, directors, cast and synopses, or explore by time-travel mechanism.</p></div>
-      <p class="archive-note">Included films meet the archive’s time-travel criteria. Questionable entries are borderline; excluded entries remain here to explain the boundary. Significance measures the role of time travel, not film quality. Provisional scores are still under review.</p>
-      <div class="film-controls">
-        <label>Find a film<input id="film-search" type="search" placeholder="Title, director, cast or story" autocomplete="off"></label>
-        <label>Time mechanism<select id="film-mechanism"><option value="">All mechanisms</option><!-- MECHANISMS --></select></label>
-        <label>Catalog assessment<select id="film-status"><option value="">All records</option><option value="included">Included</option><option value="questionable">Questionable</option><option value="excluded">Excluded</option></select></label>
-        <label>Sort by<select id="film-sort"><option value="title">Title A–Z</option><option value="year">Newest first</option><option value="score">Time-travel significance</option></select></label>
-        <button type="button" id="film-reset">Clear filters</button>
+    <section class="page-hero time-hero"><p class="eyebrow">Time Travel Movies / <!-- FILM_COUNT --> entries</p><h1>Every timeline has a story.</h1><p class="guide-status"><!-- TIME-TRAVEL_STATUS --></p><p class="lede">Discover the films that bend time. Compare Titan scores, explore release editions, and follow the evidence behind each story.</p><div class="actions"><a class="button" href="#catalog">Explore the archive ↓</a><a class="link-button" href="?sort=titan&amp;status=included#catalog">Discover the Titans</a></div><div class="archive-stats"><span><b><!-- FILM_COUNT --></b> films &amp; catalog records</span><span><b><!-- RELEASE_COUNT --></b> release editions</span></div></section>
+    <section class="guide-section archive-catalog" id="catalog" aria-labelledby="guide-title">
+      <div class="guide-heading"><div><p class="eyebrow">The encyclopedia</p><h2 id="guide-title" tabindex="-1">Films across the timeline</h2></div><p>Search by title, filmmaker or story. Every film has its own guide, scores, release editions and research sources.</p></div>
+      <details class="archive-explainer"><summary>About the catalog &amp; scores</summary><p>Included films meet the archive’s time-travel criteria. Questionable entries are borderline; excluded entries explain the boundary. Titan combines quality, audience and legacy with time-travel significance; it is not a score out of 100. Partial data and provisional assessments are labeled in each guide.</p></details>
+      <div class="archive-tools" hidden>
+        <div class="browse-modes" role="group" aria-label="Explore the archive"><button type="button" data-view="all">All films</button><button type="button" data-view="titans">Titan ranking</button><button type="button" data-view="releases">Physical releases</button></div>
+        <div class="archive-search-row"><label>Find a film<input id="film-search" type="search" placeholder="Title, director, cast or story" autocomplete="off"></label><label>Sort by<select id="film-sort"><option value="title">Title A–Z</option><option value="titan">Titan: highest first</option><option value="year">Newest first</option><option value="score">Time-travel significance</option></select></label></div>
+        <details class="advanced-filters"><summary>Refine your search</summary><div class="film-controls">
+          <label>Time mechanism<select id="film-mechanism"><option value="">All mechanisms</option><!-- MECHANISMS --></select></label>
+          <label>Catalog assessment<select id="film-status"><option value="">All records</option><option value="included">Included</option><option value="questionable">Questionable</option><option value="excluded">Excluded</option></select></label>
+          <label>Release format<select id="film-format"><option value="">Any / not cataloged</option><option value="physical">Any physical edition</option><option>4K UHD</option><option>Blu-ray</option><option>DVD</option><option>Digital</option></select></label>
+          <button type="button" id="film-reset">Reset browsing</button>
+        </div></details>
       </div>
       <p id="film-count" class="result-count" role="status"><!-- FILM_COUNT --> films</p>
+      <noscript><p>All films are listed below. Enable JavaScript to search, filter and browse in pages.</p></noscript>
       <div class="film-grid" id="film-grid"><!-- FILM_CARDS -->
       </div>
+      <nav class="archive-pagination" aria-label="Film results pages" hidden><button type="button" id="film-prev">← Previous</button><span id="film-page"></span><button type="button" id="film-next">Next →</button></nav>
     </section>
     <section class="crosslink"><p class="eyebrow">Keep exploring</p><h2>Know your movies? Play the daily game.</h2><p>Talkie Trivia asks you to identify a movie as its clues come into focus. Current release: <!-- TALKIE-TRIVIA_STATUS -->.</p><div class="actions"><a class="button" href="<!-- TALKIE-TRIVIA_URL -->">Play Talkie Trivia <span aria-hidden="true">↗</span></a><a class="link-button" href="/fmv/">Explore FMV games</a></div></section>
   </main>
