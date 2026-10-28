@@ -121,7 +121,7 @@
     const tr = g.titan;
     view.className = "ch-view";
     view.innerHTML = `<div class="ch-osd"><div class="ch-num"><small>CH · ${esc(input ? sysInfo(input).short : "ALL")}</small>${y}</div><div class="ch-era"><b>${esc(e.title)}</b>${gs.length} game${gs.length > 1 ? "s" : ""} on air</div></div>
-      <div class="ch-main"><div class="ch-now"><div class="ch-disc" id="disc"></div><div class="ch-nt">${esc(g.rep.title)}</div>
+      <div class="ch-main"><div class="ch-now"><div class="ch-disc" id="disc"></div><div class="ch-nt">${esc(g.rep.title)}</div>${window.FMVClassification.badgeHTML({...g.rep,gameId:g.id},lineage,true)}
         <div class="ch-nh">${tr ? `Titan ${tr.score.toFixed(1)} · #${tr.rank}` : "No Titan score"}<br>${esc(sysList(g))}${owned(g) ? " · OWNED" : ""}</div></div>
       <ol class="ch-menu" id="menu">${gs.map((x, i) => `<li data-i="${i}" class="${i === sel ? "sel" : ""}"><span class="cur">▶</span><span class="t">${esc(x.rep.title)}${sysDots(x)}${owned(x) ? `<span class="ch-tag">OWN</span>` : ""}${played(x) ? `<span class="ch-tag">PLAYED</span>` : ""}</span><span class="sc ${x.titan?.rank <= 50 ? "top" : ""}">${x.titan ? Math.round(x.titan.score) : "--"}</span></li>`).join("")}</ol></div>
       <div class="ch-ticker"><span>${esc(g.rep.hook || e.body)}</span></div>`;
@@ -195,7 +195,7 @@
     const saves = g.members.filter(m => { const e = t(m.key); return e.owned || e.played || e.episode || e.videoUrl || e.notes || e.pb; });
     const art = [g.members.find(m => m.key === g.best), g.rep, ...g.members].find(m => m?.art);
     view.className = "ch-view status";
-    view.innerHTML = `<div class="st-head"><div><h2>${esc(g.rep.title)}</h2><div class="st-cls">${esc(g.rep.category)} · ${g.year ?? "year unknown"} · ${esc(g.rep.developer)}${titles.length ? ` · also ${esc(titles.join(", "))}` : ""}</div></div>
+    view.innerHTML = `<div class="st-head"><div><h2>${esc(g.rep.title)}</h2>${window.FMVClassification.badgeHTML({...g.rep,gameId:g.id},lineage,true)}<div class="st-cls">${esc(g.rep.category)} · ${g.year ?? "year unknown"} · ${esc(g.rep.developer)}${titles.length ? ` · also ${esc(titles.join(", "))}` : ""}</div></div>
         <div class="st-lv ${tr?.rank <= 50 ? "top" : ""}">TITAN<b>${tr ? tr.score.toFixed(1) : "--"}</b>${tr ? `RANK ${tr.rank}/${titanCount}` : ""}</div></div>
       <div class="st-body">
         <div class="st-box"><h3>Stats</h3>${tr ? `${stat("QUALITY", tr.quality, "#3AE0FF", tr.qualityEstimated ? "*" : "")}${stat("CULTURE", tr.culture, "#FF6A5C")}${stat("REACH", tr.span, "#5CF27A")}${stat("FMV", tr.fmv, "#FFD23F")}
@@ -249,7 +249,7 @@
       <div class="st-body">
         <div class="st-box"><h3>Versions</h3><ol class="sh-inv">${vs.map((x, i) => `<li data-v="${i}" class="${i === vsel ? "sel" : ""}"><span class="cur">▶</span><span class="t"><span class="ch-sys"><i style="--c:${color(x.key)}"></i></span> ${esc(short(x.key))} ${x.year ?? "?"}${x.key === g.best ? " ★" : ""}${t(x.key).owned ? " ·OWN" : ""}</span><span class="sc">${x.priceLoose != null ? money(x.priceLoose) : sysId(x.key) === "laserdisc" ? "ARCADE" : "--"}</span></li>`).join("")}</ol>
           <p class="dim" style="margin-top:8px">★ the version to play. ◀ ▶ switch pages.</p></div>
-        <div class="st-box"><h3>${esc(v.title)}${v.alt ? ` <span class="dim">(${esc(v.alt)})</span>` : ""} · ${esc(v.system)}</h3>
+        <div class="st-box"><h3>${esc(v.title)}${v.alt ? ` <span class="dim">(${esc(v.alt)})</span>` : ""} · ${esc(v.system)}</h3>${window.FMVClassification.badgeHTML(v,lineage)}
           <div class="sh-tabs" role="tablist">${TABS.map(([k, l]) => `<button role="tab" data-tab="${k}" aria-selected="${k === tab}">${l}</button>`).join("")}</div>
           ${panes[tab]}</div>
       </div>`;

@@ -1,0 +1,198 @@
+{
+ "checked": "2026-10-28",
+ "policy": "Editorial selections for the R.I.P. FMV series, independent of FMV classification or eligibility. Seeded from the existing32-game production rotation; quality, ownership and popularity never automatically select or exclude games.",
+ "games": {
+  "tomcat-alley": {
+   "selected": true,
+   "releaseKey": "segacd-25",
+   "order": 1,
+   "reason": "Practice a compact beginning, failure montage and verdict; learn to comment while choosing actions."
+  },
+  "burning-soldier": {
+   "selected": true,
+   "releaseKey": "3do-66",
+   "order": 2,
+   "reason": "Practice explaining a video-background shooter and cutting repeated attempts into an intelligible improvement story."
+  },
+  "midnight-raiders": {
+   "selected": true,
+   "releaseKey": "segacd-27",
+   "order": 3,
+   "reason": "Practice affectionate bad-game comedy, clear failure explanations and an honest finish or stopping point."
+  },
+  "wirehead": {
+   "selected": true,
+   "releaseKey": "segacd-28",
+   "order": 4,
+   "reason": "First substantial branching-movie episode; use a route diagram and preserve the funny wrong turns."
+  },
+  "sewer-shark": {
+   "selected": true,
+   "releaseKey": "segacd-9",
+   "order": 5,
+   "reason": "First major flagship after the practice episodes: a recognizable Sega CD identity, character comedy and a visible learning curve."
+  },
+  "the-hive": {
+   "selected": true,
+   "releaseKey": "ps1-8",
+   "order": 6,
+   "reason": "A PlayStation discovery with filmed briefings and CG action; make the obscurity itself the hook."
+  },
+  "supreme-warrior": {
+   "selected": true,
+   "releaseKey": "segacd-14",
+   "order": 7,
+   "reason": "A deliberate disaster episode; show what the input asks and what the player actually understands."
+  },
+  "sherlock-holmes-consulting-detective-vol-i": {
+   "selected": true,
+   "releaseKey": "segacd-41",
+   "order": 8,
+   "reason": "First slower investigation: turn witness interviews and deductions into a story without spoiling the answer in the opening."
+  },
+  "mad-dog-mccree": {
+   "selected": true,
+   "releaseKey": "3do-1",
+   "order": 9,
+   "reason": "First gun/CRT event, contrasting pad play with the intended arcade-style interaction."
+  },
+  "psychic-detective": {
+   "selected": true,
+   "releaseKey": "3do-28",
+   "order": 10,
+   "reason": "A rare branching discovery with a genuinely different interaction; show one clear route before comparing alternatives."
+  },
+  "the-masked-rider-kamen-rider-zo": {
+   "selected": true,
+   "releaseKey": "segacd-31",
+   "order": 11,
+   "reason": "Lighter camp after two complicated episodes; the footage supplies the spectacle."
+  },
+  "dragons-lair": {
+   "selected": true,
+   "releaseKey": "pc-47",
+   "order": 12,
+   "reason": "First major classic and Port Problems milestone, after eleven practice productions. Compare clean arcade-style playback with the 3DO and Sega CD interpretations."
+  },
+  "crime-patrol": {
+   "selected": true,
+   "releaseKey": "3do-3",
+   "order": 13,
+   "reason": "Reuse the now-proven gun setup; explain what changes from Mad Dog rather than repeating its episode."
+  },
+  "tender-loving-care": {
+   "selected": true,
+   "releaseKey": "pc-32",
+   "order": 14,
+   "reason": "An adult psychological discovery; distinguish the modern presentation from the original profiling behavior."
+  },
+  "a-x-101": {
+   "selected": true,
+   "releaseKey": "segacd-37",
+   "order": 15,
+   "reason": "A deliberate bad-game counterpoint after a quiet story episode."
+  },
+  "night-trap": {
+   "selected": true,
+   "releaseKey": "segacd-8",
+   "order": 16,
+   "reason": "Mid-series surveillance event: Sega CD/32X CD challenge, 3DO comparison and anniversary restoration footage."
+  },
+  "road-blaster": {
+   "selected": true,
+   "releaseKey": "segacd-2",
+   "order": 17,
+   "reason": "A stylish classic after live-action surveillance; compare one matching sequence rather than pausing for an exhaustive port catalog."
+  },
+  "the-daedalus-encounter": {
+   "selected": true,
+   "releaseKey": "3do-27",
+   "order": 18,
+   "reason": "A substantial 3DO discovery; connect each puzzle to the film situation so the episode stays comprehensible."
+  },
+  "slam-city-with-scottie-pippen": {
+   "selected": true,
+   "releaseKey": "segacd-15",
+   "order": 19,
+   "reason": "The sports-FMV disaster turn changes both subject and rhythm; keep the complete four-disc set ready."
+  },
+  "time-gal": {
+   "selected": true,
+   "releaseKey": "pc-377",
+   "order": 20,
+   "reason": "A clean animated classic with theatrical failures; explain HD presentation versus the Sega CD English localization."
+  },
+  "brain-dead-13": {
+   "selected": true,
+   "releaseKey": "3do-15",
+   "order": 21,
+   "reason": "Animated horror discovery; make the pattern-learning visible instead of presenting a random death compilation."
+  },
+  "loadstar-the-legend-of-tully-bodine": {
+   "selected": true,
+   "releaseKey": "segacd-33",
+   "order": 22,
+   "reason": "A camp navigation episode far enough from Sewer Shark to support a useful callback."
+  },
+  "d": {
+   "selected": true,
+   "releaseKey": "3do-21",
+   "order": 23,
+   "reason": "A contained cinematic classic; record a full uninterrupted attempt before building the edit."
+  },
+  "snow-job": {
+   "selected": true,
+   "releaseKey": "3do-30",
+   "order": 24,
+   "reason": "A rare discovery earned by an established audience; give its investigation a complete episode arc."
+  },
+  "area-51": {
+   "selected": true,
+   "releaseKey": "ps1-9",
+   "order": 25,
+   "reason": "A recognizable action reset after two longer story productions; show why this conversion feels different from the filmed gun games."
+  },
+  "fahrenheit": {
+   "selected": true,
+   "releaseKey": "segacd-29",
+   "order": 26,
+   "reason": "A discovery built around rescue decisions and timed exploration, with Sega CD/32X CD comparison material."
+  },
+  "fox-hunt": {
+   "selected": true,
+   "releaseKey": "ps1-3",
+   "order": 27,
+   "reason": "A rare camp event; three discs of ambition should produce a focused challenge, not a scene-by-scene recap."
+  },
+  "rebel-assault-ii-the-hidden-empire": {
+   "selected": true,
+   "releaseKey": "ps1-5",
+   "order": 28,
+   "reason": "A recognizable classic to introduce the last arc; separate spectacle from the controls that gate it."
+  },
+  "corpse-killer": {
+   "selected": true,
+   "releaseKey": "pc-35",
+   "order": 29,
+   "reason": "Camp with a clear version-comparison thesis: modern PC footage plus a 3DO original when useful."
+  },
+  "phantasmagoria": {
+   "selected": true,
+   "releaseKey": "pc-4",
+   "order": 30,
+   "reason": "The first large Sierra horror production in this sequence; record it as one focused project."
+  },
+  "double-switch": {
+   "selected": true,
+   "releaseKey": "segacd-10",
+   "order": 31,
+   "reason": "Return to the channel’s surveillance roots with a bad-game-friendly challenge and an anniversary comparison."
+  },
+  "the-x-files-game": {
+   "selected": true,
+   "releaseKey": "ps1-2",
+   "order": 32,
+   "reason": "A filmed-mystery finale; use the PS1 four-disc version for the console challenge and research the PC presentation as comparison material."
+  }
+ }
+}

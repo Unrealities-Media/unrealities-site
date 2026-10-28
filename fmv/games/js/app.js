@@ -6,6 +6,7 @@
   const money = n => n == null ? "—" : "$" + Math.round(n).toLocaleString();
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
+  const C = window.FMVClassification;
   let games = [];
   let lineage = {};
   let tracker = {};
@@ -32,10 +33,18 @@
   const { sysId, info: sysInfo, ordered, fillSelect } = window.FMVSystems;
   let sysNames = {};
 
+  const scopeOf = g => C.scopeFor(g, lineage);
+  const classificationFilters = () => Object.fromEntries(['series','relationship','material','presentation','interaction','qte'].map(name => [name, $("#f-" + name).value]));
+  const matchesClassification = (g, filters = classificationFilters()) => {
+    if (C.matches(g, filters, scopeOf(g))) return true;
+    return filters.series === 'rip-fmv' && (g.includes || []).some(id => C.matches(g, filters, lineage[id]?.scope));
+  };
+  const inSeries = g => matchesClassification(g, {series: $("#f-series").value});
+
   // ---------- stats ----------
   const inSystem = g => !$("#f-sys").value || sysId(g.key) === $("#f-sys").value;
   const renderStats = () => {
-    const pool = games.filter(inSystem);
+    const pool = games.filter(g => inSystem(g) && inSeries(g));
     const obtainable = pool.filter(g => g.status !== "NOT obtainable");
     const owned = obtainable.filter(g => entry(g.key).owned);
     const played = pool.filter(g => entry(g.key).played).length;
@@ -53,7 +62,7 @@
     $("#st-cib").textContent = sum("priceCib");
     $("#st-unpriced").textContent = unpriced ? `, not counting ${unpriced} with no price` : "";
     const pct = obtainable.length ? Math.round(100 * owned.length / obtainable.length) : 0;
-    $("#st-scope").textContent = sysNames[$("#f-sys").value] || "all systems";
+    $("#st-scope").textContent = (sysNames[$("#f-sys").value] || "all systems") + ($("#f-series").value ? " · " + C.label($("#f-series").value) : "");
     $("#st-barfill").style.width = pct + "%";
     $(".stat-bar").setAttribute("aria-valuenow", pct);
   };
@@ -66,8 +75,9 @@
     const q = $("#q").value.trim().toLowerCase();
     const cat = $("#f-cat").value, region = $("#f-region").value, fmv = $("#f-fmv").value, cid = $("#f-cid").value, own = $("#f-own").value, run = $("#f-run").value;
     const sort = $("#f-sort").value;
+    const classification = classificationFilters();
     let out = games.filter(g => {
-      if (!inSystem(g)) return false;
+      if (!inSystem(g) || !matchesClassification(g, classification)) return false;
       if (cat && g.category !== cat) return false;
       if (region && !g[region]) return false;
       if (fmv) { const [lo, hi] = fmv.split("-").map(Number); if (g.fmv < lo || g.fmv > hi) return false; }
@@ -83,7 +93,7 @@
         if (run === "pb" ? !t.pb : run === "board" ? !sr?.boards?.length : sr?.class !== run) return false;
       }
       if (q) {
-        const hay = [g.title, g.alt, g.developer, g.publisher, g.cast, g.trivia, g.hook, g.genre, g.notes].join(" ").toLowerCase();
+        const hay = [g.title, g.alt, g.developer, g.publisher, g.cast, g.trivia, g.hook, g.genre, g.notes, JSON.stringify(g.classification || {}), scopeOf(g)?.series].join(" ").toLowerCase();
         if (!hay.includes(q)) return false;
       }
       return true;
@@ -114,9 +124,10 @@
       frag.appendChild(rowCache.get(g.key));
     }
     $("#list").replaceChildren(frag);
-    $("#result-count").textContent = !rows.length ? "No games match these filters." : `Showing ${Math.min(visibleLimit, rows.length)} of ${rows.length} matching release records`;
+    const uniqueGames = new Set(rows.flatMap(g => g.includes?.length ? g.includes.filter(id => !$("#f-series").value || lineage[id]?.scope?.series === $("#f-series").value) : [g.gameId || g.key])).size;
+    $("#result-count").textContent = !rows.length ? "No games match these filters." : `Showing ${Math.min(visibleLimit, rows.length)} of ${rows.length} matching release records · ${uniqueGames} unique game${uniqueGames === 1 ? "" : "s"}`;
     $("#list-more").hidden = visibleLimit >= rows.length;
-    $("#list-more").textContent = `Show ${Math.min(48, rows.length - visibleLimit)} more releases`;
+    $("#list-more").textContent = `Show ${Math.max(0, Math.min(48, rows.length - visibleLimit))} more releases`;
   };
   const buildRow = g => {
     const t = entry(g.key);
@@ -129,7 +140,7 @@
     $(".alt", li).textContent = g.alt || "";
     $(".year", li).textContent = g.year ?? "Year unknown";
     $(".sys", li).innerHTML = `<i class="sysdot" style="--sys:${sysInfo(sysId(g.key)).color}"></i>${esc(g.system)}`;
-    $(".cat", li).textContent = g.category;
+    $(".cat", li).textContent = C.label(g.classification?.relationship) + " · " + g.category;
     $(".regions", li).textContent = [g.na && "NA", g.jp && "JP", g.eu && "EU", g.x32 && "32X CD"].filter(Boolean).join(" ");
     $(".meter b", li).style.width = (g.fmv * 10) + "%";
     $(".n", li).textContent = g.fmv;
@@ -146,6 +157,7 @@
     else grade.textContent = "–";
     $(".row-titan", li).innerHTML = titanBadge(titanOf(g));
     const flags = $(".row-flags", li);
+    flags.innerHTML = C.badgeHTML(g, lineage);
     const flag = (cls, txt) => { const s = document.createElement("span"); s.className = "flag " + cls; s.textContent = txt; flags.appendChild(s); };
     if (t.owned) flag("own", "Owned");
     if (t.played) flag("play", "Played");
@@ -240,11 +252,13 @@
           <h2 class="d-title" id="d-title">${esc(g.title)}</h2>
           <p class="d-alt">${esc(g.alt || "")}${g.alt ? " · " : ""}${esc(g.developer)} / ${esc(g.publisher)} · ${g.year ?? "year unknown"}</p>
           ${titanBadge(titanOf(g))}
+          ${C.badgeHTML(g, lineage)}
         </div>
       </div>
       ${pickHTML(g)}
       <p class="d-hook">${esc(g.hook)}</p>
       <p><a href="game.html?game=${encodeURIComponent(g.gameId)}&amp;version=${encodeURIComponent(g.key)}">Open the full game field guide ↗</a></p>
+      <div class="d-classification"><h3>FMV classification and series selection</h3><dl class="d-facts">${C.facts(g, scopeOf(g)).map(([label,value]) => `<dt>${esc(label)}</dt><dd>${esc(value)}</dd>`).join("")}</dl><p>Catalog review reuses existing research; inferred facts and unknowns are labeled. <a href="rip-fmv.html">Selected R.I.P. FMV games</a></p></div>
       ${titanHTML(g)}
       ${versionsHTML(g)}
       ${speedrunHTML(g, t)}
@@ -278,7 +292,7 @@
         <dt>Regions</dt><dd>${esc(regions)}</dd>
         <dt>Status</dt><dd class="${g.status === "NOT obtainable" ? "d-warn" : ""}">${esc(g.status)}</dd>
         <dt>Genre</dt><dd>${esc(g.genre)}</dd>
-        <dt>FMV amount</dt><dd>${g.fmv} / 10</dd>
+        <dt>FMV prominence</dt><dd>${g.fmv} / 10</dd>
         <dt>Discs</dt><dd>${esc(g.discs)}</dd>
         <dt>Save support</dt><dd>${esc(g.save)}</dd>
         <dt>Peripherals</dt><dd>${esc(g.peripherals)}</dd>
@@ -380,19 +394,36 @@
     const perCat = {};
     for (const g of games) perCat[g.category] = (perCat[g.category] || 0) + 1;
     for (const c of Object.keys(perCat).sort()) { const o = document.createElement("option"); o.value = c; o.textContent = `${c} (${perCat[c]})`; $("#f-cat").appendChild(o); }
+    for (const [filter, field] of [['relationship','relationship'],['material','visualMaterial'],['presentation','presentation'],['interaction','interaction']]) {
+      const values = new Set(games.flatMap(g => Array.isArray(g.classification?.[field]) ? g.classification[field] : [g.classification?.[field] || 'unknown']));
+      for (const value of [...values].sort()) {
+        const option = document.createElement('option'); option.value = value; option.textContent = C.label(value); $("#f-" + filter).appendChild(option);
+      }
+    }
+    const params = new URLSearchParams(location.search);
+    for (const name of ['relationship','material','presentation','interaction','qte']) {
+      const value = params.get(name), select = $("#f-" + name);
+      if ([...select.options].some(option => option.value === value)) select.value = value;
+    }
+    const wantedSeries = new URLSearchParams(location.search).get('series');
+    if ([...$("#f-series").options].some(option => option.value === wantedSeries)) $("#f-series").value = wantedSeries;
     // ?system=<id> preselects a system, so each system has a link of its own.
     const want = new URLSearchParams(location.search).get("system");
     if (want && sysNames[want]) $("#f-sys").value = want;
     const syncSysParam = () => {
       const u = new URL(location.href);
       $("#f-sys").value ? u.searchParams.set("system", $("#f-sys").value) : u.searchParams.delete("system");
+      $("#f-series").value ? u.searchParams.set("series", $("#f-series").value) : u.searchParams.delete("series");
+      for (const name of ['relationship','material','presentation','interaction','qte']) {
+        const value = $("#f-" + name).value; value ? u.searchParams.set(name, value) : u.searchParams.delete(name);
+      }
       history.replaceState(null, "", u);
       $("#nav-timeline").href = "timeline.html" + u.search; $("#nav-titans").href = "titans.html" + u.search; $("#nav-channel").href = "channel.html" + u.search;
       for (const a of $$("#hero-systems a")) a.toggleAttribute("aria-current", a.dataset.sys === $("#f-sys").value);
     };
     for (const el of $$(".controls select, #q")) el.addEventListener("input", renderList);
     $("#list-more").addEventListener("click", () => { const shown = $("#list").children.length; renderList(true); $("#list").children[shown]?.focus(); });
-    $("#f-sys").addEventListener("input", () => { renderStats(); syncSysParam(); });
+    for (const id of ["#f-sys", "#f-series", "#f-relationship", "#f-material", "#f-presentation", "#f-interaction", "#f-qte"]) $(id).addEventListener("input", () => { renderStats(); syncSysParam(); });
     // The system names in the hero are links of their own; on this page they set the filter without reloading. A second click clears it.
     $("#hero-systems").addEventListener("click", e => {
       const a = e.target.closest("a[data-sys]"); if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;

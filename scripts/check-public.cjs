@@ -17,7 +17,8 @@ for (const relative of pages) {
   const html = fs.readFileSync(path.join(root, relative), 'utf8')
   for (const match of html.matchAll(/<script\b[^>]*\bsrc="([^"]+)"/g)) {
     if (/^(?:[a-z]+:|\/\/)/i.test(match[1])) continue
-    scripts.add(path.relative(root, match[1].startsWith('/') ? path.join(root,match[1].slice(1)) : path.resolve(root,path.dirname(relative),match[1])))
+    const pathname = match[1].split(/[?#]/)[0]
+    scripts.add(path.relative(root, pathname.startsWith('/') ? path.join(root,pathname.slice(1)) : path.resolve(root,path.dirname(relative),pathname)))
   }
   for (const match of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
     const url = match[1].replaceAll('&amp;', '&')

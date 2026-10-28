@@ -451,3 +451,6 @@ main { padding: 10px var(--gutter) 48px; }
 /* Rows off screen skip layout and paint until scrolled near; the browser remembers each row's real height once drawn. */
 .row { content-visibility: auto; contain-intrinsic-size: auto 84px; }
 @media (max-width: 860px) { .row { contain-intrinsic-size: auto 120px; } }
+
+/* Author button layout must not override the hidden state on filtered pagination. */
+.btn[hidden], .btn-ghost[hidden] { display: none; }

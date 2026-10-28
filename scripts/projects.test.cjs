@@ -26,3 +26,24 @@ test('public text is escaped and destinations/status come from summaries', () =>
   assert.ok(html.includes('Released &amp; ready'));
   assert.ok(!html.includes('<!--'));
 });
+
+test('public link validation handles versioned scripts and still checks runtime assets', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const os = require('node:os');
+  const {execFileSync} = require('node:child_process');
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), 'fmv-public-links-'));
+  try {
+    fs.mkdirSync(path.join(fixture, 'scripts'));
+    fs.mkdirSync(path.join(fixture, 'js'));
+    fs.mkdirSync(path.join(fixture, 'js/data'));
+    fs.copyFileSync(path.join(__dirname, 'check-public.cjs'), path.join(fixture, 'scripts/check-public.cjs'));
+    fs.writeFileSync(path.join(fixture, 'index.html'), '<script src="js/app.js?v=release"></script>');
+    fs.writeFileSync(path.join(fixture, 'js/app.js'), 'fetch("data/games.json")');
+    fs.writeFileSync(path.join(fixture, 'js/data/games.json'), '{}');
+    const run = () => execFileSync(process.execPath, [path.join(fixture, 'scripts/check-public.cjs')], {encoding:'utf8',stdio:'pipe'});
+    assert.match(run(), /Checked local links/);
+    fs.rmSync(path.join(fixture, 'js/data/games.json'));
+    assert.throws(run, /runtime|Broken local links|Command failed/);
+  } finally { fs.rmSync(fixture, {recursive:true, force:true}); }
+});

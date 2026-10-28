@@ -1,0 +1,5 @@
+/* Shared eligibility marker; editorial selections live on the separate series page. */
+span.rip-fmv-badge{display:inline-flex;align-items:center;width:fit-content;max-width:100%;padding:4px 8px;margin:4px 0;border:1px solid #96791d;border-radius:999px;background:#fff0b3;color:#503b00;font:700 10px/1.45 Arial,sans-serif;letter-spacing:.01em;white-space:normal;vertical-align:middle;text-transform:none;box-shadow:none}
+.row-flags .rip-fmv-badge{margin:0}.tl-card-main .rip-fmv-badge{margin-top:6px}.ti-main .rip-fmv-badge{margin-right:8px}.hero-meta .rip-fmv-badge{margin:0}.ch-now .rip-fmv-badge{font-size:9px}.contribution-title .rip-fmv-badge{font-size:10px;color:#503b00}
+
+@media(max-width:760px){.ch-now .rip-fmv-badge,.ch-now .ch-nh{grid-column:2}}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R.I.P. FMV — The series</title>
+  <meta name="description" content="The games selected for R.I.P. FMV: pre-2000 interactive movies, consumer arcade ports and restorations, with episode plans and editorial reasons.">
+  <link rel="stylesheet" href="css/style.css?v=20261028">
+  <link rel="stylesheet" href="css/unrealities.css">
+  <link rel="stylesheet" href="css/rip-fmv.css">
+  <script defer src="js/systems.js"></script>
+  <script defer src="js/art.js"></script>
+  <script defer src="js/game-data.js"></script>
+  <script defer src="js/series-data.js"></script>
+  <script defer src="js/rip-fmv.js"></script>
+</head>
+<body>
+  <div class="unrealities-bar"><a class="unrealities-name" href="https://unrealities.media/">UNREALITIES</a><a href="https://unrealities.media/#work">All four projects ↗</a></div>
+  <nav class="site-nav" aria-label="Site">
+    <a class="site-nav-home" href="index.html">FMV Index</a>
+    <a href="index.html">All games</a><a href="rip-fmv.html" aria-current="page">R.I.P. FMV series</a>
+    <a href="collect.html">Platform Titans</a><a href="game.html">Game guides</a>
+    <a href="channel.html">Channel</a><a href="timeline.html">Timeline</a><a href="titans.html">Game Titans</a>
+  </nav>
+  <main class="series-shell">
+    <header class="series-hero">
+      <p class="series-kicker">The series / selected games</p>
+      <h1>R.I.P. FMV</h1>
+      <p class="series-tagline">Bad movies. Worse controls. One very unnecessary stopwatch.</p>
+      <p>Playing, beating and sometimes speedrunning the strange video games released before 2000, including their consumer arcade ports and later restorations.</p>
+      <p>The games below have been explicitly chosen for the series. Quality never decides whether a game belongs here: an unusual challenge, a ridiculous production or a revealing port comparison can earn its place.</p>
+      <a class="btn-ghost" href="index.html">Explore the complete FMV catalog ↗</a>
+    </header>
+    <section class="series-summary" aria-label="Series scope" id="series-summary"><p role="status">Loading the series selections…</p></section>
+    <section aria-labelledby="selected-heading">
+      <div class="series-list-heading"><div><h2 id="selected-heading">Selected for the series</h2><p>One game per entry. Each links to its shared game guide and chosen edition.</p></div><label>Find a selected game <input type="search" id="series-search" placeholder="Title, platform or episode idea…"></label></div>
+      <p id="series-count" aria-live="polite"></p>
+      <p id="series-error" role="alert" hidden></p>
+      <ol class="series-grid" id="series-games"></ol>
+      <p id="series-empty" hidden>No selected games match this search.</p>
+    </section>
+    <aside class="series-candidates"><h2>The wider candidate pool</h2><p id="candidate-description">Eligibility and editorial selection are separate. Games remain in the FMV catalog even when they have not been chosen for an episode.</p><a href="index.html?series=rip-fmv">Browse all eligible pre-2000 consumer games ↗</a> · <a href="docs/fmv-play-order.md">Read the opening episode plan ↗</a></aside>
+  </main>
+  <footer class="series-footer"><p>The <a href="index.html">FMV Games Index</a> is the shared reference catalog. R.I.P. FMV is its curated series section. Episode plans do not imply a published video or tested capture setup.</p></footer>
+  <noscript><p><a href="docs/fmv-play-order.md">Read the episode plan</a> or <a href="data/rip-fmv-series.json">download the selection manifest</a>.</p></noscript>
+</body>
+</html>

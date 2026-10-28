@@ -1,8 +1,9 @@
 /* Console purchase decisions: whole games, language coverage and explicit evidence. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.FMVPriority=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
  'use strict';
- const systems={segacd:'Sega CD','3do':'3DO',saturn:'Sega Saturn',ps1:'PlayStation',cdi:'Philips CD-i',jaguarcd:'Jaguar CD',cd32:'Amiga CD32',laseractive:'LaserActive',tgcd:'TurboGrafx-CD',pcfx:'PC-FX',pippin:'Pippin',playdia:'Playdia'};
- const sys=r=>r.key.slice(0,r.key.lastIndexOf('-'));
+ const systems={segacd:'Sega CD','3do':'3DO',saturn:'Sega Saturn',ps1:'PlayStation',ps2:'PlayStation 2','32x':'Sega 32X',cdi:'Philips CD-i',jaguarcd:'Jaguar CD',cd32:'Amiga CD32',cdtv:'Commodore CDTV',laseractive:'LaserActive',tgcd:'TurboGrafx-CD',pcfx:'PC-FX',pippin:'Pippin',playdia:'Playdia'};
+ // Old public release keys survive corrections to their original attribution.
+ const sys=r=>r.platformId || r.key.slice(0,r.key.lastIndexOf('-'));
  const rank=g=>g.line?.titan?.rank??Infinity;
  const released=r=>/^Released\b/.test(r.status||'')&&r.access!=='Lost';
  const price=n=>typeof n==='number'&&Number.isFinite(n)&&n>=0?n:null;

@@ -6,3 +6,13 @@
 @media(max-width:400px){.site-header>nav a:nth-child(4){display:none}.gallery-grid{grid-template-columns:1fr}.image-button img{height:210px}.directory-grid{grid-template-columns:1fr}}
 .synopsis{font-size:19px;line-height:1.6;max-width:850px;margin-bottom:25px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Keep tablet navigation and search readable beside the longer catalog name. */
+@media (min-width:761px) and (max-width:1150px) {
+  .site-header { flex-wrap:wrap; gap:18px 28px; }
+  .site-header>.brand { order:0; }
+  .site-header>.game-search { order:1; flex:1; min-width:220px; max-width:320px; margin-left:auto; }
+  .site-header>nav { order:2; flex:1 0 100%; flex-wrap:wrap; gap:10px 22px; }
+  .site-header>nav a { white-space:nowrap; }
+  .site-header>nav a:last-child { display:inline; }
+}

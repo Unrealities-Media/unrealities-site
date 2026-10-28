@@ -5,11 +5,12 @@ const root = path.resolve(__dirname, '..')
 const source = path.resolve(root, '..', 'fmv-games')
 const target = path.join(root, 'fmv', 'games')
 const check = process.argv.includes('--check')
-const paths = ['index.html', 'game.html', 'timeline.html', 'titans.html', 'collect.html', 'channel.html', 'tools/capture/store_prices.json']
-for (const directory of ['css', 'js', 'data', 'img']) {
+const paths = ['index.html', 'game.html', 'timeline.html', 'titans.html', 'collect.html', 'channel.html', 'rip-fmv.html', 'tools/capture/store_prices.json']
+for (const directory of ['css', 'js', 'data', 'img', 'docs']) {
   function addFiles(folder) {
     for (const item of fs.readdirSync(path.join(source, folder), { withFileTypes: true })) {
       const relative = path.join(folder, item.name)
+      if (relative === path.join('docs', 'superpowers') || relative === path.join('docs', 'pr-45-review.md')) continue
       if (item.isDirectory()) addFiles(relative)
       else if (item.isFile() && !item.name.endsWith('.local.json') && item.name !== 'README.md') paths.push(relative)
     }

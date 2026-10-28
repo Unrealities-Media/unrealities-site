@@ -66,6 +66,8 @@
       }
     }
     for (const url of group.line.titan?.cultureSources || []) add(url,'Cultural context');
+    for (const url of group.line.playGuide?.sources || []) add(url,'Play guide research');
+    for (const release of group.members) for (const url of release.researchSources || []) add(url,'Release research');
     return [...sources.values()];
   };
   const localPath = value => typeof value === 'string' && value && !/^(?:[a-z]+:|\/)|(?:^|\/)\.\.(?:\/|$)/i.test(value);

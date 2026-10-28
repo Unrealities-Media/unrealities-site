@@ -19,7 +19,7 @@
       const own = ms.filter(m => !m.includes?.length);
       const open = ms.find(m => m.key === lineage[id].best) || own.find(m => m.na) || own[0] || ms[0];
       return {
-        id, t, ms, open, title: (own.find(m => m.na) || own[0] || ms[0]).title, year: ms[0].year,
+        id, t, ms, open, ripBadge: window.FMVClassification.badgeHTML({...open,gameId:id},lineage,true), title: (own.find(m => m.na) || own[0] || ms[0]).title, year: ms[0].year,
         systems: [...t.systems].sort((a, b) => info(a).rank - info(b).rank).map(s => sysName[s] || s), na: ms.some(m => m.na), jp: ms.some(m => m.jp), eu: ms.some(m => m.eu),
       };
     }).sort((a, b) => a.t.rank - b.t.rank);
@@ -46,7 +46,7 @@
         <a class="thumb" href="game.html?game=${encodeURIComponent(r.id)}" aria-hidden="true" tabindex="-1"></a>
         <div class="ti-main">
           <a class="ti-title" href="game.html?game=${encodeURIComponent(r.id)}">${esc(r.title)}</a>
-          <span class="ti-sub">${r.year ?? "year unknown"} · ${esc(reach)}</span>
+          ${r.ripBadge}<span class="ti-sub">${r.year ?? "year unknown"} · ${esc(reach)}</span>
           <div class="ti-bars">
             ${bar("q", "Quality", t.quality, t.qualityEstimated ? " est." : "")}
             ${bar("c", "Culture", t.culture)}

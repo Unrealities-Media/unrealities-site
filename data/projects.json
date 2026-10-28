@@ -26,11 +26,11 @@
     "name": "RIP FMV",
     "category": "Games, research & video",
     "status": "Public archive · channel in development",
-    "description": "Discover the games that made video playable. Explore releases, compare versions and follow the research behind a full-motion video channel in development.",
+    "description": "Explore the full-motion video game catalog and discover the games selected for R.I.P. FMV. Compare releases, inspect format evidence and find ways to play.",
     "url": "/fmv/",
-    "action": "Explore RIP FMV",
-    "milestone": "Browse game guides, platform Titans and release comparisons with clearer mobile reading and a catalog that loads in manageable batches.",
-    "reviewedOn": "2026-10-26"
+    "action": "Explore FMV games",
+    "milestone": "Browse the full FMV catalog, a dedicated R.I.P. FMV series page, and eligibility badges across game guides, timelines and rankings.",
+    "reviewedOn": "2026-10-28"
   },
   {
     "id": "time-travel",

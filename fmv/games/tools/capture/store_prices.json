@@ -88,6 +88,10 @@
   ],
   "the-13th-doll": [
    "https://store.steampowered.com/app/1196340/"
+  ],
+  "the-hive": [
+   "https://www.gog.com/en/game/the_hive",
+   "https://store.steampowered.com/app/325730/"
   ]
  },
  "_terms": {
@@ -546,12 +550,11 @@
     "url": "https://store.steampowered.com/app/1087700/",
     "price": 14.99,
     "regular": 14.99,
-    "released": "Jul 30, 2019",
-    "developer": "Screaming Villains",
-    "match": 0.92
+    "match": 1.0,
+    "note": "Reviewed dated offer; edition qualifications in lineage.playGuide."
    }
   ],
-  "checked": "2026-10-25"
+  "checked": "2026-10-27"
  },
  "creature-shock": {
   "stores": [],
@@ -891,16 +894,6 @@
  "dragons-lair": {
   "stores": [
    {
-    "store": "Steam",
-    "title": "Dragon's Lair",
-    "url": "https://store.steampowered.com/app/227380/",
-    "price": 9.99,
-    "regular": 9.99,
-    "released": "May 17, 2013",
-    "developer": "Digital Leisure Inc.",
-    "match": 1.0
-   },
-   {
     "store": "GOG",
     "title": "Dragon's Lair Trilogy",
     "url": "https://www.gog.com/en/game/dragons_lair_trilogy",
@@ -909,9 +902,18 @@
     "released": "1983.06.19",
     "developer": "Digital Leisure Inc.",
     "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Dragon's Lair",
+    "url": "https://store.steampowered.com/app/227380/",
+    "price": 9.99,
+    "regular": 9.99,
+    "match": 1.0,
+    "note": "Reviewed dated offer; edition qualifications in lineage.playGuide."
    }
   ],
-  "checked": "2026-10-24"
+  "checked": "2026-10-27"
  },
  "dragons-lair-ii-time-warp": {
   "stores": [
@@ -2172,12 +2174,11 @@
     "url": "https://store.steampowered.com/app/643620/",
     "price": 14.99,
     "regular": 14.99,
-    "released": "Aug 15, 2017",
-    "developer": "Screaming Villains",
-    "match": 0.92
+    "match": 1.0,
+    "note": "Reviewed dated offer; edition qualifications in lineage.playGuide."
    }
   ],
-  "checked": "2026-10-25"
+  "checked": "2026-10-27"
  },
  "ninja-hayate": {
   "stores": [],
@@ -2335,16 +2336,6 @@
  "phantasmagoria": {
   "stores": [
    {
-    "store": "Steam",
-    "title": "Phantasmagoria",
-    "url": "https://store.steampowered.com/app/501990/",
-    "price": 9.99,
-    "regular": 9.99,
-    "released": "Aug 29, 2016",
-    "developer": "Sierra",
-    "match": 1.0
-   },
-   {
     "store": "GOG",
     "title": "Phantasmagoria",
     "url": "https://www.gog.com/en/game/phantasmagoria",
@@ -2353,9 +2344,18 @@
     "released": "1995.07.31",
     "developer": "Sierra",
     "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Phantasmagoria",
+    "url": "https://store.steampowered.com/app/501990/",
+    "price": 3.99,
+    "regular": 9.99,
+    "match": 1.0,
+    "note": "Reviewed dated offer; edition qualifications in lineage.playGuide."
    }
   ],
-  "checked": "2026-10-24"
+  "checked": "2026-10-27"
  },
  "phantasmagoria-a-puzzle-of-flesh": {
   "stores": [
@@ -3195,16 +3195,6 @@
  "tender-loving-care": {
   "stores": [
    {
-    "store": "Steam",
-    "title": "Tender Loving Care",
-    "url": "https://store.steampowered.com/app/593900/",
-    "price": 5.99,
-    "regular": 5.99,
-    "released": "Mar 30, 2017",
-    "developer": "Aftermath Media",
-    "match": 1.0
-   },
-   {
     "store": "GOG",
     "title": "Tender Loving Care",
     "url": "https://www.gog.com/en/game/tender_loving_care",
@@ -3213,9 +3203,18 @@
     "released": "1998.01.01",
     "developer": "Aftermath Media",
     "match": 1.0
+   },
+   {
+    "store": "Steam",
+    "title": "Tender Loving Care",
+    "url": "https://store.steampowered.com/app/593900/",
+    "price": 5.99,
+    "regular": 5.99,
+    "match": 1.0,
+    "note": "Reviewed dated offer; edition qualifications in lineage.playGuide."
    }
   ],
-  "checked": "2026-10-24"
+  "checked": "2026-10-27"
  },
  "tenebris-somnia": {
   "stores": [
@@ -3482,8 +3481,18 @@
   "checked": "2026-10-24"
  },
  "the-dark-eye": {
-  "stores": [],
-  "checked": "2026-10-25"
+  "checked": "2026-10-27",
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Edgar Allan Poe’s Interactive Horror: 1995 Edition",
+    "url": "https://store.steampowered.com/app/4289030/",
+    "price": 9.99,
+    "regular": 9.99,
+    "match": 1.0,
+    "note": "Released game; October 27 US guide quote."
+   }
+  ]
  },
  "the-gallery": {
   "stores": [
@@ -3501,29 +3510,9 @@
   "checked": "2026-10-25"
  },
  "the-hive": {
-  "stores": [
-   {
-    "store": "GOG",
-    "title": "The Hive",
-    "url": "https://www.gog.com/en/game/the_hive",
-    "price": 9.99,
-    "regular": 19.99,
-    "released": "2016.08.25",
-    "developer": "Skydome Entertainment",
-    "match": 1.0
-   },
-   {
-    "store": "Steam",
-    "title": "The Hive",
-    "url": "https://store.steampowered.com/app/325730/",
-    "price": 19.99,
-    "regular": 19.99,
-    "released": "Aug 25, 2016",
-    "developer": "Skydome Entertainment",
-    "match": 1.0
-   }
-  ],
-  "checked": "2026-10-25"
+  "stores": [],
+  "checked": "2026-10-27",
+  "note": "The reviewed 1995 game has no verified current matching Steam/GOG/EA product."
  },
  "the-infectious-madness-of-doctor-dekker": {
   "stores": [
@@ -3836,8 +3825,18 @@
   "checked": "2026-10-24"
  },
  "time-gal": {
-  "stores": [],
-  "checked": "2026-10-25"
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Time Gal HD-Remaster",
+    "url": "https://store.steampowered.com/app/3050490/",
+    "price": 24.99,
+    "regular": 24.99,
+    "match": 1.0,
+    "note": "Reviewed dated offer; edition qualifications in lineage.playGuide."
+   }
+  ],
+  "checked": "2026-10-27"
  },
  "time-gal-and-ninja-hayate": {
   "stores": [],
@@ -4419,5 +4418,19 @@
    }
   ],
   "checked": "2026-10-25"
+ },
+ "fear-effect-2-retro-helix": {
+  "checked": "2026-10-27",
+  "stores": [
+   {
+    "store": "Steam",
+    "title": "Fear Effect 2: Retro Helix",
+    "url": "https://store.steampowered.com/app/3509140/",
+    "price": 9.99,
+    "regular": 9.99,
+    "match": 1.0,
+    "note": "Released game; October 27 US guide quote."
+   }
+  ]
  }
 }

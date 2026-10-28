@@ -8,16 +8,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=20261028">
 <link rel="stylesheet" href="css/unrealities.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23f2b544'/><circle cx='16' cy='16' r='4' fill='%23141b2d'/></svg>">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Archivo+Black&display=swap">
+<link rel="stylesheet" href="css/rip-badge.css?v=20261028-1">
 </head>
 <body>
 <div class="unrealities-bar"><a class="unrealities-name" href="https://unrealities.media/">UNREALITIES</a><a href="https://unrealities.media/#work">All four projects <span aria-hidden="true">↗</span></a></div>
 
 <nav class="site-nav" aria-label="Site">
   <a class="site-nav-home" href="./">FMV Index</a>
+  <a href="rip-fmv.html">R.I.P. FMV series</a>
   <a href="collect.html">Platform Titans</a><a href="game.html">Game guides</a>
   <a href="channel.html" id="nav-channel">Channel</a>
   <a href="./" aria-current="page">All games</a>
@@ -28,8 +30,8 @@
 <header class="hero">
   <div class="hero-inner">
     <p class="hero-kicker" id="hero-systems">&nbsp;</p>
-    <h1 class="hero-title">RIP FMV<br>The games archive</h1>
-    <p class="hero-lede">Every game that streamed video off a disc: laserdisc cartoons, Digital Pictures interactive movies, light-gun shooters, pre-rendered rail shooters, game shows with real hosts, and the games that only wanted a film clip between levels. <span id="hero-count"></span> titles so far, with prices, review scores, episode notes, and a tracker for the collection, one system at a time.</p>
+    <h1 class="hero-title">FMV Games Index<br>The complete catalog</h1>
+    <p class="hero-lede">The reference catalog for games built around full-motion video, across every era: laserdisc cartoons, Digital Pictures interactive movies, light-gun shooters, pre-rendered rail shooters, game shows with real hosts, and the games that only wanted a film clip between levels. <span id="hero-count"></span> release records so far, with versions, prices, reviews and format evidence. Core FMV, hybrids and related games are clearly labeled.</p>
   </div>
   <div class="hero-disc" aria-hidden="true">
     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -51,28 +53,35 @@
 
 <section class="stats" aria-label="Collection progress">
   <p class="stat-scope">Showing <b id="st-scope">all systems</b></p>
-  <div class="stat"><b id="st-owned">0</b><span>owned of <em id="st-total">0</em> obtainable</span></div>
+  <div class="stat"><b id="st-owned">0</b><span>owned of <em id="st-total">0</em> obtainable releases</span></div>
   <div class="stat"><b id="st-played">0</b><span>played</span></div>
   <div class="stat"><b id="st-uploaded">0</b><span>episodes uploaded</span></div>
-  <div class="stat"><b id="st-loose">$0</b><span>to finish the set, loose<i id="st-unpriced"></i></span></div>
-  <div class="stat"><b id="st-cib">$0</b><span>to finish the set, complete in box</span></div>
+  <div class="stat"><b id="st-loose">$0</b><span>unowned releases, loose<i id="st-unpriced"></i></span></div>
+  <div class="stat"><b id="st-cib">$0</b><span>unowned releases, complete in box</span></div>
   <div class="stat-bar" role="progressbar" aria-label="Owned share" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="st-barfill"></i></div>
 </section>
 
 <section class="controls" aria-label="Filters">
+  <p><a href="?relationship=core">Browse core FMV games across all eras</a> · <a href="?series=rip-fmv">Pre-2000 consumer candidates</a> · <a href="rip-fmv.html">R.I.P. FMV: games selected for the series ↗</a></p>
   <div class="search">
     <label for="q" class="visually-hidden">Search titles, developers, cast</label>
     <input id="q" type="search" placeholder="Search titles, developers, cast, trivia…" autocomplete="off">
   </div>
   <div class="filters">
     <label>System <select id="f-sys"><option value="">All</option></select></label>
-    <label>Category <select id="f-cat"><option value="">All</option></select></label>
+    <label>Catalog scope <select id="f-series"><option value="">All catalog</option><option value="rip-fmv">Pre-2000 consumer candidates</option><option value="later-fmv">Later FMV</option><option value="cinematic-adventures">Cinematic adventures</option><option value="related-history">Related history</option><option value="arcade-only">Arcade / no reviewed home edition</option><option value="unreleased">Unreleased / unavailable</option><option value="review">Needs review</option><option value="compilation">Compilations</option></select></label>
+    <label>FMV relationship <select id="f-relationship"><option value="">Any</option></select></label>
+    <label>Visual material <select id="f-material"><option value="">Any</option></select></label>
+    <label>Presentation <select id="f-presentation"><option value="">Any</option></select></label>
+    <label>Interaction <select id="f-interaction"><option value="">Any</option></select></label>
+    <label>QTEs <select id="f-qte"><option value="">Any</option><option value="yes">Yes</option><option value="no">No</option><option value="unknown">Unknown</option></select></label>
+    <label>Legacy category <select id="f-cat"><option value="">All</option></select></label>
     <label>Region <select id="f-region"><option value="">Any</option><option value="na">North America</option><option value="jp">Japan</option><option value="eu">Europe</option><option value="x32">Has 32X CD version</option></select></label>
-    <label>FMV amount <select id="f-fmv"><option value="">Any</option><option value="8-10">Core FMV (8–10)</option><option value="4-7">Substantial (4–7)</option><option value="1-3">Cutscenes only (1–3)</option></select></label>
+    <label>FMV prominence <select id="f-fmv"><option value="">Any</option><option value="8-10">High prominence (8–10)</option><option value="4-7">Moderate prominence (4–7)</option><option value="1-3">Low prominence (1–3)</option></select></label>
     <label>Content ID risk <select id="f-cid"><option value="">Any</option><option>HIGH</option><option>Med–High</option><option>Med</option><option>Low–Med</option><option>Low</option></select></label>
     <label>Status <select id="f-own"><option value="">Everything</option><option value="owned">Owned</option><option value="wanted">Not owned</option><option value="played">Played</option><option value="unplayed">Owned, not played</option><option value="uploaded">Uploaded</option></select></label>
     <label>Speedrun <select id="f-run"><option value="">Any</option><option value="board">Has a Speedrun.com board</option><option value="Speed-clear">Personal speed-clear</option><option value="Completion">Completion challenge</option><option value="pb">Has my personal best</option></select></label>
-    <label>Sort <select id="f-sort"><option value="titan" selected>Titan score</option><option value="title">Title</option><option value="year">Year</option><option value="system">System</option><option value="fmv">FMV amount</option><option value="priceCib">Price, complete</option><option value="priceLoose">Price, loose</option><option value="sega16">Sega-16 grade</option><option value="mobyCritic">Critic score</option></select></label>
+    <label>Sort <select id="f-sort"><option value="titan" selected>Titan score</option><option value="title">Title</option><option value="year">Year</option><option value="system">System</option><option value="fmv">FMV prominence</option><option value="priceCib">Price, complete</option><option value="priceLoose">Price, loose</option><option value="sega16">Sega-16 grade</option><option value="mobyCritic">Critic score</option></select></label>
     <button id="f-reset" type="button" class="btn-ghost">Clear filters</button>
   </div>
   <p class="result-count" id="result-count"></p>
@@ -116,6 +125,7 @@
 
 <script src="js/systems.js"></script>
 <script src="js/art.js"></script>
-<script src="js/app.js"></script>
+<script src="js/classification.js?v=20261028-badges"></script>
+<script src="js/app.js?v=20261028-release"></script>
 </body>
 </html>

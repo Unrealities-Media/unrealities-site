@@ -112,7 +112,7 @@
       <button class="tl-card" type="button" aria-expanded="${open.has(gr.id)}" aria-controls="m-${esc(gr.id)}">
         <span class="thumb" aria-hidden="true"></span>
         <span class="tl-card-main">
-          <span class="tl-title">${esc(r.title)}</span>
+          <span class="tl-title">${esc(r.title)}</span>${window.FMVClassification.badgeHTML({...r,gameId:gr.id},lineage,true)}
           <span class="tl-sub">${esc(r.category)} · FMV ${gr.fmv}/10${gr.owned ? ` · <span class="tl-own">owned</span>` : ""}</span>
         </span>
         <span class="tl-count" title="${gr.members.length} system${gr.members.length > 1 ? "s" : ""} in the index">${gr.members.length > 1 ? `×${gr.members.length}` : ""}</span>

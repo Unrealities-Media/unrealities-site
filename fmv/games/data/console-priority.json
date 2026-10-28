@@ -80,6 +80,635 @@
     "https://github.com/DerekPascarella/TeamInnocent-EnglishPatchPCFX"
    ],
    "checked": "2026-10-25"
+  },
+  "segacd-81": {
+   "status": "official",
+   "note": "English/Japanese editions. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/starblade-edd",
+    "https://www.pricecharting.com/search-products?q=Starblade+3do&type=prices",
+    "https://www.pricecharting.com/game/sega-cd/starblade",
+    "https://www.pricecharting.com/game/playstation/starblade-alpha",
+    "https://www.mobygames.com/game/11206/starblade/releases/",
+    "https://www.psxpaldb.com/games/starblade-alpha/"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-119": {
+   "status": "official",
+   "note": "English/Japanese editions. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/starblade-edd",
+    "https://www.pricecharting.com/search-products?q=Starblade+3do&type=prices",
+    "https://www.pricecharting.com/game/sega-cd/starblade",
+    "https://www.pricecharting.com/game/playstation/starblade-alpha",
+    "https://www.mobygames.com/game/11206/starblade/releases/",
+    "https://www.psxpaldb.com/games/starblade-alpha/"
+   ],
+   "checked": "2026-10-27"
+  },
+  "3do-80": {
+   "status": "untranslated",
+   "note": "Japanese. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/j-b-harold-blue-chicago-blues-ou7",
+    "https://www.pricecharting.com/game/jp-playstation/jb-harold-blue-chicago-blues",
+    "https://segaxtreme.net/threads/j-b-harold-blue-chicago-blues-english-translation.25301/page-3"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-352": {
+   "status": "official",
+   "note": "English computer edition. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/j-b-harold-blue-chicago-blues-ou7",
+    "https://www.pricecharting.com/game/jp-playstation/jb-harold-blue-chicago-blues",
+    "https://segaxtreme.net/threads/j-b-harold-blue-chicago-blues-english-translation.25301/page-3"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-120": {
+   "status": "official",
+   "note": "English and Japanese editions. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/the-need-for-speed-38h",
+    "https://www.pricecharting.com/search-products?q=The+Need+for+Speed+3do&type=prices",
+    "https://www.pricecharting.com/game/sega-saturn/need-for-speed",
+    "https://www.pricecharting.com/game/playstation/need-for-speed",
+    "https://en.wikipedia.org/wiki/The_Need_for_Speed"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-121": {
+   "status": "official",
+   "note": "English and Japanese editions. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/road-rash-bez",
+    "https://www.pricecharting.com/search-products?q=Road+Rash+sega+cd&type=prices",
+    "https://www.pricecharting.com/search-products?q=Road+Rash+3do&type=prices",
+    "https://www.pricecharting.com/game/sega-saturn/road-rash",
+    "https://www.pricecharting.com/game/playstation/road-rash",
+    "https://en.wikipedia.org/wiki/Road_Rash_%281994_video_game%29"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-353": {
+   "status": "official",
+   "note": "English and other localized editions. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/road-rash-bez",
+    "https://www.pricecharting.com/search-products?q=Road+Rash+sega+cd&type=prices",
+    "https://www.pricecharting.com/search-products?q=Road+Rash+3do&type=prices",
+    "https://www.pricecharting.com/game/sega-saturn/road-rash",
+    "https://www.pricecharting.com/game/playstation/road-rash",
+    "https://en.wikipedia.org/wiki/Road_Rash_%281994_video_game%29"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-354": {
+   "status": "official",
+   "note": "English. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/iron-helix-3lg",
+    "https://www.pricecharting.com/search-products?q=Iron+Helix+sega+cd&type=prices",
+    "https://www.pcgamingwiki.com/wiki/Iron_Helix",
+    "https://www.pricecharting.com/game/sega-cd/iron-helix"
+   ],
+   "checked": "2026-10-27"
+  },
+  "3do-81": {
+   "status": "untranslated",
+   "note": "Japanese. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/gakko-no-kowai-uwasa-hanako-san-ga-kita-oxr",
+    "https://www.pricecharting.com/game/jp-playstation/gakkou-no-kowai-uwasa-hanako-sangakita",
+    "https://www.pricecharting.com/game/jp-sega-saturn/gakkou-no-kowai-uwasa-hanako-san-ga-kita",
+    "https://www.pricecharting.com/search-products?q=Gakk%C5%8D+no+Kowai+Uwasa%3A+Hanako-san+ga+Kita%21%21+pippin&type=prices",
+    "https://gamefaqs.gamespot.com/ps/572977-gakkou-no-kowai-uwasa-hanako-san-ga-kita/data"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-122": {
+   "status": "official",
+   "note": "English and Japanese editions. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/shock-wave-ed6",
+    "https://www.pricecharting.com/search-products?q=Shock+Wave+3do&type=prices",
+    "https://www.pricecharting.com/search-products?q=Shock+Wave+pippin&type=prices",
+    "https://psxdatacenter.com/games/SLUS-00028.html",
+    "https://www.mobygames.com/game/22617/shockwave-assault/releases/",
+    "https://www.myabandonware.com/game/shockwave-assault-n1r"
+   ],
+   "checked": "2026-10-27"
+  },
+  "saturn-84": {
+   "status": "untranslated",
+   "note": "Japanese. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/triad-stone-n0p",
+    "https://www.pricecharting.com/search-products?q=Strahl+3do&type=prices",
+    "https://www.pricecharting.com/game/laseractive/triad-stone",
+    "https://www.pricecharting.com/game/jp-sega-saturn/strahl",
+    "https://fmvworld.com/strahl.html",
+    "https://fmvworld.com/triadstone.html"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-355": {
+   "status": "official",
+   "note": "English. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://store.steampowered.com/app/781270/",
+    "https://store.steampowered.com/api/appdetails?appids=781270&cc=us&l=english",
+    "https://www.myabandonware.com/game/chaos-control-3hm",
+    "https://www.pricecharting.com/game/cd-i/chaos-control",
+    "https://www.pricecharting.com/game/jp-sega-saturn/chaos-control",
+    "https://www.pricecharting.com/search-products?q=Chaos+Control+Remix+saturn&type=prices",
+    "https://gamefaqs.gamespot.com/ps/572730-chaos-control/data"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-123": {
+   "status": "untranslated",
+   "note": "Japanese. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://store.steampowered.com/app/781270/",
+    "https://store.steampowered.com/api/appdetails?appids=781270&cc=us&l=english",
+    "https://www.myabandonware.com/game/chaos-control-3hm",
+    "https://www.pricecharting.com/game/cd-i/chaos-control",
+    "https://www.pricecharting.com/game/jp-sega-saturn/chaos-control",
+    "https://www.pricecharting.com/search-products?q=Chaos+Control+Remix+saturn&type=prices",
+    "https://gamefaqs.gamespot.com/ps/572730-chaos-control/data"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-124": {
+   "status": "untranslated",
+   "note": "Japanese. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.pricecharting.com/game/pc-games/quest-for-fame",
+    "https://www.mobygames.com/game/20009/quest-for-fame/releases/",
+    "https://www.mobygames.com/game/20009/quest-for-fame/specs/",
+    "https://mimora.mimoza.jp/yao_game/retro/contents/ctg_main/memorandum/PS/detail/gmr_PS-0054.php"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-356": {
+   "status": "official",
+   "note": "English. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/vid-grid-p0k",
+    "https://www.pricecharting.com/search-products?q=Vid+Grid+jaguar+cd&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-357": {
+   "status": "official",
+   "note": "English and Japanese editions. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://store.steampowered.com/api/appdetails?appids=743890&cc=us&filters=basic,price_overview",
+    "https://store.steampowered.com/app/743890/",
+    "https://www.myabandonware.com/game/mega-man-x4-a4c",
+    "https://www.pricecharting.com/game/sega-saturn/mega-man-x4",
+    "https://www.pricecharting.com/game/playstation/mega-man-x4"
+   ],
+   "checked": "2026-10-27"
+  },
+  "saturn-85": {
+   "status": "official",
+   "note": "English PAL. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/frankenstein-through-the-eyes-of-the-monster-3k0",
+    "https://www.pricecharting.com/game/pc-games/frankenstein-through-the-eyes-of-the-monster",
+    "https://www.satakore.com/sega-saturn-game%2C%2CT-12511H-50%2C%2CFrankenstein-Through-the-Eyes-of-the-Monster-EUR.html",
+    "https://www.mobygames.com/game/3216/frankenstein-through-the-eyes-of-the-monster/releases/"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-125": {
+   "status": "official",
+   "note": "English and Japanese editions. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/civilization-ii-multiplayer-gold-edition-3hr",
+    "https://www.pricecharting.com/game/pc-games/civilization-ii",
+    "https://www.mobygames.com/game/15/sid-meiers-civilization-ii/screenshots/playstation/238604/",
+    "https://www.lukiegames.com/Civilization-II-Sony-Playstation-Game.html"
+   ],
+   "checked": "2026-10-27"
+  },
+  "saturn-86": {
+   "status": "untranslated",
+   "note": "Japanese. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://store.steampowered.com/app/1758910/",
+    "https://store.steampowered.com/api/appdetails?appids=1758910&cc=us&l=english",
+    "https://www.gog.com/en/game/time_commando",
+    "https://www.myabandonware.com/game/time-commando-bxr",
+    "https://www.pricecharting.com/game/playstation/time-commando",
+    "https://www.pricecharting.com/game/pc-games/time-commando"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-358": {
+   "status": "official",
+   "note": "English DOS. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/the-lost-files-of-sherlock-holmes-1v4",
+    "https://www.pricecharting.com/search-products?q=Lost+Files+of+Sherlock+Holmes%3A+The+Case+of+the+Serrated+Scalpel+3do&type=prices",
+    "https://www.scummvm.org/compatibility/DEV/sherlock:scalpel/",
+    "https://en.wikipedia.org/wiki/The_Lost_Files_of_Sherlock_Holmes"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-359": {
+   "status": "official",
+   "note": "English DOS. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/the-horde-22q",
+    "https://www.pricecharting.com/search-products?q=The+Horde+3do&type=prices",
+    "https://www.pricecharting.com/game/sega-saturn/the-horde"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-360": {
+   "status": "official",
+   "note": "English Windows 3.x. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/spaceship-warlock-3qa",
+    "https://www.pricecharting.com/search-products?q=Spaceship+Warlock+macintosh&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-361": {
+   "status": "official",
+   "note": "English Windows 3.x. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.wegneronline.com/badday/package.html",
+    "https://www.myabandonware.com/game/the-residents-freak-show-3pg"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-362": {
+   "status": "official",
+   "note": "English DOS. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/the-case-of-the-cautious-condor-3d7",
+    "https://www.lemonamiga.com/review/case-of-the-cautious-condor-cdtv/350",
+    "https://device.report/m/dd730b4e92954ec585f33b4d72ee2fb595a00e98bf9450f780ac3c2dd5e676d4"
+   ],
+   "checked": "2026-10-27"
+  },
+  "3do-82": {
+   "status": "official",
+   "note": "English. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.digitpress.com/library/manuals/3do/cannon_fodder.pdf",
+    "https://www.mobygames.com/game/210/cannon-fodder/"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-126": {
+   "status": "untranslated",
+   "note": "Japanese. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.mobygames.com/game/3956/quantum-gate/releases/playstation/",
+    "https://gamefaqs.gamespot.com/ps/573409-quantum-gate-i-akumu-no-joshou/data",
+    "https://www.myabandonware.com/game/quantum-gate-483",
+    "https://www.pricecharting.com/game/pc-games/quantum-gate"
+   ],
+   "checked": "2026-10-27"
+  },
+  "saturn-87": {
+   "status": "untranslated",
+   "note": "Japanese. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.mobygames.com/game/3956/quantum-gate/releases/playstation/",
+    "https://gamefaqs.gamespot.com/ps/573409-quantum-gate-i-akumu-no-joshou/data",
+    "https://www.myabandonware.com/game/quantum-gate-483",
+    "https://www.pricecharting.com/game/pc-games/quantum-gate"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-363": {
+   "status": "official",
+   "note": "English DOS edition. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/psycho-killer-320"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-364": {
+   "status": "official",
+   "note": "English Windows 3.x / PC-Mac hybrid. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.scummvm.org/en/compatibility/2026.2.0/",
+    "https://www.scummvm.org/screenshots/synergy/",
+    "https://www.myabandonware.com/game/l-zone-ya7"
+   ],
+   "checked": "2026-10-27"
+  },
+  "3do-83": {
+   "status": "official",
+   "note": "English. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.fightersgeneration.com/games/primalrage.html",
+    "https://www.pricecharting.com/game/3do/primal-rage",
+    "https://www.pricecharting.com/game/playstation/primal-rage",
+    "https://www.myabandonware.com/game/primal-rage-2vr",
+    "https://www.pricecharting.com/search-products?q=Primal+Rage+jaguar+cd&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-127": {
+   "status": "official",
+   "note": "English. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.fightersgeneration.com/games/primalrage.html",
+    "https://www.pricecharting.com/game/3do/primal-rage",
+    "https://www.pricecharting.com/game/playstation/primal-rage",
+    "https://www.myabandonware.com/game/primal-rage-2vr",
+    "https://www.pricecharting.com/search-products?q=Primal+Rage+jaguar+cd&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "saturn-88": {
+   "status": "official",
+   "note": "English/Japanese by edition. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.fightersgeneration.com/games/primalrage.html",
+    "https://www.pricecharting.com/game/3do/primal-rage",
+    "https://www.pricecharting.com/game/playstation/primal-rage",
+    "https://www.myabandonware.com/game/primal-rage-2vr",
+    "https://www.pricecharting.com/search-products?q=Primal+Rage+jaguar+cd&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "32x-1": {
+   "status": "official",
+   "note": "English; cartridge. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.fightersgeneration.com/games/primalrage.html",
+    "https://www.pricecharting.com/game/3do/primal-rage",
+    "https://www.pricecharting.com/game/playstation/primal-rage",
+    "https://www.myabandonware.com/game/primal-rage-2vr",
+    "https://www.pricecharting.com/search-products?q=Primal+Rage+jaguar+cd&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-365": {
+   "status": "official",
+   "note": "English DOS. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.fightersgeneration.com/games/primalrage.html",
+    "https://www.pricecharting.com/game/3do/primal-rage",
+    "https://www.pricecharting.com/game/playstation/primal-rage",
+    "https://www.myabandonware.com/game/primal-rage-2vr",
+    "https://www.pricecharting.com/search-products?q=Primal+Rage+jaguar+cd&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-128": {
+   "status": "official",
+   "note": "English. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.pcgamingwiki.com/wiki/Gex_Trilogy",
+    "https://store.steampowered.com/app/3183970/",
+    "https://www.gog.com/en/game/gex_trilogy",
+    "https://www.gog.com/en/game/gex",
+    "https://www.myabandonware.com/game/gex-cwy",
+    "https://www.pricecharting.com/search-products?q=Gex+3do&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "saturn-89": {
+   "status": "official",
+   "note": "English. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.pcgamingwiki.com/wiki/Gex_Trilogy",
+    "https://store.steampowered.com/app/3183970/",
+    "https://www.gog.com/en/game/gex_trilogy",
+    "https://www.gog.com/en/game/gex",
+    "https://www.myabandonware.com/game/gex-cwy",
+    "https://www.pricecharting.com/search-products?q=Gex+3do&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-366": {
+   "status": "official",
+   "note": "English Windows. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.pcgamingwiki.com/wiki/Gex_Trilogy",
+    "https://store.steampowered.com/app/3183970/",
+    "https://www.gog.com/en/game/gex_trilogy",
+    "https://www.gog.com/en/game/gex",
+    "https://www.myabandonware.com/game/gex-cwy",
+    "https://www.pricecharting.com/search-products?q=Gex+3do&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-367": {
+   "status": "official",
+   "note": "English DOS. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.theworldofcdi.com/cd-i_encyclopedia/mystic-midway-phantom-express/",
+    "https://www.myabandonware.com/game/mystic-midway-phantom-express-cdt",
+    "https://www.pricecharting.com/game/cd-i/mystic-midway-phantom-express"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-368": {
+   "status": "official",
+   "note": "English/French by edition; DOS. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/the-morlov-affair-331",
+    "https://www.pricecharting.com/game/cd-i/morlov-affair"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-129": {
+   "status": "untranslated",
+   "note": "Japanese. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.mobygames.com/game/4257/dark-seed-ii/releases/",
+    "https://psxdatacenter.com/games/J/D/SLPS-00938.html",
+    "https://www.myabandonware.com/game/dark-seed-ii-1rx",
+    "https://www.pricecharting.com/game/jp-sega-saturn/dark-seed-ii",
+    "https://www.pricecharting.com/game/jp-playstation/dark-seed-ii"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-369": {
+   "status": "official",
+   "note": "English Windows 3.x. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.mobygames.com/game/4257/dark-seed-ii/releases/",
+    "https://psxdatacenter.com/games/J/D/SLPS-00938.html",
+    "https://www.myabandonware.com/game/dark-seed-ii-1rx",
+    "https://www.pricecharting.com/game/jp-sega-saturn/dark-seed-ii",
+    "https://www.pricecharting.com/game/jp-playstation/dark-seed-ii"
+   ],
+   "checked": "2026-10-27"
+  },
+  "mac-91": {
+   "status": "official",
+   "note": "English. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.mobygames.com/game/4257/dark-seed-ii/releases/",
+    "https://psxdatacenter.com/games/J/D/SLPS-00938.html",
+    "https://www.myabandonware.com/game/dark-seed-ii-1rx",
+    "https://www.pricecharting.com/game/jp-sega-saturn/dark-seed-ii",
+    "https://www.pricecharting.com/game/jp-playstation/dark-seed-ii"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-130": {
+   "status": "official",
+   "note": "English. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.videogamemanual.com/ps1/Panzer%20General%20%28USA%29.pdf",
+    "https://www.mobygames.com/game/1021/panzer-general/releases/",
+    "https://www.myabandonware.com/game/panzer-general-2as",
+    "https://en.wikipedia.org/wiki/Panzer_General",
+    "https://www.pricecharting.com/search-products?q=Panzer+General+3do&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-370": {
+   "status": "untranslated",
+   "note": "DOS/Windows by edition. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.videogamemanual.com/ps1/Panzer%20General%20%28USA%29.pdf",
+    "https://www.mobygames.com/game/1021/panzer-general/releases/",
+    "https://www.myabandonware.com/game/panzer-general-2as",
+    "https://en.wikipedia.org/wiki/Panzer_General",
+    "https://www.pricecharting.com/search-products?q=Panzer+General+3do&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "3do-84": {
+   "status": "untranslated",
+   "note": "Japanese. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.mobygames.com/game/187028/moon-cradle/",
+    "https://www.myabandonware.com/game/moon-cradle-ovb",
+    "https://www.mobygames.com/search/?q=Moon+Cradle",
+    "https://www.pricecharting.com/game/jp-sega-saturn/moon-cradle"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-371": {
+   "status": "untranslated",
+   "note": "Japanese Windows. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/nanatsu-no-hikan-p77",
+    "https://www.mobygames.com/search/?q=Nanatsu+no+Hikan",
+    "https://www.pricecharting.com/game/jp-sega-saturn/nanatsu-no-hikan"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-372": {
+   "status": "official",
+   "note": "English/multilingual Windows. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/independence-day-dcq",
+    "https://www.pricecharting.com/game/sega-saturn/independence-day",
+    "https://www.pricecharting.com/game/playstation/independence-day"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-373": {
+   "status": "official",
+   "note": "English Windows. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/cosmology-of-kyoto-3i6"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-374": {
+   "status": "untranslated",
+   "note": "Windows. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.mobygames.com/game/40829/laurie-andersons-puppet-motel/credits/windows/",
+    "https://www.mail-archive.com/netbehaviour%40lists.netbehaviour.org/msg06687.html",
+    "https://blogs.loc.gov/thesignal/2014/08/emulation-as-a-service-eaas-at-yale-university-library/"
+   ],
+   "checked": "2026-10-27"
+  },
+  "saturn-90": {
+   "status": "untranslated",
+   "note": "Japanese dub/text. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/the-psychotron-ilo",
+    "https://elisoftware.org/wiki/Psychotron_%28PC%2C_CD-ROM%29_Merit_Software_-_1994_USA%2C_Canada_Release",
+    "https://www.segasaturnshiro.com/2023/06/09/psychotron-bestofsaturn/",
+    "https://www.dosbox-staging.org/0.83/manual/graphics/reelmagic/",
+    "https://www.pricecharting.com/game/jp-sega-saturn/the-psychotron"
+   ],
+   "checked": "2026-10-27"
+  },
+  "mac-92": {
+   "status": "official",
+   "note": "English. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/the-psychotron-ilo",
+    "https://elisoftware.org/wiki/Psychotron_%28PC%2C_CD-ROM%29_Merit_Software_-_1994_USA%2C_Canada_Release",
+    "https://www.segasaturnshiro.com/2023/06/09/psychotron-bestofsaturn/",
+    "https://www.dosbox-staging.org/0.83/manual/graphics/reelmagic/",
+    "https://www.pricecharting.com/game/jp-sega-saturn/the-psychotron",
+    "https://www.mobygames.com/game/4409/the-psychotron/"
+   ],
+   "checked": "2026-10-27"
+  },
+  "mac-93": {
+   "status": "official",
+   "note": "English. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/noir-a-shadowy-thriller-fh4",
+    "https://www.metzomagic.com/showArticle.php?index=478",
+    "https://obscuritory.com/adventure/noir-a-shadowy-thriller/",
+    "https://www.bobshop.co.za/noir-a-shadowy-thriller-big-box-pc-adventure-game/p/646599246"
+   ],
+   "checked": "2026-10-27"
+  },
+  "ps1-131": {
+   "status": "untranslated",
+   "note": "Japanese. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.psxdatacenter.com/games/J/C/SLPS-00055.html",
+    "https://en.wikipedia.org/wiki/Cyberwar_(video_game)",
+    "https://en.wikipedia.org/wiki/List_of_cancelled_Sega_CD_games",
+    "https://en.wikipedia.org/wiki/List_of_cancelled_3DO_games",
+    "https://www.myabandonware.com/game/cyberwar-3fa",
+    "https://www.pricecharting.com/search-products?q=Cyberwar+pc+games&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-375": {
+   "status": "official",
+   "note": "English Windows. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/solar-crusade-zik",
+    "https://www.pricecharting.com/game/cd-i/solar-crusade",
+    "https://www.mobygames.com/game/6206/solar-crusade/"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-376": {
+   "status": "official",
+   "note": "English Windows. Check the exact edition; region flags and edition-specific FMV rating remain unassigned.",
+   "sources": [
+    "https://www.myabandonware.com/game/point-of-view-g3q",
+    "https://www.pricecharting.com/search-products?q=Point+of+View+dvd&type=prices"
+   ],
+   "checked": "2026-10-27"
+  },
+  "pc-377": {
+   "status": "partial",
+   "note": "English interface; Japanese voices, no English audio or subtitle track listed. Timed gameplay is the selected route.",
+   "sources": [
+    "https://store.steampowered.com/app/3050490/"
+   ],
+   "checked": "2026-10-27"
   }
  },
  "games": {
